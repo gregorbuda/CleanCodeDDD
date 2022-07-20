@@ -195,3 +195,5 @@ C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Compliance.Api.xml
+C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.xml
