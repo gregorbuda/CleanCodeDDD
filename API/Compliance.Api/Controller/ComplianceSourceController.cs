@@ -18,8 +18,8 @@ namespace Compliance.Api.Controller
             _mediator = mediator;
         }
 
-        [HttpPost(Name = "complianceSource")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [HttpPost()]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<ApiResponse<int>>> ComplianceSource([FromBody] CreateComplianceSourceCommand command)
         {
             var result = await _mediator.Send(command);
