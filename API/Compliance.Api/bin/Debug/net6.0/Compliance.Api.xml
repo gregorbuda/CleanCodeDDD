@@ -4,6 +4,13 @@
         <name>Compliance.Api</name>
     </assembly>
     <members>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.ComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand)">
+            <summary>
+            Create a ComplianceSource
+            </summary>
+            <param></param>
+            <returns>Compliance Source Id</returns>
+        </member>
         <member name="M:Compliance.Api.Utils.ControllerBaseCustom.NotFound">
             <summary>
             Not Found Response.

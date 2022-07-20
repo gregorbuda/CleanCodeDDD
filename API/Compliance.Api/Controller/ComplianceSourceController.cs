@@ -22,6 +22,11 @@ namespace Compliance.Api.Controller
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Create a ComplianceSource
+        /// </summary>
+        /// <param></param>
+        /// <returns>Compliance Source Id</returns>
         [HttpPost()]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<ApiResponse<int>>> ComplianceSource([FromBody] CreateComplianceSourceCommand command)
