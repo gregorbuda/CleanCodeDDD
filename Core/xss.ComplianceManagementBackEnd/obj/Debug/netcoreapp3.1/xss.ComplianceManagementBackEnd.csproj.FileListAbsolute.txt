@@ -1,0 +1,13 @@
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\bin\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.deps.json
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\bin\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.runtimeconfig.json
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\bin\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.runtimeconfig.dev.json
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\bin\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.dll
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\bin\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.pdb
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\obj\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.csproj.AssemblyReference.cache
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\obj\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\obj\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.AssemblyInfoInputs.cache
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\obj\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.AssemblyInfo.cs
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\obj\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.csproj.CoreCompileInputs.cache
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\obj\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.dll
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\obj\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.pdb
+C:\Users\wilom\source\repos\Xirect\xss.Compliance\xss.ComplianceManagementBackEnd\obj\Debug\netcoreapp3.1\xss.ComplianceManagementBackEnd.genruntimeconfig.cache

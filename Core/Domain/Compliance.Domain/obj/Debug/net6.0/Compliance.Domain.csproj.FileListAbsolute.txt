@@ -1,0 +1,12 @@
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\Compliance.Domain.deps.json
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\Compliance.Domain.dll
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\ref\Compliance.Domain.dll
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\Compliance.Domain.pdb
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.csproj.AssemblyReference.cache
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.AssemblyInfoInputs.cache
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.AssemblyInfo.cs
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.csproj.CoreCompileInputs.cache
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.dll
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\ref\Compliance.Domain.dll
+C:\Users\wilom\source\repos\Xirect\Compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.pdb

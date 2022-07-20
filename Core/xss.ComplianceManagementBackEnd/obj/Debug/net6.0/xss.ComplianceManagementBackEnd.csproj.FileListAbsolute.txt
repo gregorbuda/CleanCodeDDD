@@ -1,0 +1,4 @@
+C:\Users\wilom\source\repos\compliance\Core\xss.ComplianceManagementBackEnd\obj\Debug\net6.0\xss.ComplianceManagementBackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wilom\source\repos\compliance\Core\xss.ComplianceManagementBackEnd\obj\Debug\net6.0\xss.ComplianceManagementBackEnd.AssemblyInfoInputs.cache
+C:\Users\wilom\source\repos\compliance\Core\xss.ComplianceManagementBackEnd\obj\Debug\net6.0\xss.ComplianceManagementBackEnd.AssemblyInfo.cs
+C:\Users\wilom\source\repos\compliance\Core\xss.ComplianceManagementBackEnd\obj\Debug\net6.0\xss.ComplianceManagementBackEnd.csproj.CoreCompileInputs.cache
