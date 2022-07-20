@@ -16,8 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\xss.Compliance\xss.ComplianceManagementBackEnd\xss.ComplianceManagementBackEnd.csproj" />
     <ProjectReference Include="..\..\Core\Application\Compliance.Application\Compliance.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

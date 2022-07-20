@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ea31025c-1da1-47ff-8247-677f70a5f722": {
+      "ProjectGuid": "ea31025c-1da1-47ff-8247-677f70a5f722",
+      "DisplayName": "Compliance.Application",
+      "ColorIndex": 0
+    },
+    "6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab": {
+      "ProjectGuid": "6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab",
+      "DisplayName": "Compliance.Infrastructure",
+      "ColorIndex": 1
+    },
+    "4475092d-47bf-4736-8627-8a9ae55492dd": {
+      "ProjectGuid": "4475092d-47bf-4736-8627-8a9ae55492dd",
+      "DisplayName": "xss.ComplianceManagementBackEnd",
+      "ColorIndex": 2
+    },
+    "efe62af0-37a2-4204-a189-1d548f68d618": {
+      "ProjectGuid": "efe62af0-37a2-4204-a189-1d548f68d618",
+      "DisplayName": "Compliance.Api",
+      "ColorIndex": 3
+    },
+    "4db795b3-cc5e-4106-b4ee-b32d4749d89b": {
+      "ProjectGuid": "4db795b3-cc5e-4106-b4ee-b32d4749d89b",
+      "DisplayName": "Compliance.Domain",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

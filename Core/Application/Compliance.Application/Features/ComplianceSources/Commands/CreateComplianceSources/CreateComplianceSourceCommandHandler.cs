@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
 using Compliance.Application.Responses;
+using Compliance.Domain.Models;
 using MediatR;
-using xss.ComplianceManagementBackEnd.Entity;
 
 namespace Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources
 {

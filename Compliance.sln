@@ -19,8 +19,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compliance.Domain", "Core\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compliance.Infrastructure", "Infrastructure\Compliance.Infrastructure\Compliance.Infrastructure.csproj", "{6B01FAC9-5BDB-4D5B-96BD-4D3E1FA3ABAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xss.ComplianceManagementBackEnd", "Core\xss.ComplianceManagementBackEnd\xss.ComplianceManagementBackEnd.csproj", "{4475092D-47BF-4736-8627-8A9AE55492DD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,10 +41,6 @@ Global
 		{6B01FAC9-5BDB-4D5B-96BD-4D3E1FA3ABAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B01FAC9-5BDB-4D5B-96BD-4D3E1FA3ABAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B01FAC9-5BDB-4D5B-96BD-4D3E1FA3ABAB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4475092D-47BF-4736-8627-8A9AE55492DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4475092D-47BF-4736-8627-8A9AE55492DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4475092D-47BF-4736-8627-8A9AE55492DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4475092D-47BF-4736-8627-8A9AE55492DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,7 +53,6 @@ Global
 		{EA31025C-1DA1-47FF-8247-677F70A5F722} = {BCC0C10C-C1B7-49BB-9EB5-BCDDFBD69309}
 		{4DB795B3-CC5E-4106-B4EE-B32D4749D89B} = {BCC0C10C-C1B7-49BB-9EB5-BCDDFBD69309}
 		{6B01FAC9-5BDB-4D5B-96BD-4D3E1FA3ABAB} = {4A8F779B-9569-4422-B719-55CF6CD16069}
-		{4475092D-47BF-4736-8627-8A9AE55492DD} = {BCC0C10C-C1B7-49BB-9EB5-BCDDFBD69309}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86D1FD51-1BE2-4B1C-9F0E-FBDB627844B9}

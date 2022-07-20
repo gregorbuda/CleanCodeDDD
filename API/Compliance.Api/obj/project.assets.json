@@ -1113,8 +1113,7 @@
           "FluentValidation.DependencyInjectionExtensions": "11.1.0",
           "MediatR": "10.0.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
-          "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
-          "xss.ComplianceManagementBackEnd": "1.0.0"
+          "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0"
         },
         "compile": {
           "bin/placeholder/Compliance.Application.dll": {}
@@ -1126,6 +1125,9 @@
       "Compliance.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MediatR": "10.0.1"
+        },
         "compile": {
           "bin/placeholder/Compliance.Domain.dll": {}
         },
@@ -1139,24 +1141,13 @@
         "dependencies": {
           "Compliance.Application": "1.0.0",
           "MediatR": "10.0.1",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0-preview.6.22329.4",
-          "xss.ComplianceManagementBackEnd": "1.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0-preview.6.22329.4"
         },
         "compile": {
           "bin/placeholder/Compliance.Infrastructure.dll": {}
         },
         "runtime": {
           "bin/placeholder/Compliance.Infrastructure.dll": {}
-        }
-      },
-      "xss.ComplianceManagementBackEnd/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/xss.ComplianceManagementBackEnd.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/xss.ComplianceManagementBackEnd.dll": {}
         }
       }
     }
@@ -3655,11 +3646,6 @@
       "type": "project",
       "path": "../../Infrastructure/Compliance.Infrastructure/Compliance.Infrastructure.csproj",
       "msbuildProject": "../../Infrastructure/Compliance.Infrastructure/Compliance.Infrastructure.csproj"
-    },
-    "xss.ComplianceManagementBackEnd/1.0.0": {
-      "type": "project",
-      "path": "../../Core/xss.ComplianceManagementBackEnd/xss.ComplianceManagementBackEnd.csproj",
-      "msbuildProject": "../../Core/xss.ComplianceManagementBackEnd/xss.ComplianceManagementBackEnd.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3671,24 +3657,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wilom\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wilom\\source\\repos\\compliance\\API\\Compliance.Api\\Compliance.Api.csproj",
+      "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\API\\Compliance.Api\\Compliance.Api.csproj",
       "projectName": "Compliance.Api",
-      "projectPath": "C:\\Users\\wilom\\source\\repos\\compliance\\API\\Compliance.Api\\Compliance.Api.csproj",
-      "packagesPath": "C:\\Users\\wilom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wilom\\source\\repos\\compliance\\API\\Compliance.Api\\obj\\",
+      "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\API\\Compliance.Api\\Compliance.Api.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\API\\Compliance.Api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\wilom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3696,18 +3677,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://xnuget.xirect.com/api/v2": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\wilom\\source\\repos\\compliance\\Core\\Application\\Compliance.Application\\Compliance.Application.csproj": {
-              "projectPath": "C:\\Users\\wilom\\source\\repos\\compliance\\Core\\Application\\Compliance.Application\\Compliance.Application.csproj"
+            "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Compliance.Application.csproj": {
+              "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Compliance.Application.csproj"
             },
-            "C:\\Users\\wilom\\source\\repos\\compliance\\Infrastructure\\Compliance.Infrastructure\\Compliance.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\wilom\\source\\repos\\compliance\\Infrastructure\\Compliance.Infrastructure\\Compliance.Infrastructure.csproj"
+            "C:\\GitRepositories\\cleanarchitecture\\compliance\\Infrastructure\\Compliance.Infrastructure\\Compliance.Infrastructure.csproj": {
+              "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Infrastructure\\Compliance.Infrastructure\\Compliance.Infrastructure.csproj"
             }
           }
         }
@@ -3751,7 +3731,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.107\\RuntimeIdentifierGraph.json"
       }
     }
   }

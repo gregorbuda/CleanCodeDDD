@@ -22,7 +22,7 @@ namespace Compliance.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceDistributorData", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceDistributorData", b =>
                 {
                     b.Property<int>("ComplianceDistributorDataId")
                         .ValueGeneratedOnAdd()
@@ -47,6 +47,7 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("FieldData")
+                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -68,7 +69,7 @@ namespace Compliance.Infrastructure.Migrations
                     b.ToTable("ComplianceDistributorData", "Eth");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceDistributorDataLogs", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceDistributorDataLogs", b =>
                 {
                     b.Property<int>("ComplianceDistributorLogId")
                         .ValueGeneratedOnAdd()
@@ -80,11 +81,13 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ComplianceDistributorLogData")
+                        .IsRequired()
                         .HasMaxLength(500)
                         .IsUnicode(false)
                         .HasColumnType("varchar(500)");
 
                     b.Property<string>("ComplianceDistributorLogMessage")
+                        .IsRequired()
                         .HasMaxLength(500)
                         .IsUnicode(false)
                         .HasColumnType("varchar(500)");
@@ -118,7 +121,7 @@ namespace Compliance.Infrastructure.Migrations
                     b.ToTable("ComplianceDistributorDataLogs", "Eth");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceFieldType", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceFieldType", b =>
                 {
                     b.Property<int>("ComplianceFieldTypeId")
                         .ValueGeneratedOnAdd()
@@ -146,6 +149,7 @@ namespace Compliance.Infrastructure.Migrations
                         .HasDefaultValueSql("(getdate())");
 
                     b.Property<string>("FieldPath")
+                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -187,7 +191,7 @@ namespace Compliance.Infrastructure.Migrations
                     b.ToTable("ComplianceFieldType", "Eth");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceSource", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceSource", b =>
                 {
                     b.Property<int>("ComplianceSourceId")
                         .ValueGeneratedOnAdd()
@@ -227,7 +231,7 @@ namespace Compliance.Infrastructure.Migrations
                     b.ToTable("ComplianceSource", "Eth");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceSourceTypeMarkets", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceSourceTypeMarkets", b =>
                 {
                     b.Property<int>("ComplianceSourceTypeMarketId")
                         .ValueGeneratedOnAdd()
@@ -270,7 +274,7 @@ namespace Compliance.Infrastructure.Migrations
                     b.ToTable("ComplianceSourceTypeMarkets", "eth");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceSourceTypes", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceSourceTypes", b =>
                 {
                     b.Property<int>("ComplianceSourceTypeId")
                         .ValueGeneratedOnAdd()
@@ -330,7 +334,7 @@ namespace Compliance.Infrastructure.Migrations
                     b.ToTable("ComplianceSourceTypes", "Eth");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.FileResourceExtension", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.FileResourceExtension", b =>
                 {
                     b.Property<int>("FileResourceExtensionId")
                         .ValueGeneratedOnAdd()
@@ -373,7 +377,7 @@ namespace Compliance.Infrastructure.Migrations
                     b.ToTable("FileResourceExtension");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.FileResourceType", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.FileResourceType", b =>
                 {
                     b.Property<int>("FileResourceTypeId")
                         .ValueGeneratedOnAdd()
@@ -388,6 +392,7 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnType("datetime");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -418,7 +423,7 @@ namespace Compliance.Infrastructure.Migrations
                     b.ToTable("FileResourceType");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.InputBehaviour", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.InputBehaviour", b =>
                 {
                     b.Property<int>("InputBehaviourId")
                         .ValueGeneratedOnAdd()
@@ -437,6 +442,7 @@ namespace Compliance.Infrastructure.Migrations
                         .HasDefaultValueSql("(getdate())");
 
                     b.Property<string>("InputBehaviourName")
+                        .IsRequired()
                         .HasMaxLength(500)
                         .IsUnicode(false)
                         .HasColumnType("varchar(500)");
@@ -457,7 +463,7 @@ namespace Compliance.Infrastructure.Migrations
                     b.ToTable("InputBehaviour", "Gbl");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.Market", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.Market", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -474,17 +480,20 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnName("COMPANYADDRESSID");
 
                     b.Property<string>("Companycode")
+                        .IsRequired()
                         .HasMaxLength(20)
                         .IsUnicode(false)
                         .HasColumnType("varchar(20)")
                         .HasColumnName("COMPANYCODE");
 
                     b.Property<string>("Companyemail")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("COMPANYEMAIL");
 
                     b.Property<string>("Companyphone")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("COMPANYPHONE");
@@ -510,6 +519,7 @@ namespace Compliance.Infrastructure.Migrations
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("DefaultCultureInfo")
+                        .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(10)
                         .IsUnicode(false)
@@ -529,6 +539,7 @@ namespace Compliance.Infrastructure.Migrations
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("MarketDescription")
+                        .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
@@ -564,6 +575,7 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnName("MAXVOLUMELIMIT_NFR");
 
                     b.Property<string>("MerchantCurrency")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .IsUnicode(false)
                         .HasColumnType("varchar(50)");
@@ -573,11 +585,13 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnName("MIN_AGE");
 
                     b.Property<string>("Nfrcompanycode")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("NFRCOMPANYCODE");
 
                     b.Property<string>("Nfrcurrency")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("NFRCURRENCY");
@@ -602,6 +616,7 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnName("SETTAXINTEGRATION");
 
                     b.Property<string>("Shippingcurrency")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .IsUnicode(false)
                         .HasColumnType("varchar(50)")
@@ -626,6 +641,7 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnType("smallint");
 
                     b.Property<string>("TranslationKey")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("UpdatedBy")
@@ -641,9 +657,9 @@ namespace Compliance.Infrastructure.Migrations
                     b.ToTable("Market");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceDistributorData", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceDistributorData", b =>
                 {
-                    b.HasOne("xss.ComplianceManagementBackEnd.Entity.ComplianceSourceTypes", "ComplianceSourceType")
+                    b.HasOne("Compliance.Domain.Models.ComplianceSourceTypes", "ComplianceSourceType")
                         .WithMany("ComplianceDistributorData")
                         .HasForeignKey("ComplianceSourceTypeId")
                         .IsRequired()
@@ -652,9 +668,9 @@ namespace Compliance.Infrastructure.Migrations
                     b.Navigation("ComplianceSourceType");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceDistributorDataLogs", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceDistributorDataLogs", b =>
                 {
-                    b.HasOne("xss.ComplianceManagementBackEnd.Entity.ComplianceDistributorData", "ComplianceDistributorData")
+                    b.HasOne("Compliance.Domain.Models.ComplianceDistributorData", "ComplianceDistributorData")
                         .WithMany("ComplianceDistributorDataLogs")
                         .HasForeignKey("ComplianceDistributorDataId")
                         .IsRequired()
@@ -663,15 +679,15 @@ namespace Compliance.Infrastructure.Migrations
                     b.Navigation("ComplianceDistributorData");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceFieldType", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceFieldType", b =>
                 {
-                    b.HasOne("xss.ComplianceManagementBackEnd.Entity.FileResourceType", "FileResourceType")
+                    b.HasOne("Compliance.Domain.Models.FileResourceType", "FileResourceType")
                         .WithMany("ComplianceFieldTypes")
                         .HasForeignKey("FileResourceTypeId")
                         .IsRequired()
                         .HasConstraintName("Fk_ComplianceFieldType_FileesourceTypeId");
 
-                    b.HasOne("xss.ComplianceManagementBackEnd.Entity.InputBehaviour", "InputBehaviour")
+                    b.HasOne("Compliance.Domain.Models.InputBehaviour", "InputBehaviour")
                         .WithMany("ComplianceFieldType")
                         .HasForeignKey("InputBehaviourId")
                         .IsRequired()
@@ -682,15 +698,15 @@ namespace Compliance.Infrastructure.Migrations
                     b.Navigation("InputBehaviour");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceSourceTypeMarkets", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceSourceTypeMarkets", b =>
                 {
-                    b.HasOne("xss.ComplianceManagementBackEnd.Entity.ComplianceSourceTypes", "ComplianceSourceType")
+                    b.HasOne("Compliance.Domain.Models.ComplianceSourceTypes", "ComplianceSourceType")
                         .WithMany("ComplianceSourceTypeMarkets")
                         .HasForeignKey("ComplianceSourceTypeId")
                         .IsRequired()
                         .HasConstraintName("FK_ComplianceSourceTypeMarkets_ComplianceSourceType");
 
-                    b.HasOne("xss.ComplianceManagementBackEnd.Entity.Market", "Markets")
+                    b.HasOne("Compliance.Domain.Models.Market", "Markets")
                         .WithMany("ComplianceSourceTypeMarkets")
                         .HasForeignKey("MarketId")
                         .IsRequired()
@@ -701,15 +717,15 @@ namespace Compliance.Infrastructure.Migrations
                     b.Navigation("Markets");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceSourceTypes", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceSourceTypes", b =>
                 {
-                    b.HasOne("xss.ComplianceManagementBackEnd.Entity.ComplianceFieldType", "ComplianceFieldType")
+                    b.HasOne("Compliance.Domain.Models.ComplianceFieldType", "ComplianceFieldType")
                         .WithMany("ComplianceSourceTypes")
                         .HasForeignKey("ComplianceFieldTypeId")
                         .IsRequired()
                         .HasConstraintName("Fk_ComplianceSourceTypes_ComplianceFieldTypeId");
 
-                    b.HasOne("xss.ComplianceManagementBackEnd.Entity.ComplianceSource", "ComplianceSource")
+                    b.HasOne("Compliance.Domain.Models.ComplianceSource", "ComplianceSource")
                         .WithMany("ComplianceSourceTypes")
                         .HasForeignKey("ComplianceSourceId")
                         .IsRequired()
@@ -720,9 +736,9 @@ namespace Compliance.Infrastructure.Migrations
                     b.Navigation("ComplianceSource");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.FileResourceExtension", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.FileResourceExtension", b =>
                 {
-                    b.HasOne("xss.ComplianceManagementBackEnd.Entity.FileResourceType", "FileResourceType")
+                    b.HasOne("Compliance.Domain.Models.FileResourceType", "FileResourceType")
                         .WithMany("FileResourceExtension")
                         .HasForeignKey("FileResourceTypeId")
                         .IsRequired()
@@ -731,41 +747,41 @@ namespace Compliance.Infrastructure.Migrations
                     b.Navigation("FileResourceType");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceDistributorData", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceDistributorData", b =>
                 {
                     b.Navigation("ComplianceDistributorDataLogs");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceFieldType", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceFieldType", b =>
                 {
                     b.Navigation("ComplianceSourceTypes");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceSource", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceSource", b =>
                 {
                     b.Navigation("ComplianceSourceTypes");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.ComplianceSourceTypes", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.ComplianceSourceTypes", b =>
                 {
                     b.Navigation("ComplianceDistributorData");
 
                     b.Navigation("ComplianceSourceTypeMarkets");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.FileResourceType", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.FileResourceType", b =>
                 {
                     b.Navigation("ComplianceFieldTypes");
 
                     b.Navigation("FileResourceExtension");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.InputBehaviour", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.InputBehaviour", b =>
                 {
                     b.Navigation("ComplianceFieldType");
                 });
 
-            modelBuilder.Entity("xss.ComplianceManagementBackEnd.Entity.Market", b =>
+            modelBuilder.Entity("Compliance.Domain.Models.Market", b =>
                 {
                     b.Navigation("ComplianceSourceTypeMarkets");
                 });

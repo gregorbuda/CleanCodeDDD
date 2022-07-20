@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\ComplianceSources\Queries\**" />
+    <EmbeddedResource Remove="Features\ComplianceSources\Queries\**" />
+    <None Remove="Features\ComplianceSources\Queries\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="FluentValidation" Version="11.1.0" />
@@ -18,11 +24,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\Compliance.Domain\Compliance.Domain.csproj" />
-    <ProjectReference Include="..\..\xss.ComplianceManagementBackEnd\xss.ComplianceManagementBackEnd.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\ComplianceSources\Queries\" />
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>
