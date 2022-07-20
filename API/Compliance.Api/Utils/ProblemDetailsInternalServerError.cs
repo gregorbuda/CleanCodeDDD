@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Compliance.Application.Responses
+namespace Compliance.Api.Utils
 {
     /// <summary>
-    /// Problem details for NotFound response
+    /// Problem details for Internal Server Error response
     /// </summary>
-    public class ProblemDetailsNotFound
+    public class ProblemDetailsInternalServerError
     {
         /// <summary>
         /// Indicates that the call response is inccorrect.
@@ -25,7 +25,7 @@ namespace Compliance.Application.Responses
         /// <value>
         /// The code result.
         /// </value>
-        /// <example>404</example>
+        /// <example>500</example>
         public String CodeResult { get; set; }
         /// <summary>
         /// The message.
@@ -33,7 +33,7 @@ namespace Compliance.Application.Responses
         /// <value>
         /// The message.
         /// </value>
-        /// <example>NotFound, Element or search not found.</example>
+        /// <example>Internal Server Error.</example>
         public String Message { get; set; }
         /// <summary>
         /// In this case it is always null, because there is no data to display.
@@ -41,7 +41,6 @@ namespace Compliance.Application.Responses
         /// <value>
         /// The data.
         /// </value>
-
         public String Data { get; set; }
     }
 }

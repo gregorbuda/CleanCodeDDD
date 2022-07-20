@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Compliance.Application.Responses
+namespace Compliance.Api.Utils
 {
     /// <summary>
-    /// Problem details for BadRequest response
+    /// Problem details for NotFound response
     /// </summary>
-    public class ProblemDetailsBadRequest
+    public class ProblemDetailsNotFound
     {
         /// <summary>
         /// Indicates that the call response is inccorrect.
@@ -25,7 +25,7 @@ namespace Compliance.Application.Responses
         /// <value>
         /// The code result.
         /// </value>
-        /// <example>400</example>
+        /// <example>404</example>
         public String CodeResult { get; set; }
         /// <summary>
         /// The message.
@@ -33,7 +33,7 @@ namespace Compliance.Application.Responses
         /// <value>
         /// The message.
         /// </value>
-        /// <example>Bad Request, problem with parametes, variables or model.</example>
+        /// <example>NotFound, Element or search not found.</example>
         public String Message { get; set; }
         /// <summary>
         /// In this case it is always null, because there is no data to display.
@@ -41,6 +41,7 @@ namespace Compliance.Application.Responses
         /// <value>
         /// The data.
         /// </value>
+
         public String Data { get; set; }
     }
 }

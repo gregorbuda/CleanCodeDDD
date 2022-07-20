@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Compliance.Application.Responses
+namespace Compliance.Api.Utils
 {
     /// <summary>
-    /// Problem details for Internal Server Error response
+    /// Problem details for BadRequest response
     /// </summary>
-    public class ProblemDetailsInternalServerError
+    public class ProblemDetailsBadRequest
     {
         /// <summary>
         /// Indicates that the call response is inccorrect.
@@ -25,7 +25,7 @@ namespace Compliance.Application.Responses
         /// <value>
         /// The code result.
         /// </value>
-        /// <example>500</example>
+        /// <example>400</example>
         public String CodeResult { get; set; }
         /// <summary>
         /// The message.
@@ -33,7 +33,7 @@ namespace Compliance.Application.Responses
         /// <value>
         /// The message.
         /// </value>
-        /// <example>Internal Server Error.</example>
+        /// <example>Bad Request, problem with parametes, variables or model.</example>
         public String Message { get; set; }
         /// <summary>
         /// In this case it is always null, because there is no data to display.

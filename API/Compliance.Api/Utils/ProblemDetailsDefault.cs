@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Compliance.Application.Responses
+namespace Compliance.Api.Utils
 {
     /// <summary>
-    /// Problem details for Unauthorized response
+    /// Problem details for default response
     /// </summary>
-    public class ProblemDetailsUnauthorized
+    public class ProblemDetailsDefault
     {
         /// <summary>
         /// Indicates that the call response is inccorrect.
@@ -25,15 +25,15 @@ namespace Compliance.Application.Responses
         /// <value>
         /// The code result.
         /// </value>
-        /// <example>401</example>
+        /// <example>Default</example>
         public String CodeResult { get; set; }
         /// <summary>
-        /// The message
+        /// The message.
         /// </summary>
         /// <value>
         /// The message.
         /// </value>
-        /// <example>Unauthorized.</example>
+        /// <example>Default</example>
         public String Message { get; set; }
         /// <summary>
         /// In this case it is always null, because there is no data to display.

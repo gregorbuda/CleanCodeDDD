@@ -1,5 +1,5 @@
+using Compliance.Api.Utils;
 using Compliance.Application;
-using Compliance.Application.Responses;
 using Compliance.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -42,6 +42,7 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
+
 builder.Services.AddMvc(setupAction =>
 {
     setupAction.Filters.Add(
@@ -76,8 +77,7 @@ builder.Services.AddMvc(setupAction =>
             jsonOutputFormatter.SupportedMediaTypes.Remove("text/json");
         }
     }
-
-}).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+});
 
 var app = builder.Build();
 
@@ -85,7 +85,12 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json",
+                          "Swagger XML Api Demo v1");
+    });
 }
 
 

@@ -41,5 +41,245 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:Compliance.Api.Utils.ProblemDetailsBadRequest">
+            <summary>
+            Problem details for BadRequest response
+            </summary>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsBadRequest.Success">
+            <summary>
+            Indicates that the call response is inccorrect.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>False</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsBadRequest.CodeResult">
+            <summary>
+            The code result.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>400</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsBadRequest.Message">
+            <summary>
+            The message.
+            </summary>
+            <value>
+            The message.
+            </value>
+            <example>Bad Request, problem with parametes, variables or model.</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsBadRequest.Data">
+            <summary>
+            In this case it is always null, because there is no data to display.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Compliance.Api.Utils.ProblemDetailsDefault">
+            <summary>
+            Problem details for default response
+            </summary>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsDefault.Success">
+            <summary>
+            Indicates that the call response is inccorrect.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>False</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsDefault.CodeResult">
+            <summary>
+            The code result.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>Default</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsDefault.Message">
+            <summary>
+            The message.
+            </summary>
+            <value>
+            The message.
+            </value>
+            <example>Default</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsDefault.Data">
+            <summary>
+            In this case it is always null, because there is no data to display.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Compliance.Api.Utils.ProblemDetailsInternalServerError">
+            <summary>
+            Problem details for Internal Server Error response
+            </summary>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsInternalServerError.Success">
+            <summary>
+            Indicates that the call response is inccorrect.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>False</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsInternalServerError.CodeResult">
+            <summary>
+            The code result.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>500</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsInternalServerError.Message">
+            <summary>
+            The message.
+            </summary>
+            <value>
+            The message.
+            </value>
+            <example>Internal Server Error.</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsInternalServerError.Data">
+            <summary>
+            In this case it is always null, because there is no data to display.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Compliance.Api.Utils.ProblemDetailsNotAcceptable">
+            <summary>
+            Problem details for Not Acceptable response
+            </summary>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsNotAcceptable.Success">
+            <summary>
+            Indicates that the call response is inccorrect.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>False</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsNotAcceptable.CodeResult">
+            <summary>
+            The code result.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>406</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsNotAcceptable.Message">
+            <summary>
+            The message.
+            </summary>
+            <value>
+            The message.
+            </value>
+            <example>Not Acceptable.</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsNotAcceptable.Data">
+            <summary>
+            In this case it is always null, because there is no data to display.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Compliance.Api.Utils.ProblemDetailsNotFound">
+            <summary>
+            Problem details for NotFound response
+            </summary>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsNotFound.Success">
+            <summary>
+            Indicates that the call response is inccorrect.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>False</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsNotFound.CodeResult">
+            <summary>
+            The code result.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>404</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsNotFound.Message">
+            <summary>
+            The message.
+            </summary>
+            <value>
+            The message.
+            </value>
+            <example>NotFound, Element or search not found.</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsNotFound.Data">
+            <summary>
+            In this case it is always null, because there is no data to display.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Compliance.Api.Utils.ProblemDetailsUnauthorized">
+            <summary>
+            Problem details for Unauthorized response
+            </summary>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsUnauthorized.Success">
+            <summary>
+            Indicates that the call response is inccorrect.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>False</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsUnauthorized.CodeResult">
+            <summary>
+            The code result.
+            </summary>
+            <value>
+            The code result.
+            </value>
+            <example>401</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsUnauthorized.Message">
+            <summary>
+            The message
+            </summary>
+            <value>
+            The message.
+            </value>
+            <example>Unauthorized.</example>
+        </member>
+        <member name="P:Compliance.Api.Utils.ProblemDetailsUnauthorized.Data">
+            <summary>
+            In this case it is always null, because there is no data to display.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
     </members>
 </doc>
