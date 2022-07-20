@@ -3,12 +3,16 @@ using Compliance.Application.Features.ComplianceSources.Commands.CreateComplianc
 using Compliance.Application.Responses;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Net;
 
 namespace Compliance.Api.Controller
 {
+    [Produces("application/json")]
+    [ApiVersion("1.0")]
     [ApiController]
     [Route("api/v1/[controller]")]
+    [SwaggerTag("The Addresses REST services")]
     public class ComplianceSourceController : ControllerBaseCustom
     {
         private readonly IMediator _mediator;

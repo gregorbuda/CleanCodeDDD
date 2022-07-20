@@ -192,3 +192,6 @@ C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\ref\Compliance.Api.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.pdb
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.genruntimeconfig.cache
+C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.MvcApplicationPartsAssemblyInfo.cs
