@@ -9,6 +9,6 @@ namespace Compliance.Application.Contracts.Persistence
 {
     public interface IComplianceSourceRepository : IAsyncRepository<ComplianceSource>
     {
-        Task<ComplianceSource> GetById(int ComplianceSourceId);
+
     }
 }

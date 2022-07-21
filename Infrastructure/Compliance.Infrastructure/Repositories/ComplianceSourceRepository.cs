@@ -16,11 +16,5 @@ namespace Compliance.Infrastructure.Repositories
         {
         }
 
-        public async Task<ComplianceSource> GetById(int ComplianceSourceId)
-        {
-            var complianceSource = await _context.ComplianceSource.Where(x => x.ComplianceSourceId == ComplianceSourceId).FirstOrDefaultAsync();
-
-            return complianceSource;
-        }
     }
 }

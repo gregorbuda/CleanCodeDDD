@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
 using Compliance.Application.Responses;
-using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using System;
@@ -10,44 +9,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Compliance.Application.Features.ComplianceSources.Queries
+namespace Compliance.Application.Features.ComplianceSources.Commands.DeleteComplainceSources
 {
-    public class GetComplianceSourceByIdListHandler : IRequestHandler<GetComplianceSourceByIdList, ApiResponse<ComplianceSourceResponse>>
+    public class DeleteComplianceSourceCommandHandler : IRequestHandler<DeleteComplianceSourceCommand, ApiResponse<Boolean>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public GetComplianceSourceByIdListHandler(IUnitOfWork unitOfWork, IMapper mapper)
+        public DeleteComplianceSourceCommandHandler(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
 
-        public async Task<ApiResponse<ComplianceSourceResponse>> Handle(GetComplianceSourceByIdList request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<Boolean>> Handle(DeleteComplianceSourceCommand request, CancellationToken cancellationToken)
         {
             Boolean success = false;
             String Message = "";
-            ComplianceSource ComplianceSource = null;
-            ComplianceSourceResponse ComplianceSourceResponse = null;
             String CodeResult = "";
-
+            Boolean Result = false;
             try
             {
-                ComplianceSource = await _unitOfWork.complianceSourceRepository.GetByIdAsync(request._complianceSourceId);
+                var ComplianceSourceToDelete = await _unitOfWork.complianceSourceRepository.GetByIdAsync(request.ComplianceSourceId);
 
-                ComplianceSourceResponse = _mapper.Map<ComplianceSourceResponse>(ComplianceSource);
-
-                if (ComplianceSource.ComplianceSourceId > 0)
+                if (ComplianceSourceToDelete != null)
                 {
+                    _unitOfWork.complianceSourceRepository.DeleteEntity(ComplianceSourceToDelete);
+
+                    await _unitOfWork.Complete();
+
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
                     success = true;
+                    Result = true;
                 }
                 else
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
                     Message = "Compliance Source Not Found";
-                    ComplianceSourceResponse = null;
+                    Result = false;
                     success = false;
                 }
             }
@@ -55,15 +55,14 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
             {
                 CodeResult = StatusCodes.Status500InternalServerError.ToString();
                 Message = "Internal Server Error";
-                ComplianceSourceResponse = null;
                 success = false;
+                Result = false;
             }
-
-            ApiResponse<ComplianceSourceResponse> response = new ApiResponse<ComplianceSourceResponse>
+            ApiResponse<Boolean> response = new ApiResponse<Boolean>
             {
                 CodeResult = CodeResult,
                 Message = Message,
-                Data = ComplianceSourceResponse,
+                Data = Result,
                 Success = success
             };
 
