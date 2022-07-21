@@ -3,8 +3,6 @@ C:\Users\wilom\source\repos\Xirect\Compliance\Infrastructure\Compliance.Infrastr
 C:\Users\wilom\source\repos\Xirect\Compliance\Infrastructure\Compliance.Infrastructure\bin\Debug\net6.0\Compliance.Infrastructure.dll
 C:\Users\wilom\source\repos\Xirect\Compliance\Infrastructure\Compliance.Infrastructure\bin\Debug\net6.0\ref\Compliance.Infrastructure.dll
 C:\Users\wilom\source\repos\Xirect\Compliance\Infrastructure\Compliance.Infrastructure\bin\Debug\net6.0\Compliance.Infrastructure.pdb
-C:\Users\wilom\source\repos\Xirect\Compliance\Infrastructure\Compliance.Infrastructure\bin\Debug\net6.0\xss.ComplianceManagementBackEnd.dll
-C:\Users\wilom\source\repos\Xirect\Compliance\Infrastructure\Compliance.Infrastructure\bin\Debug\net6.0\xss.ComplianceManagementBackEnd.pdb
 C:\Users\wilom\source\repos\Xirect\Compliance\Infrastructure\Compliance.Infrastructure\obj\Debug\net6.0\Compliance.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\wilom\source\repos\Xirect\Compliance\Infrastructure\Compliance.Infrastructure\obj\Debug\net6.0\Compliance.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\wilom\source\repos\Xirect\Compliance\Infrastructure\Compliance.Infrastructure\obj\Debug\net6.0\Compliance.Infrastructure.AssemblyInfoInputs.cache

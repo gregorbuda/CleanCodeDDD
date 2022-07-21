@@ -11,8 +11,6 @@ C:\Users\wilom\source\repos\Xirect\Compliance\Core\Application\Compliance.Applic
 C:\Users\wilom\source\repos\Xirect\Compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\ref\Compliance.Application.dll
 C:\Users\wilom\source\repos\Xirect\Compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Compliance.Application.pdb
 C:\Users\wilom\source\repos\Xirect\Compliance\Core\Application\Compliance.Application\bin\Debug\net6.0\Compliance.Domain.dll
-C:\Users\wilom\source\repos\Xirect\Compliance\Core\Application\Compliance.Application\bin\Debug\net6.0\xss.ComplianceManagementBackEnd.dll
-C:\Users\wilom\source\repos\Xirect\Compliance\Core\Application\Compliance.Application\bin\Debug\net6.0\xss.ComplianceManagementBackEnd.pdb
 C:\Users\wilom\source\repos\Xirect\Compliance\Core\Application\Compliance.Application\bin\Debug\net6.0\Compliance.Domain.pdb
 C:\Users\wilom\source\repos\Xirect\Compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Compliance.Application.csproj.CopyComplete
 C:\Users\wilom\source\repos\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Compliance.Application.dll
