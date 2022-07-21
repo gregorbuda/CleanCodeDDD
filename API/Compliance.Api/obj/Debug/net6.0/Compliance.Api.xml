@@ -56,7 +56,7 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
-        <member name="M:Compliance.Api.Controller.ComplainceSourceController.DeleteStreamer(Compliance.Application.Features.ComplianceSources.Commands.DeleteComplainceSources.DeleteComplianceSourceCommand)">
+        <member name="M:Compliance.Api.Controller.ComplainceSourceController.DeleteComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.DeleteComplainceSources.DeleteComplianceSourceCommand)">
             <summary>
             Delete Compliance Source
             </summary>
@@ -92,6 +92,45 @@
             </returns>
             <remarks>
             Get Input Behaviour All.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.UpdateInputBehaviour(Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommand)">
+            <summary>
+            Update Input Behaviour
+            </summary>
+            <param name="command">The data Input Behaviour.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Input Behaviour.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.DeleteInputBehaviour(Compliance.Application.Features.InputBehaviours.Commands.DeleteInputBehaviours.DeleteInputBehavioursCommand)">
+            <summary>
+            Delete Input Behaviour
+            </summary>
+            <param name="command">The data Input Behaviour.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Delete Input Behaviour.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.GetInputBehaviourById(System.Int32)">
+            <summary>
+            Get Input Behaviour By Id
+            </summary>
+            <param name="InputBehaviourId">The Input Behaviour Id.</param>
+            <returns>
+            A Input Behaviour By Id 
+            </returns>
+            <remarks>
+            Get Input Behaviour By Id
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>

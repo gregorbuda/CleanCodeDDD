@@ -123,7 +123,7 @@ namespace Compliance.Api.Controller
         /// </remarks>
         [HttpDelete()]
         [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<Boolean>>> DeleteStreamer([FromBody] DeleteComplianceSourceCommand command)
+        public async Task<ActionResult<ApiResponse<Boolean>>> DeleteComplianceSource([FromBody] DeleteComplianceSourceCommand command)
         {
             var result = await _mediator.Send(command);
             return Ok(result);
