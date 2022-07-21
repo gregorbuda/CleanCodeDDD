@@ -4,6 +4,97 @@
         <name>Compliance.Api</name>
     </assembly>
     <members>
+        <member name="M:Compliance.Api.Controller.ComplainceSourceController.CreateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand)">
+            <summary>
+            Create Compliance Source
+            </summary>
+            <param name="command">The data Compliance Source.</param>
+            <returns>
+            An Compliance Source Id 
+            </returns>
+            <remarks>
+            Create Compliance Source.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplainceSourceController.GetComplianceSourceById(System.Int32)">
+            <summary>
+            Get Compliance Source By Id
+            </summary>
+            <param name="ComplianceSourceId">The Compliance Source Id.</param>
+            <returns>
+            A Compliance Source By Id 
+            </returns>
+            <remarks>
+            Get Compliance Source By Id.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplainceSourceController.GetComplianceSourceAll">
+            <summary>
+            Get Compliance Source All
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Source List
+            </returns>
+            <remarks>
+            Get Compliance Source All.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplainceSourceController.UpdateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand)">
+            <summary>
+            Update Compliance Source
+            </summary>
+            <param name="command">The data Compliance Source.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Compliance Source.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplainceSourceController.DeleteStreamer(Compliance.Application.Features.ComplianceSources.Commands.DeleteComplainceSources.DeleteComplianceSourceCommand)">
+            <summary>
+            Delete Compliance Source
+            </summary>
+            <param name="command">The data Compliance Source.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Delete Compliance Source.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.CreateInputBehaviour(Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours.CreateInputBehavioursCommand)">
+            <summary>
+            Create Input Behaviour
+            </summary>
+            <param name="command">The data Input Behaviour.</param>
+            <returns>
+            An Input Behaviour Id 
+            </returns>
+            <remarks>
+            Create Input Behaviour.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.GetInputBehaviourAll">
+            <summary>
+            Get Input Behaviour All
+            </summary>
+            <param></param>
+            <returns>
+            A List of Input Behaviour
+            </returns>
+            <remarks>
+            Get Input Behaviour All.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Utils.ControllerBaseCustom.NotFound">
             <summary>
             Not Found Response.

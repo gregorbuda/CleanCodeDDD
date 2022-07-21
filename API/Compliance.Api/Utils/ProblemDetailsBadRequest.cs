@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Compliance.Api.Utils
+﻿namespace Compliance.Api.Utils
 {
     /// <summary>
     /// Problem details for BadRequest response
