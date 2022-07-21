@@ -40,7 +40,7 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpPost()]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<InputBehaviourCreateResponse>>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<InputBehaviourCreateResponse>>> CreateInputBehaviour([FromBody] CreateInputBehavioursCommand command)
         {
             var result = await _mediator.Send(command);
@@ -59,7 +59,7 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("GetInputBehaviourAll")]
-        [ProducesResponseType(typeof(InputBehaviourResponse), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<InputBehaviourResponse>>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<IReadOnlyList<InputBehaviourResponse>>>> GetInputBehaviourAll()
         {
             var query = new GetInputBehavioursAllList();
