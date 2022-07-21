@@ -1,5 +1,6 @@
 using Compliance.Api.Utils;
 using Compliance.Application;
+using Compliance.Application.Responses;
 using Compliance.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -42,42 +43,16 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
-
-//builder.Services.AddMvc(setupAction =>
-//{
-//    setupAction.Filters.Add(
-//        new ProducesResponseTypeAttribute(typeof(ProblemDetailsBadRequest), StatusCodes.Status400BadRequest));
-//    setupAction.Filters.Add(
-//        new ProducesResponseTypeAttribute(typeof(ProblemDetailsNotFound), StatusCodes.Status404NotFound));
-//    setupAction.Filters.Add(
-//        new ProducesResponseTypeAttribute(typeof(ProblemDetailsNotAcceptable), StatusCodes.Status406NotAcceptable));
-//    setupAction.Filters.Add(
-//        new ProducesResponseTypeAttribute(typeof(ProblemDetailsInternalServerError), StatusCodes.Status500InternalServerError));
-//    setupAction.Filters.Add(
-//        new ProducesDefaultResponseTypeAttribute(typeof(ProblemDetailsDefault)));
-//    setupAction.Filters.Add(
-//        new ProducesResponseTypeAttribute(typeof(ProblemDetailsUnauthorized), StatusCodes.Status401Unauthorized));
-
-//    setupAction.Filters.Add(
-//        new AuthorizeFilter());
-
-//    setupAction.ReturnHttpNotAcceptable = true;
-
-//    setupAction.OutputFormatters.Add(new XmlSerializerOutputFormatter());
-
-//    var jsonOutputFormatter = setupAction.OutputFormatters
-//        .OfType<SystemTextJsonOutputFormatter>().FirstOrDefault();
-
-//    if (jsonOutputFormatter != null)
-//    {
-//        // remove text/json as it isn't the approved media type
-//        // for working with JSON at API level
-//        if (jsonOutputFormatter.SupportedMediaTypes.Contains("text/json"))
-//        {
-//            jsonOutputFormatter.SupportedMediaTypes.Remove("text/json");
-//        }
-//    }
-//});
+builder.Services.AddMvc()
+.SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+           .ConfigureApiBehaviorOptions(options =>
+           {
+               options.InvalidModelStateResponseFactory = context =>
+               {
+                   var problems = new CustomBadRequest(context);
+                   return new BadRequestObjectResult(problems);
+               };
+           });
 
 var app = builder.Build();
 

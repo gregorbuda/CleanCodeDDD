@@ -24,6 +24,8 @@ namespace Compliance.Infrastructure
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IAsyncRepository<>), typeof(RepositoryBase<>));
             services.AddScoped<IComplianceSourceRepository, ComplianceSourceRepository>();
+            services.AddScoped<IInputBehaviourRepository, InputBehaviourRepository>();
+            
 
             return services;
         }

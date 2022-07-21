@@ -17,6 +17,10 @@ namespace Compliance.Infrastructure.Repositories
         public IComplianceSourceRepository complianceSourceRepository => _complianceSourceRepository ??
             new ComplianceSourceRepository(_context);
 
+        private IInputBehaviourRepository _inputBehaviourRepository;
+        public IInputBehaviourRepository inputBehaviourRepository => _inputBehaviourRepository ??
+            new InputBehaviourRepository(_context);
+
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
