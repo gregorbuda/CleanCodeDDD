@@ -3,10 +3,11 @@ using Compliance.Application.Contracts.Persistence;
 using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 
 namespace Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources
 {
-    public class CreateComplianceSourceCommandHandler : IRequestHandler<CreateComplianceSourceCommand, ApiResponse<Int32>>
+    public class CreateComplianceSourceCommandHandler : IRequestHandler<CreateComplianceSourceCommand, ApiResponse<ComplianceSourceCreateResponse>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
@@ -17,50 +18,49 @@ namespace Compliance.Application.Features.ComplianceSources.Commands.CreateCompl
             _mapper = mapper;
         }
 
-        public async Task<ApiResponse<Int32>> Handle(CreateComplianceSourceCommand request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<ComplianceSourceCreateResponse>> Handle(CreateComplianceSourceCommand request, CancellationToken cancellationToken)
         {
             var complianceSourceEntity = _mapper.Map<ComplianceSource>(request);
 
-            int Result;
+            ComplianceSource complianceSource = null;
+            ComplianceSourceCreateResponse objReponse = null;
             Boolean success = false;
             String Message = "";
             String CodeResult = "";
 
             try
             {
-                _unitOfWork.complianceSourceRepository.AddEntity(complianceSourceEntity);
+                complianceSource = await _unitOfWork.complianceSourceRepository.AddAsync(complianceSourceEntity);
 
-                var result = await _unitOfWork.Complete();
+                 objReponse = _mapper.Map<ComplianceSourceCreateResponse>(complianceSource);
 
-                if (result > 0)
+                if (complianceSource.ComplianceSourceId > 0)
                 {
-                    CodeResult = "200";
+                    CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
-                    Result = complianceSourceEntity.ComplianceSourceId;
                     success = true;
                 }
                 else
                 {
-                    CodeResult = "400";
+                    CodeResult = StatusCodes.Status400BadRequest.ToString();
                     Message = "No se pudo registrar el ComplianceSource";
-                    Result = 0;
+                    complianceSource = null;
                     success = false;
                 }
-
             }
             catch (Exception ex)
             {
-                CodeResult = "500";
-                Message = "Server Error";
-                Result = 0;
+                CodeResult = StatusCodes.Status500InternalServerError.ToString();
+                Message = "Internal Server Error";
                 success = false;
+                complianceSource = null;
             }
 
-            ApiResponse<Int32> response = new ApiResponse<Int32>
+            ApiResponse<ComplianceSourceCreateResponse> response = new ApiResponse<ComplianceSourceCreateResponse>
             {
                 CodeResult = CodeResult,
                 Message = Message,
-                Data = Result,
+                Data = objReponse,
                 Success = success
             };
 

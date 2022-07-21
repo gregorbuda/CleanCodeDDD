@@ -43,41 +43,41 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 
-builder.Services.AddMvc(setupAction =>
-{
-    setupAction.Filters.Add(
-        new ProducesResponseTypeAttribute(typeof(ProblemDetailsBadRequest), StatusCodes.Status400BadRequest));
-    setupAction.Filters.Add(
-        new ProducesResponseTypeAttribute(typeof(ProblemDetailsNotFound), StatusCodes.Status404NotFound));
-    setupAction.Filters.Add(
-        new ProducesResponseTypeAttribute(typeof(ProblemDetailsNotAcceptable), StatusCodes.Status406NotAcceptable));
-    setupAction.Filters.Add(
-        new ProducesResponseTypeAttribute(typeof(ProblemDetailsInternalServerError), StatusCodes.Status500InternalServerError));
-    setupAction.Filters.Add(
-        new ProducesDefaultResponseTypeAttribute(typeof(ProblemDetailsDefault)));
-    setupAction.Filters.Add(
-        new ProducesResponseTypeAttribute(typeof(ProblemDetailsUnauthorized), StatusCodes.Status401Unauthorized));
+//builder.Services.AddMvc(setupAction =>
+//{
+//    setupAction.Filters.Add(
+//        new ProducesResponseTypeAttribute(typeof(ProblemDetailsBadRequest), StatusCodes.Status400BadRequest));
+//    setupAction.Filters.Add(
+//        new ProducesResponseTypeAttribute(typeof(ProblemDetailsNotFound), StatusCodes.Status404NotFound));
+//    setupAction.Filters.Add(
+//        new ProducesResponseTypeAttribute(typeof(ProblemDetailsNotAcceptable), StatusCodes.Status406NotAcceptable));
+//    setupAction.Filters.Add(
+//        new ProducesResponseTypeAttribute(typeof(ProblemDetailsInternalServerError), StatusCodes.Status500InternalServerError));
+//    setupAction.Filters.Add(
+//        new ProducesDefaultResponseTypeAttribute(typeof(ProblemDetailsDefault)));
+//    setupAction.Filters.Add(
+//        new ProducesResponseTypeAttribute(typeof(ProblemDetailsUnauthorized), StatusCodes.Status401Unauthorized));
 
-    setupAction.Filters.Add(
-        new AuthorizeFilter());
+//    setupAction.Filters.Add(
+//        new AuthorizeFilter());
 
-    setupAction.ReturnHttpNotAcceptable = true;
+//    setupAction.ReturnHttpNotAcceptable = true;
 
-    setupAction.OutputFormatters.Add(new XmlSerializerOutputFormatter());
+//    setupAction.OutputFormatters.Add(new XmlSerializerOutputFormatter());
 
-    var jsonOutputFormatter = setupAction.OutputFormatters
-        .OfType<SystemTextJsonOutputFormatter>().FirstOrDefault();
+//    var jsonOutputFormatter = setupAction.OutputFormatters
+//        .OfType<SystemTextJsonOutputFormatter>().FirstOrDefault();
 
-    if (jsonOutputFormatter != null)
-    {
-        // remove text/json as it isn't the approved media type
-        // for working with JSON at API level
-        if (jsonOutputFormatter.SupportedMediaTypes.Contains("text/json"))
-        {
-            jsonOutputFormatter.SupportedMediaTypes.Remove("text/json");
-        }
-    }
-});
+//    if (jsonOutputFormatter != null)
+//    {
+//        // remove text/json as it isn't the approved media type
+//        // for working with JSON at API level
+//        if (jsonOutputFormatter.SupportedMediaTypes.Contains("text/json"))
+//        {
+//            jsonOutputFormatter.SupportedMediaTypes.Remove("text/json");
+//        }
+//    }
+//});
 
 var app = builder.Build();
 

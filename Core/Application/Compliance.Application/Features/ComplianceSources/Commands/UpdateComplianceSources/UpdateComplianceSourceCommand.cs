@@ -1,12 +1,18 @@
 ﻿using Compliance.Application.Responses;
-using Compliance.Domain.Models;
 using MediatR;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources
+namespace Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources
 {
-    public class CreateComplianceSourceCommand : IRequest<ApiResponse<ComplianceSourceCreateResponse>>
+    public class UpdateComplianceSourceCommand : IRequest<ApiResponse<Boolean>>
     {
+        [Required]
+        public Int32 ComplianceSourceId { get; set; }
         [Required]
         public string ComplianceSourceName { get; set; } = string.Empty;
         [Required]
