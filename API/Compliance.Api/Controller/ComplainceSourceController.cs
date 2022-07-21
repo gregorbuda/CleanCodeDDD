@@ -42,7 +42,7 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpPost()]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ApiResponse<ComplianceSourceCreateResponse>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<ComplianceSourceCreateResponse>>> CreateComplianceSource([FromBody] CreateComplianceSourceCommand command)
         {
             var result = await _mediator.Send(command);
@@ -61,7 +61,7 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("GetComplianceSourceById")]
-        [ProducesResponseType(typeof(ComplianceSourceResponse), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ApiResponse<ComplianceSourceResponse>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<ComplianceSourceResponse>>> GetComplianceSourceById(Int32 ComplianceSourceId)
         {
             var query = new GetComplianceSourceByIdList(ComplianceSourceId);
@@ -81,7 +81,7 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("GetComplianceSourceAll")]
-        [ProducesResponseType(typeof(ComplianceSourceCreateResponse), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceSourceCreateResponse>>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceSourceCreateResponse>>>> GetComplianceSourceAll()
         {
             var query = new GetComplianceSourceAllList();
@@ -102,7 +102,7 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpPut()]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ApiResponse<Boolean>),(int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<Boolean>>> UpdateComplianceSource([FromBody] UpdateComplianceSourceCommand command)
         {
             var result = await _mediator.Send(command);
@@ -122,7 +122,7 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpDelete()]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<Boolean>>> DeleteStreamer([FromBody] DeleteComplianceSourceCommand command)
         {
             var result = await _mediator.Send(command);
