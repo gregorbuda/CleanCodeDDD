@@ -14,6 +14,11 @@ namespace Compliance.Infrastructure.Repositories
         private Hashtable _repositories;
         private readonly ApplicationDbContext _context;
 
+        
+        private IComplianceSourceTypesRepository _complianceSourceTypesRepository;
+        public IComplianceSourceTypesRepository complianceSourceTypesRepository => _complianceSourceTypesRepository ??
+        new ComplianceSourceTypesRepository(_context);
+
         private IComplianceFieldTypeRepository _complianceFieldTypeRepository;
         public IComplianceFieldTypeRepository complianceFieldTypeRepository => _complianceFieldTypeRepository ??
         new ComplianceFieldTypeRepository(_context);

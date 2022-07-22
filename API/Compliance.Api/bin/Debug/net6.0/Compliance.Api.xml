@@ -134,6 +134,71 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.CreateComplianceSourceType(Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand)">
+            <summary>
+            Create Compliance Source Type
+            </summary>
+            <param name="command">The data Compliance Source Type.</param>
+            <returns>
+            An Compliance Source Type Id 
+            </returns>
+            <remarks>
+            Create Compliance Source Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.UpdateComplianceSourceType(Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand)">
+            <summary>
+            Update Compliance Source Type
+            </summary>
+            <param name="command">The data Compliance Source Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Compliance Source Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.DeleteComplianceSourceType(Compliance.Application.Features.ComplianceSourceType.Commands.DeleteComplianceSourceType.DeleteComplianceSourceTypeCommand)">
+            <summary>
+            Delete Compliance Source Type
+            </summary>
+            <param name="command">The data Compliance Source Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Delete Compliance Source Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.GetComplianceSourceTypeAll">
+            <summary>
+            Get Compliance Source Type All
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Source Type List
+            </returns>
+            <remarks>
+            Get Compliance Source Type All
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.GetComplianceSourceTypeById(System.Int32)">
+            <summary>
+            Get Compliance Source Type By Id
+            </summary>
+            <param name="InputBehaviourId">The Input Behaviour Id.</param>
+            <returns>
+            A Compliance Source Type By Id
+            </returns>
+            <remarks>
+            Get Compliance Source Type By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.FileResourceTypeController.CreateFileResourceType(Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand)">
             <summary>
             Create File Resource Type

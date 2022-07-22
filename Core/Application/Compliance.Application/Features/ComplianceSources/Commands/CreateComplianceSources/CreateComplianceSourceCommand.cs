@@ -15,5 +15,6 @@ namespace Compliance.Application.Features.ComplianceSources.Commands.CreateCompl
         public int CreatedBy { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public int? UpdatedBy { get; set; }
+
     }
 }
