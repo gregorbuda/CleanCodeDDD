@@ -1,0 +1,411 @@
+﻿++Solución "Compliance" ‎(5 de 5 proyectos)
+i:{00000000-0000-0000-0000-000000000000}:Compliance.sln
+++src
+i:{00000000-0000-0000-0000-000000000000}:src
+++API
+i:{009d4045-7bbb-4f3d-9fdf-ccd2fc8f4fae}:API
+++Compliance.Api
+i:{4067f835-377f-45a8-a33b-799ac7cdb0f1}:Compliance.Api
+++Connected Services 
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:>1528
+++Dependencias
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:>1527
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:>1227
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:>961
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:>1064
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:>1572
+++Properties
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\properties\
+++Controller
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\controller\
+++ComplianceFieldTypeController.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\controller\compliancefieldtypecontroller.cs
+++ComplianceSourceController.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\controller\compliancesourcecontroller.cs
+++FileResourceTypeController.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\controller\fileresourcetypecontroller.cs
+++InputBehaviourController.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\controller\inputbehaviourcontroller.cs
+++Utils
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\utils\
+++.editorconfig
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\.editorconfig
+++appsettings.json
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\appsettings.json
+++Program.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\program.cs
+++No se detectaron dependencias de servicio
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:>1529
+++Analizadores
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:analizadores
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:analizadores
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:analizadores
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:analizadores
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:analizadores
+++Marcos de trabajo
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:marcos de trabajo
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:marcos de trabajo
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:marcos de trabajo
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:marcos de trabajo
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:marcos de trabajo
+++Paquetes
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:paquetes
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:paquetes
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:paquetes
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:paquetes
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:paquetes
+++Proyectos
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:proyectos
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:proyectos
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:proyectos
+++launchSettings.json
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\properties\launchsettings.json
+++ControllerBaseCustom.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\utils\controllerbasecustom.cs
+++ProblemDetailsBadRequest.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\utils\problemdetailsbadrequest.cs
+++ProblemDetailsDefault.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\utils\problemdetailsdefault.cs
+++ProblemDetailsInternalServerError.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\utils\problemdetailsinternalservererror.cs
+++ProblemDetailsNotAcceptable.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\utils\problemdetailsnotacceptable.cs
+++ProblemDetailsNotFound.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\utils\problemdetailsnotfound.cs
+++ProblemDetailsUnauthorized.cs
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\utils\problemdetailsunauthorized.cs
+++appsettings.Development.json
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.7\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.7\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.0-preview.6.22329.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.0-preview.6.22329.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.7\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\users\user\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0-preview.6.22324.4\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.7\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.7\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.7\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.7\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.7\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\api\compliance.api\microsoft.netcore.app
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\microsoft.netcore.app
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\microsoft.netcore.app
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\microsoft.netcore.app
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:c:\gitrepositories\cleanarchitecture\compliance\test\compliance.unittest\microsoft.netcore.app
+++Microsoft.AspNetCore.Mvc.Versioning (5.0.0)
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:>1635
+++Microsoft.EntityFrameworkCore.Tools (7.0.0-preview.6.22329.4)
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:>1638
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:>1616
+++Swashbuckle.AspNetCore (6.2.3)
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:>1636
+++Swashbuckle.AspNetCore.Annotations (6.4.0)
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:>1637
+++Compliance.Application
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\bin\debug\net6.0\compliance.application.dll
+i:{bcc0c10c-c1b7-49bb-9eb5-bcddfbd69309}:Compliance.Application
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\bin\debug\net6.0\compliance.application.dll
+++Compliance.Infrastructure
+i:{efe62af0-37a2-4204-a189-1d548f68d618}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\bin\debug\net6.0\compliance.infrastructure.dll
+i:{4a8f779b-9569-4422-b719-55cf6cd16069}:Compliance.Infrastructure
+++Core
+i:{009d4045-7bbb-4f3d-9fdf-ccd2fc8f4fae}:Core
+++Contracts
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\contracts\
+++Persistence
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\contracts\persistence\
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\persistence\
+++IAsyncRepository.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\contracts\persistence\iasyncrepository.cs
+++IComplianceFieldTypeRepository.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\contracts\persistence\icompliancefieldtyperepository.cs
+++IComplianceSourceRepository.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\contracts\persistence\icompliancesourcerepository.cs
+++IFileResourceTypeRepository.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\contracts\persistence\ifileresourcetyperepository.cs
+++IInputBehaviourRepository.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\contracts\persistence\iinputbehaviourrepository.cs
+++IUnitOfWork.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\contracts\persistence\iunitofwork.cs
+++Features
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\
+++ComplianceFieldTypes
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\
+++Commands
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\commands\
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\commands\
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\commands\
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\commands\
+++CreateComplianceFieldType
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\commands\createcompliancefieldtype\
+++CreateComplianceFieldTypeCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\commands\createcompliancefieldtype\createcompliancefieldtypecommand.cs
+++CreateComplianceFieldTypeCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\commands\createcompliancefieldtype\createcompliancefieldtypecommandhandler.cs
+++DeleteComplianceFieldType
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\commands\deletecompliancefieldtype\
+++DeleteComplianceFieldTypeCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\commands\deletecompliancefieldtype\deletecompliancefieldtypecommand.cs
+++DeleteComplianceFieldTypeCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\commands\deletecompliancefieldtype\deletecompliancefieldtypecommandhandler.cs
+++UpdateComplianceFieldType
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\commands\updatecompliancefieldtype\
+++UpdateComplianceFieldTypeCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\commands\updatecompliancefieldtype\updatecompliancefieldtypecommand.cs
+++UpdateComplianceFieldTypeCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\commands\updatecompliancefieldtype\updatecompliancefieldtypecommandhandler.cs
+++Queries
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\queries\
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\queries\
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\queries\
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\queries\
+++GetComplianceFieldTypeAllList.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\queries\getcompliancefieldtypealllist.cs
+++GetComplianceFieldTypeAllListHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\queries\getcompliancefieldtypealllisthandler.cs
+++GetComplianceFieldTypeByIdList.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\queries\getcompliancefieldtypebyidlist.cs
+++GetComplianceFieldTypeByIdListHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancefieldtypes\queries\getcompliancefieldtypebyidlisthandler.cs
+++ComplianceSources
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\
+++CreateComplianceSources
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\commands\createcompliancesources\
+++CreateComplianceSourceCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\commands\createcompliancesources\createcompliancesourcecommand.cs
+++CreateComplianceSourceCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\commands\createcompliancesources\createcompliancesourcecommandhandler.cs
+++DeleteComplainceSources
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\commands\deletecomplaincesources\
+++DeleteComplianceSourceCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\commands\deletecomplaincesources\deletecompliancesourcecommand.cs
+++DeleteComplianceSourceCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\commands\deletecomplaincesources\deletecompliancesourcecommandhandler.cs
+++UpdateComplianceSources
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\commands\updatecompliancesources\
+++UpdateComplianceSourceCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\commands\updatecompliancesources\updatecompliancesourcecommand.cs
+++UpdateComplianceSourceCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\commands\updatecompliancesources\updatecompliancesourcecommandhandler.cs
+++GetComplianceSourceAllList.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\queries\getcompliancesourcealllist.cs
+++GetComplianceSourceAllListHanlder.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\queries\getcompliancesourcealllisthanlder.cs
+++GetComplianceSourceByIdList.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\queries\getcompliancesourcebyidlist.cs
+++GetComplianceSourceByIdListHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\compliancesources\queries\getcompliancesourcebyidlisthandler.cs
+++FileResourceTypes
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\
+++CreateFileResourceTypes
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\commands\createfileresourcetypes\
+++CreateFileResourceTypesCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\commands\createfileresourcetypes\createfileresourcetypescommand.cs
+++CreateFileResourceTypesCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\commands\createfileresourcetypes\createfileresourcetypescommandhandler.cs
+++DeleteFileResourceTypes
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\commands\deletefileresourcetypes\
+++DeleteFileResourceTypesCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\commands\deletefileresourcetypes\deletefileresourcetypescommand.cs
+++DeleteFileResourceTypesCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\commands\deletefileresourcetypes\deletefileresourcetypescommandhandler.cs
+++UpdateFileResourceTypes
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\commands\updatefileresourcetypes\
+++UpdateFileResourceTypesCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\commands\updatefileresourcetypes\updatefileresourcetypescommand.cs
+++UpdateFileResourceTypesCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\commands\updatefileresourcetypes\updatefileresourcetypescommandhandler.cs
+++GetFileResourceTypesAllList.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\queries\getfileresourcetypesalllist.cs
+++GetFileResourceTypesAllListHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\queries\getfileresourcetypesalllisthandler.cs
+++GetFileResourceTypesByIdList.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\queries\getfileresourcetypesbyidlist.cs
+++GetFileResourceTypesByIdListHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\fileresourcetypes\queries\getfileresourcetypesbyidlisthandler.cs
+++InputBehaviours
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\
+++CreateInputBehaviours
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\commands\createinputbehaviours\
+++CreateInputBehavioursCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\commands\createinputbehaviours\createinputbehaviourscommand.cs
+++CreateInputBehavioursCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\commands\createinputbehaviours\createinputbehaviourscommandhandler.cs
+++DeleteInputBehaviours
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\commands\deleteinputbehaviours\
+++DeleteInputBehavioursCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\commands\deleteinputbehaviours\deleteinputbehaviourscommand.cs
+++DeleteInputBehavioursCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\commands\deleteinputbehaviours\deleteinputbehaviourscommandhandler.cs
+++UpdateInputBehaviours
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\commands\updateinputbehaviours\
+++UpdateInputBehavioursCommand.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\commands\updateinputbehaviours\updateinputbehaviourscommand.cs
+++UpdateInputBehavioursCommandHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\commands\updateinputbehaviours\updateinputbehaviourscommandhandler.cs
+++GetInputBehavioursAllList.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\queries\getinputbehavioursalllist.cs
+++GetInputBehavioursAllListHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\queries\getinputbehavioursalllisthandler.cs
+++GetInputBehavioursByIdList.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\queries\getinputbehavioursbyidlist.cs
+++GetInputBehavioursByIdListHandler.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\features\inputbehaviours\queries\getinputbehavioursbyidlisthandler.cs
+++Mappings
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\mappings\
+++ComplianceFieldTypeProfile.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\mappings\compliancefieldtypeprofile.cs
+++ComplianceSourceProfile.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\mappings\compliancesourceprofile.cs
+++FileResourceTypeProfile.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\mappings\fileresourcetypeprofile.cs
+++InputBehaviourProfile.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\mappings\inputbehaviourprofile.cs
+++Responses
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\responses\
+++ApplicationServiceRegistration.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\applicationserviceregistration.cs
+++ApiResponse.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\responses\apiresponse.cs
+++CustomBadRequest.cs
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\application\compliance.application\responses\custombadrequest.cs
+++AutoMapper (11.0.1)
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:>1603
+++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:>1599
+++FluentValidation (11.1.0)
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:>1601
+++FluentValidation.DependencyInjectionExtensions (11.1.0)
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:>1598
+++MediatR (10.0.1)
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:>1600
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:>1596
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:>1615
+++MediatR.Extensions.Microsoft.DependencyInjection (10.0.1)
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:>1604
+++Microsoft.AspNetCore.Mvc.Abstractions (2.2.0)
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:>1602
+++Compliance.Domain
+i:{ea31025c-1da1-47ff-8247-677f70a5f722}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\bin\debug\net6.0\compliance.domain.dll
+i:{bcc0c10c-c1b7-49bb-9eb5-bcddfbd69309}:Compliance.Domain
+++Models
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\
+++ComplianceDistributorData.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\compliancedistributordata.cs
+++ComplianceDistributorDataLogs.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\compliancedistributordatalogs.cs
+++ComplianceFieldType.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\compliancefieldtype.cs
+++ComplianceFieldTypeCreateResponse.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\compliancefieldtypecreateresponse.cs
+++ComplianceFieldTypeResponse.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\compliancefieldtyperesponse.cs
+++ComplianceSource.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\compliancesource.cs
+++ComplianceSourceCreateResponse.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\compliancesourcecreateresponse.cs
+++ComplianceSourceResponse.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\compliancesourceresponse.cs
+++ComplianceSourceTypeMarkets.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\compliancesourcetypemarkets.cs
+++ComplianceSourceTypes.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\compliancesourcetypes.cs
+++FileResourceExtension.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\fileresourceextension.cs
+++FileResourceType.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\fileresourcetype.cs
+++FileResourceTypeCreateResponse.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\fileresourcetypecreateresponse.cs
+++FileResourceTypeResponse.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\fileresourcetyperesponse.cs
+++InputBehaviour.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\inputbehaviour.cs
+++InputBehaviourCreateResponse.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\inputbehaviourcreateresponse.cs
+++InputBehaviourResponse.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\inputbehaviourresponse.cs
+++Market.cs
+i:{4db795b3-cc5e-4106-b4ee-b32d4749d89b}:c:\gitrepositories\cleanarchitecture\compliance\core\domain\compliance.domain\models\market.cs
+++Infrastucture
+i:{009d4045-7bbb-4f3d-9fdf-ccd2fc8f4fae}:Infrastucture
+++Migrations
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\migrations\
+++Repositories
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\repositories\
+++ComplianceFieldTypeRepository.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\repositories\compliancefieldtyperepository.cs
+++ComplianceSourceRepository.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\repositories\compliancesourcerepository.cs
+++FileResourceTypeRepository.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\repositories\fileresourcetyperepository.cs
+++InputBehaviourRepository.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\repositories\inputbehaviourrepository.cs
+++RepositoryBase.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\repositories\repositorybase.cs
+++UnitOfWork.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\repositories\unitofwork.cs
+++InfrastructureServiceRegistration.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\infrastructureserviceregistration.cs
+++20220720181458_initial.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\migrations\20220720181458_initial.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\migrations\applicationdbcontextmodelsnapshot.cs
+++ApplicationDbContext.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\persistence\applicationdbcontext.cs
+++Microsoft.EntityFrameworkCore.SqlServer (7.0.0-preview.6.22329.4)
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:>1614
+++20220720181458_initial.Designer.cs
+i:{6b01fac9-5bdb-4d5b-96bd-4d3e1fa3abab}:c:\gitrepositories\cleanarchitecture\compliance\infrastructure\compliance.infrastructure\migrations\20220720181458_initial.designer.cs
+++Test
+i:{009d4045-7bbb-4f3d-9fdf-ccd2fc8f4fae}:Test
+++Compliance.UnitTest
+i:{5abd2f11-d5fe-4bf3-b872-e74f637f2132}:Compliance.UnitTest
+++UnitTest1.cs
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:c:\gitrepositories\cleanarchitecture\compliance\test\compliance.unittest\unittest1.cs
+++xunit.analyzers
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:c:\users\user\.nuget\packages\xunit.analyzers\0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll
+++coverlet.collector (3.1.0)
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:>1652
+++Microsoft.NET.Test.Sdk (16.11.0)
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:>1649
+++xunit (2.4.1)
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:>1650
+++xunit.runner.visualstudio (2.4.3)
+i:{ced1910d-563d-4ad0-8fe8-51e769883e34}:>1651
+++Documentos de script
+++VM5
+++index.html
+++swagger-ui-bundle.js
+++swagger-ui-standalone-preset.js
+++aspnetcore-browser-refresh.js
+++browserLink

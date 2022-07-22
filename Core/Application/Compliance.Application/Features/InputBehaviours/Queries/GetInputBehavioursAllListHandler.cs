@@ -47,7 +47,7 @@ namespace Compliance.Application.Features.InputBehaviours.Queries
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
                     Message = "Input Behaviour Not Found";
-                    inputBehaviour = null;
+                    inputBehaviourResponse = null;
                     success = false;
                 }
             }
@@ -55,7 +55,7 @@ namespace Compliance.Application.Features.InputBehaviours.Queries
             {
                 CodeResult = StatusCodes.Status500InternalServerError.ToString();
                 Message = "Internal Server Error";
-                inputBehaviour = null;
+                inputBehaviourResponse = null;
                 success = false;
             }
 

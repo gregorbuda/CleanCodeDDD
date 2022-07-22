@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2x5WLWajYfmutnFwdEDVysMV1tXs/T2HyLEygRypkq6IqHZibU4LAmPrYXm42FYywCF+1SX3cknr9MH/novKMg==",
+  "dgSpecHash": "iW+sVXNnHELPM4x0kb9Sr4qTwskxMyFARUZlqcUUk/P9lyuNIMlok9Wf6NLY1/cd2qYcNw/pW8TUv7j7FmU0xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wilom\\source\\repos\\Xirect\\compliance\\Core\\Domain\\Compliance.Domain\\Compliance.Domain.csproj",
+  "projectFilePath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\Compliance.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\wilom\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
-    "C:\\Users\\wilom\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }

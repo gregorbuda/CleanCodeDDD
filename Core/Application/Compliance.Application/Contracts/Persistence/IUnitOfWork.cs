@@ -12,6 +12,10 @@ namespace Compliance.Application.Contracts.Persistence
 
         IInputBehaviourRepository inputBehaviourRepository { get; }
 
+        IFileResourceTypeRepository fileResourceTypeRepository { get; }
+
+        IComplianceFieldTypeRepository complianceFieldTypeRepository  { get; }
+
         IAsyncRepository<TEntity> Repository<TEntity>() where TEntity : class, new();
         Task<int> Complete();
     }

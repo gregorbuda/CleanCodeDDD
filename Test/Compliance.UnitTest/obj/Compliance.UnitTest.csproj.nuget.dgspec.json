@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wilom\\source\\repos\\Xirect\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj": {}
+    "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wilom\\source\\repos\\Xirect\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj": {
+    "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wilom\\source\\repos\\Xirect\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj",
+        "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj",
         "projectName": "Compliance.UnitTest",
-        "projectPath": "C:\\Users\\wilom\\source\\repos\\Xirect\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj",
-        "packagesPath": "C:\\Users\\wilom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wilom\\source\\repos\\Xirect\\compliance\\Test\\Compliance.UnitTest\\obj\\",
+        "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\wilom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.107\\RuntimeIdentifierGraph.json"
         }
       }
     }

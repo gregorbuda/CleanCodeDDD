@@ -4,6 +4,71 @@
         <name>Compliance.Api</name>
     </assembly>
     <members>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.CreateComplianceFieldType(Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand)">
+            <summary>
+            Create Compliance Field Type
+            </summary>
+            <param name="command">The data Compliance Source.</param>
+            <returns>
+            An Compliance Field Type Id 
+            </returns>
+            <remarks>
+            Create Compliance Field Type.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.UpdateFileResourceType(Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand)">
+            <summary>
+            Update Compliance Field Type
+            </summary>
+            <param name="command">The data Compliance Field Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Compliance Field Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.DeleteComplianceFieldType(Compliance.Application.Features.ComplianceFieldTypes.Commands.DeleteComplianceFieldType.DeleteComplianceFieldTypeCommand)">
+            <summary>
+            Delete Compliance Field Type
+            </summary>
+            <param name="command">The data Compliance Field Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Delete Compliance Field Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.GetComplianceFieldTypeAll">
+            <summary>
+            Get Compliance Field Type All
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Field Type  List
+            </returns>
+            <remarks>
+            Get Compliance Field Type All
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.GetComplianceFieldTypeById(System.Int32)">
+            <summary>
+            Get Compliance Field Type By Id
+            </summary>
+            <param name="ComplianceFieldTypeId">The Compliance Field Type Id.</param>
+            <returns>
+            A Compliance Field Type Id
+            </returns>
+            <remarks>
+            Get Compliance Field Type By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.ComplianceSourceController.CreateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand)">
             <summary>
             Create Compliance Source
@@ -66,6 +131,71 @@
             </returns>
             <remarks>
             Delete Compliance Source.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.CreateFileResourceType(Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand)">
+            <summary>
+            Create File Resource Type
+            </summary>
+            <param name="command">The data File Resource Type.</param>
+            <returns>
+            A File Resource Type Id 
+            </returns>
+            <remarks>
+            Create File Resource Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.UpdateFileResourceType(Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand)">
+            <summary>
+            Update File Resource Type
+            </summary>
+            <param name="command">The data File Resource Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update File Resource Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.DeleteComplianceSource(Compliance.Application.Features.FileResourceTypes.Commands.DeleteFileResourceTypes.DeleteFileResourceTypesCommand)">
+            <summary>
+            Delete File Resource Type
+            </summary>
+            <param name="command">The data File Resource Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Delete File Resource Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.GetFileResourceTypeAll">
+            <summary>
+            Get File Resource Type All
+            </summary>
+            <param></param>
+            <returns>
+            A File Resource Type List
+            </returns>
+            <remarks>
+            Get File Resource Type All
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.GetFileResourceTypeById(System.Int32)">
+            <summary>
+            Get File Resource Type By Id
+            </summary>
+            <param name="FileResourceTypeId">The File Resource Type Id.</param>
+            <returns>
+            A File Resource Type By Id 
+            </returns>
+            <remarks>
+            Get File Resource Type By Id
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
