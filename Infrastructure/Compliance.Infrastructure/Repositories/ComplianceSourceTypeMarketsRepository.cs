@@ -1,6 +1,7 @@
 ﻿using Compliance.Application.Contracts.Persistence;
 using Compliance.Domain.Models;
 using Compliance.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,18 @@ namespace Compliance.Infrastructure.Repositories
     {
         public ComplianceSourceTypeMarketsRepository(ApplicationDbContext context) : base(context)
         {
+        }
+
+        public async Task<IEnumerable<ComplianceSourceTypeMarkets>> GetByComplianceSourceTypeId(int complianceSourceTypeId)
+        {
+            var result =  _context.ComplianceSourceTypeMarkets
+                .Include(complianceSourceType => complianceSourceType.Markets)
+                .ToList()
+                .FindAll(complianceSourceType => complianceSourceType.ComplianceSourceTypeId == complianceSourceTypeId);
+
+            return result;
+
+
         }
     }
 }

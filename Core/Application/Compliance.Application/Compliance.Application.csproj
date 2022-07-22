@@ -23,7 +23,6 @@
   <ItemGroup>
     <Folder Include="Features\ComplianceSourceTypeMarket\Commands\DeleteComplianceSourceTypeMarket\" />
     <Folder Include="Features\ComplianceSourceTypeMarket\Commands\UpdateComplianceSourceTypeMarket\" />
-    <Folder Include="Features\ComplianceSourceTypeMarket\Queries\" />
   </ItemGroup>
 
 </Project>

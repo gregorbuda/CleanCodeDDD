@@ -9,6 +9,6 @@ namespace Compliance.Application.Contracts.Persistence
 {
     public interface IComplianceSourceTypeMarketsRepository : IAsyncRepository<ComplianceSourceTypeMarkets>
     {
-
+        Task<IEnumerable<ComplianceSourceTypeMarkets>> GetByComplianceSourceTypeId(Int32 complianceSourceTypeId);
     }
 }
