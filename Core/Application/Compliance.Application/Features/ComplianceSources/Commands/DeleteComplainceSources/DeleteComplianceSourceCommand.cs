@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Compliance.Application.Features.ComplianceSources.Commands.DeleteComplainceSources
+namespace Compliance.Application.Features.ComplianceSources.Commands.DeleteComplianceSources
 {
     public class DeleteComplianceSourceCommand : IRequest<ApiResponse<Boolean>>
     {

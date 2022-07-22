@@ -1,6 +1,6 @@
 ﻿using Compliance.Api.Utils;
 using Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources;
-using Compliance.Application.Features.ComplianceSources.Commands.DeleteComplainceSources;
+using Compliance.Application.Features.ComplianceSources.Commands.DeleteComplianceSources;
 using Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources;
 using Compliance.Application.Features.ComplianceSources.Queries;
 using Compliance.Application.Responses;
@@ -20,12 +20,12 @@ namespace Compliance.Api.Controller
     [ProducesResponseType(typeof(ProblemDetailsNotAcceptable), (int)HttpStatusCode.NotAcceptable)]
     [ProducesResponseType(typeof(ProblemDetailsInternalServerError), (int)HttpStatusCode.InternalServerError)]
     [ProducesResponseType(typeof(ProblemDetailsUnauthorized), (int)HttpStatusCode.Unauthorized)]
-    [SwaggerTag("The Complaince Sources REST services")]
-    public class ComplainceSourceController : ControllerBaseCustom
+    [SwaggerTag("The Compliance Sources REST services")]
+    public class ComplianceSourceController : ControllerBaseCustom
     {
         private readonly IMediator _mediator;
 
-        public ComplainceSourceController(IMediator mediator)
+        public ComplianceSourceController(IMediator mediator)
         {
             _mediator = mediator;
         }

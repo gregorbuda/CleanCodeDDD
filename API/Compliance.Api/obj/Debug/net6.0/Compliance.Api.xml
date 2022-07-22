@@ -4,7 +4,7 @@
         <name>Compliance.Api</name>
     </assembly>
     <members>
-        <member name="M:Compliance.Api.Controller.ComplainceSourceController.CreateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand)">
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.CreateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand)">
             <summary>
             Create Compliance Source
             </summary>
@@ -17,7 +17,7 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
-        <member name="M:Compliance.Api.Controller.ComplainceSourceController.GetComplianceSourceById(System.Int32)">
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.GetComplianceSourceById(System.Int32)">
             <summary>
             Get Compliance Source By Id
             </summary>
@@ -30,7 +30,7 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
-        <member name="M:Compliance.Api.Controller.ComplainceSourceController.GetComplianceSourceAll">
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.GetComplianceSourceAll">
             <summary>
             Get Compliance Source All
             </summary>
@@ -43,7 +43,7 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
-        <member name="M:Compliance.Api.Controller.ComplainceSourceController.UpdateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand)">
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.UpdateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand)">
             <summary>
             Update Compliance Source
             </summary>
@@ -56,7 +56,7 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
-        <member name="M:Compliance.Api.Controller.ComplainceSourceController.DeleteComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.DeleteComplainceSources.DeleteComplianceSourceCommand)">
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.DeleteComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.DeleteComplianceSources.DeleteComplianceSourceCommand)">
             <summary>
             Delete Compliance Source
             </summary>
