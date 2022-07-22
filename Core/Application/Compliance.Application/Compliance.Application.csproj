@@ -20,4 +20,10 @@
     <ProjectReference Include="..\..\Domain\Compliance.Domain\Compliance.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\ComplianceSourceTypeMarket\Commands\DeleteComplianceSourceTypeMarket\" />
+    <Folder Include="Features\ComplianceSourceTypeMarket\Commands\UpdateComplianceSourceTypeMarket\" />
+    <Folder Include="Features\ComplianceSourceTypeMarket\Queries\" />
+  </ItemGroup>
+
 </Project>

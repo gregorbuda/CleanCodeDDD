@@ -199,6 +199,19 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.CreateComplianceSourceTypeMarkets(Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand)">
+            <summary>
+            Create Compliance Source Type Markets
+            </summary>
+            <param name="command">The data Compliance Source Type Markets.</param>
+            <returns>
+            A Compliance Source Type Markets Id 
+            </returns>
+            <remarks>
+            Create Compliance Source Type Markets
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.FileResourceTypeController.CreateFileResourceType(Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand)">
             <summary>
             Create File Resource Type

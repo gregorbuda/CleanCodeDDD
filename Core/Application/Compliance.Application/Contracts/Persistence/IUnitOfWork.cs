@@ -18,6 +18,8 @@ namespace Compliance.Application.Contracts.Persistence
 
         IComplianceSourceTypesRepository complianceSourceTypesRepository { get; }
 
+        IComplianceSourceTypeMarketsRepository complianceSourceTypeMarketsRepository { get; }
+
         IAsyncRepository<TEntity> Repository<TEntity>() where TEntity : class, new();
         Task<int> Complete();
     }
