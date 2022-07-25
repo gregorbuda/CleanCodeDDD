@@ -25,34 +25,61 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateCo
 
         public async Task<ApiResponse<bool>> Handle(UpdateComplianceFieldTypeCommand request, CancellationToken cancellationToken)
         {
+            FileResourceType fileResourceType = null;
+            InputBehaviour inputBehaviour = null;
             Boolean success = false;
             String Message = "";
             String CodeResult = "";
             Boolean Result = false;
             try
             {
-                var ComplianceFieldTypeToUpdate = await _unitOfWork.complianceFieldTypeRepository.GetByIdAsync(request.ComplianceSourceTypeId);
+                fileResourceType = await _unitOfWork.fileResourceTypeRepository.GetByIdAsync(request.FileResourceTypeId);
 
-                if (ComplianceFieldTypeToUpdate != null)
+                if (fileResourceType != null)
                 {
-                    _mapper.Map(request, ComplianceFieldTypeToUpdate, typeof(UpdateComplianceFieldTypeCommand), typeof(ComplianceFieldType));
+                    inputBehaviour = await _unitOfWork.inputBehaviourRepository.GetByIdAsync(request.InputBehaviourId);
 
-                    _unitOfWork.complianceFieldTypeRepository.UpdateEntity(ComplianceFieldTypeToUpdate);
+                    if (inputBehaviour != null)
+                    {
+                        var ComplianceFieldTypeToUpdate = await _unitOfWork.complianceFieldTypeRepository.GetByIdAsync(request.ComplianceSourceTypeId);
 
-                    await _unitOfWork.Complete();
+                        if (ComplianceFieldTypeToUpdate != null)
+                        {
+                            _mapper.Map(request, ComplianceFieldTypeToUpdate, typeof(UpdateComplianceFieldTypeCommand), typeof(ComplianceFieldType));
 
-                    CodeResult = StatusCodes.Status200OK.ToString();
-                    Message = "Success, and there is a response body.";
-                    success = true;
-                    Result = true;
+                            _unitOfWork.complianceFieldTypeRepository.UpdateEntity(ComplianceFieldTypeToUpdate);
+
+                            await _unitOfWork.Complete();
+
+                            CodeResult = StatusCodes.Status200OK.ToString();
+                            Message = "Success, and there is a response body.";
+                            success = true;
+                            Result = true;
+                        }
+                        else
+                        {
+                            CodeResult = StatusCodes.Status404NotFound.ToString();
+                            Message = $"Compliance Field Type Id {request.ComplianceSourceTypeId} Not Found";
+                            Result = false;
+                            success = false;
+                        }
+                    }
+                    else
+                    {
+                        CodeResult = StatusCodes.Status404NotFound.ToString();
+                        Message = $"input Behaviour Id {request.InputBehaviourId} Not Found";
+                        Result = false;
+                        success = false;
+                    }
                 }
                 else
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
-                    Message = "Compliance Field Type Not Found";
+                    Message = $"File Resource Type Id {request.FileResourceTypeId} Not Found";
                     Result = false;
                     success = false;
                 }
+
 
             }
             catch (Exception ex)

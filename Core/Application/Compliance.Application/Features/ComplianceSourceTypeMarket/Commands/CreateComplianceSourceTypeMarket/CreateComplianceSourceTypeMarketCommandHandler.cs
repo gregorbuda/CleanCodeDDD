@@ -27,6 +27,7 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.Cr
         {
             var complianceSourceTypeMarketsEntity = _mapper.Map<ComplianceSourceTypeMarkets>(request);
 
+            ComplianceSourceTypes complianceSourceTypes = null;
             ComplianceSourceTypeMarkets complianceSourceTypeMarkets = null;
             ComplianceSourceTypeMarketsCreateResponse objReponse = null;
             Boolean success = false;
@@ -35,20 +36,32 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.Cr
 
             try
             {
-                complianceSourceTypeMarkets = await _unitOfWork.complianceSourceTypeMarketsRepository.AddAsync(complianceSourceTypeMarketsEntity);
+                complianceSourceTypes = await _unitOfWork.complianceSourceTypesRepository.GetByIdAsync(request.ComplianceSourceTypeId);
 
-                objReponse = _mapper.Map<ComplianceSourceTypeMarketsCreateResponse>(complianceSourceTypeMarkets);
-
-                if (complianceSourceTypeMarkets.ComplianceSourceTypeMarketId > 0)
+                if (complianceSourceTypes != null)
                 {
-                    CodeResult = StatusCodes.Status200OK.ToString();
-                    Message = "Success, and there is a response body.";
-                    success = true;
+                    complianceSourceTypeMarkets = await _unitOfWork.complianceSourceTypeMarketsRepository.AddAsync(complianceSourceTypeMarketsEntity);
+
+                    objReponse = _mapper.Map<ComplianceSourceTypeMarketsCreateResponse>(complianceSourceTypeMarkets);
+
+                    if (complianceSourceTypeMarkets.ComplianceSourceTypeMarketId > 0)
+                    {
+                        CodeResult = StatusCodes.Status200OK.ToString();
+                        Message = "Success, and there is a response body.";
+                        success = true;
+                    }
+                    else
+                    {
+                        CodeResult = StatusCodes.Status400BadRequest.ToString();
+                        Message = "No se pudo registrar el Compliance Source Type";
+                        objReponse = null;
+                        success = false;
+                    }
                 }
                 else
                 {
-                    CodeResult = StatusCodes.Status400BadRequest.ToString();
-                    Message = "No se pudo registrar el Compliance Source Type";
+                    CodeResult = StatusCodes.Status404NotFound.ToString();
+                    Message = $"Compliance Source Id {request.ComplianceSourceTypeId} Not Found";
                     objReponse = null;
                     success = false;
                 }

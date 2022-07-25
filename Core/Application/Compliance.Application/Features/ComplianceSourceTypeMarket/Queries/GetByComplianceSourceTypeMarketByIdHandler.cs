@@ -46,7 +46,7 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Queries
                 else
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
-                    Message = "Compliance Source Not Found";
+                    Message = $"Compliance Source Type Id {request._complianceSourceTypeId} Not Found";
                     complianceSourceTypeMarkets = null;
                     success = false;
                 }

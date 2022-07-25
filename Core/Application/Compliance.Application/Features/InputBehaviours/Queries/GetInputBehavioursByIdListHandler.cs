@@ -46,7 +46,7 @@ namespace Compliance.Application.Features.InputBehaviours.Queries
                 else
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
-                    Message = "Input Behaviour Not Found";
+                    Message = $"input Behaviour Id {request._inputBehaviourId} Not Found";
                     inputBehaviour = null;
                     success = false;
                 }

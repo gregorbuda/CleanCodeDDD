@@ -31,5 +31,9 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateCo
         public int CreatedBy { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public int? UpdatedBy { get; set; }
+        [Required]
+        public int InputBehaviourId { get; set; }
+        [Required]
+        public int FileResourceTypeId { get; set; }
     }
 }

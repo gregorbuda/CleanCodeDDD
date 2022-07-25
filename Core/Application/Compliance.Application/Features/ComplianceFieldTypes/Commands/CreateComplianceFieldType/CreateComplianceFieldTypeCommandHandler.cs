@@ -27,6 +27,8 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateCo
         {
             var complianceSourceEntity = _mapper.Map<ComplianceFieldType>(request);
 
+            FileResourceType fileResourceType = null;
+            InputBehaviour inputBehaviour = null;
             ComplianceFieldType complianceFieldType = null;
             ComplianceFieldTypeCreateResponse objReponse = null;
             Boolean success = false;
@@ -35,20 +37,44 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateCo
 
             try
             {
-                complianceFieldType = await _unitOfWork.complianceFieldTypeRepository.AddAsync(complianceSourceEntity);
+                fileResourceType = await _unitOfWork.fileResourceTypeRepository.GetByIdAsync(request.FileResourceTypeId);
 
-                objReponse = _mapper.Map<ComplianceFieldTypeCreateResponse>(complianceFieldType);
-
-                if (complianceFieldType.ComplianceFieldTypeId > 0)
+                if (fileResourceType != null)
                 {
-                    CodeResult = StatusCodes.Status200OK.ToString();
-                    Message = "Success, and there is a response body.";
-                    success = true;
+                    inputBehaviour = await _unitOfWork.inputBehaviourRepository.GetByIdAsync(request.InputBehaviourId);
+
+                    if (inputBehaviour != null)
+                    {
+                        complianceFieldType = await _unitOfWork.complianceFieldTypeRepository.AddAsync(complianceSourceEntity);
+
+                        objReponse = _mapper.Map<ComplianceFieldTypeCreateResponse>(complianceFieldType);
+
+                        if (complianceFieldType.ComplianceFieldTypeId > 0)
+                        {
+                            CodeResult = StatusCodes.Status200OK.ToString();
+                            Message = "Success, and there is a response body.";
+                            success = true;
+                        }
+                        else
+                        {
+                            CodeResult = StatusCodes.Status400BadRequest.ToString();
+                            Message = "No se pudo registrar el ComplianceSource";
+                            objReponse = null;
+                            success = false;
+                        }
+                    }
+                    else
+                    {
+                        CodeResult = StatusCodes.Status404NotFound.ToString();
+                        Message = $"input Behaviour Id {request.InputBehaviourId} Not Found";
+                        objReponse = null;
+                        success = false;
+                    }
                 }
                 else
                 {
-                    CodeResult = StatusCodes.Status400BadRequest.ToString();
-                    Message = "No se pudo registrar el ComplianceSource";
+                    CodeResult = StatusCodes.Status404NotFound.ToString();
+                    Message = $"File Resource Type Id {request.FileResourceTypeId} Not Found";
                     objReponse = null;
                     success = false;
                 }

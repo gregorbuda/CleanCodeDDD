@@ -46,7 +46,7 @@ namespace Compliance.Application.Features.FileResourceTypes.Queries
                 else
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
-                    Message = "File Resource Type Not Found";
+                    Message = $"File Resource Type Id {request._fileResourceTypeId} Not Found";
                     fileResourceTypeResponse = null;
                     success = false;
                 }

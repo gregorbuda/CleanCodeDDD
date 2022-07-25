@@ -25,10 +25,15 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateCo
         [Required]
         public short? WidthPx { get; set; }
         [Required]
+
         public byte Status { get; set; }
         public DateTime? CreatedDate { get; set; }
         public int CreatedBy { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public int? UpdatedBy { get; set; }
+        [Required]
+        public int InputBehaviourId { get; set; }
+        [Required]
+        public int FileResourceTypeId { get; set; }
     }
 }

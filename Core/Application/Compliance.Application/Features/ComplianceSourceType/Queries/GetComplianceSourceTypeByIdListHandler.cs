@@ -37,7 +37,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Queries
 
                 ComplianceSourceTypesResponse = _mapper.Map<ComplianceSourceTypesResponse>(ComplianceSourceTypes);
 
-                if (ComplianceSourceTypes.ComplianceFieldTypeId > 0)
+                if (ComplianceSourceTypes != null)
                 {
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -46,7 +46,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Queries
                 else
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
-                    Message = "Compliance Source Not Found";
+                    Message = $"Compliance Field Type Id {request._complianceSourceTypeId} Not Found";
                     ComplianceSourceTypesResponse = null;
                     success = false;
                 }

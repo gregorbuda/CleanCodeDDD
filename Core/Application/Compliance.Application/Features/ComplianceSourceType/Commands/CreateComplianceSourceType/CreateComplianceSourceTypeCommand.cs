@@ -15,6 +15,8 @@ namespace Compliance.Application.Features.ComplianceSourceType.Commands.CreateCo
         [Required]
         public int ComplianceFieldTypeId { get; set; }
         [Required]
+        public int ComplianceSourceId { get; set; }
+        [Required]
         public int DistributorId { get; set; }
         [Required]
         public bool RequiresCompliance { get; set; }
