@@ -14,7 +14,8 @@ namespace Compliance.Application.Mappings
             CreateMap<InputBehaviour, InputBehaviourCreateResponse>()
              .ForMember(dest => dest.InputBehaviourId, opt => opt.MapFrom(src => src.InputBehaviourId));
 
-            CreateMap<InputBehaviour, InputBehaviourResponse>();
+            CreateMap<InputBehaviour, InputBehaviourResponse>()
+               .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)(EnumComplianceSourceStatus)src.Status));
 
         }
     }

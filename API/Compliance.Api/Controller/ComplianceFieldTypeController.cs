@@ -100,7 +100,7 @@ namespace Compliance.Api.Controller
         /// Get Compliance Field Type All
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
-        [HttpGet("GetComplianceFieldTypeAll")]
+        [HttpGet("ComplianceFieldTypeAll")]
         [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceFieldTypeResponse>>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceFieldTypeResponse>>>> GetComplianceFieldTypeAll()
         {
@@ -121,7 +121,7 @@ namespace Compliance.Api.Controller
         /// Get Compliance Field Type By Id
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
-        [HttpGet("GetComplianceFieldTypeById")]
+        [HttpGet("ComplianceFieldTypeById")]
         [ProducesResponseType(typeof(ApiResponse<ComplianceFieldTypeResponse>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<ComplianceFieldTypeResponse>>> GetComplianceFieldTypeById(Int32 ComplianceFieldTypeId)
         {

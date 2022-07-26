@@ -1,6 +1,7 @@
 ﻿using Compliance.Application.Contracts.Persistence;
 using Compliance.Domain.Models;
 using Compliance.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,10 @@ namespace Compliance.Infrastructure.Repositories
     {
         public ComplianceSourceTypesRepository(ApplicationDbContext context) : base(context)
         {
+        }
+        public async Task<IEnumerable<ComplianceSourceTypes>> GetComplianceSourceTypeByCompianceSourceId(Int32 ComplianceSourceId)
+        {
+            return await _context.ComplianceSourceTypes!.Where(v => v.ComplianceSourceId == ComplianceSourceId).ToListAsync();
         }
     }
 }

@@ -13,10 +13,7 @@ namespace Compliance.Domain.Models
         public string TranslationKey { get; set; }
         public string Description { get; set; }
         public int MaxSize { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public int CreatedBy { get; set; }
-        public DateTime? UpdatedDate { get; set; }
-        public int? UpdatedBy { get; set; }
-        public int Status { get; set; }
+        /// <example>Active</example>
+        public EnumComplianceSourceStatus Status { get; set; }
     }
 }

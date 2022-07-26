@@ -60,7 +60,7 @@ namespace Compliance.Api.Controller
         /// Get Input Behaviour All.\
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
-        [HttpGet("GetInputBehaviourAll")]
+        [HttpGet("InputBehaviourAll")]
         [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<InputBehaviourResponse>>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<IReadOnlyList<InputBehaviourResponse>>>> GetInputBehaviourAll()
         {
@@ -119,7 +119,7 @@ namespace Compliance.Api.Controller
         /// Get Input Behaviour By Id
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
-        [HttpGet("GetInputBehaviourById")]
+        [HttpGet("InputBehaviourById")]
         [ProducesResponseType(typeof(ApiResponse<InputBehaviourResponse>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<InputBehaviourResponse>>> GetInputBehaviourById(Int32 InputBehaviourId)
         {

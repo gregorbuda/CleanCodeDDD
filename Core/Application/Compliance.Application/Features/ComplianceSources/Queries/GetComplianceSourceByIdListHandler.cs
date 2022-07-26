@@ -29,16 +29,40 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
             String Message = "";
             ComplianceSource ComplianceSource = null;
             ComplianceSourceResponse ComplianceSourceResponse = null;
+            IEnumerable<ComplianceSourceTypes> complianceSourceTypes = null;
+            List<ComplianceSourceTypesResponse> complianceSourceTypesResponseList = new List<ComplianceSourceTypesResponse>();
             String CodeResult = "";
 
             try
             {
                 ComplianceSource = await _unitOfWork.complianceSourceRepository.GetByIdAsync(request._complianceSourceId);
 
-                ComplianceSourceResponse = _mapper.Map<ComplianceSourceResponse>(ComplianceSource);
-
-                if (ComplianceSource.ComplianceSourceId > 0)
+                if (ComplianceSource != null)
                 {
+                    ComplianceSourceResponse = _mapper.Map<ComplianceSourceResponse>(ComplianceSource);
+
+                    complianceSourceTypes = await _unitOfWork.complianceSourceTypesRepository.GetComplianceSourceTypeByCompianceSourceId(request._complianceSourceId);
+
+                    foreach (var complianceSourceTypesList in complianceSourceTypes)
+                    {
+
+                        ComplianceSourceTypesResponse complianceSourceTypesResponse = new ComplianceSourceTypesResponse();
+                        complianceSourceTypesResponse.Status = (EnumComplianceSourceStatus)complianceSourceTypesList.Status;
+                        complianceSourceTypesResponse.ComplianceFieldTypeId = complianceSourceTypesList.ComplianceFieldTypeId;
+                        complianceSourceTypesResponse.ComplianceFileSizeKb = complianceSourceTypesList.ComplianceFileSizeKb;
+                        complianceSourceTypesResponse.ComplianceSourceId = complianceSourceTypesList.ComplianceSourceId;
+                        complianceSourceTypesResponse.ComplianceSourceTypeId = complianceSourceTypesList.ComplianceSourceTypeId;
+                        complianceSourceTypesResponse.DistributorId = complianceSourceTypesList.DistributorId;
+                        complianceSourceTypesResponse.RequiresCompliance = complianceSourceTypesList.RequiresCompliance;
+                        complianceSourceTypesResponse.HeightPx = complianceSourceTypesList.HeightPx;
+                        complianceSourceTypesResponse.WidthPx = complianceSourceTypesList.WidthPx;
+
+                        complianceSourceTypesResponseList.Add(complianceSourceTypesResponse);
+
+                    }
+
+                    ComplianceSourceResponse.ComplianceSourceType = complianceSourceTypesResponseList;
+
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
                     success = true;
@@ -46,7 +70,7 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
                 else
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
-                    Message = "Compliance Source Not Found";
+                    Message = $"Compliance Source Id {request._complianceSourceId} Not Found";
                     ComplianceSourceResponse = null;
                     success = false;
                 }

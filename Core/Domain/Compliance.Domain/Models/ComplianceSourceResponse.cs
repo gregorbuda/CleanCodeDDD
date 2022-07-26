@@ -35,39 +35,15 @@ namespace Compliance.Domain.Models
         /// The Compliance Status.
         /// </value>
         /// <example>Active</example>
-        public byte Status { get; set; }
+        public EnumComplianceSourceStatus Status { get; set; }
+
         /// <summary>
-        /// The update date.
+        /// Compliance Source Types
         /// </summary>
         /// <value>
-        /// The update date.
+        /// Compliance Source Types
         /// </value>
-        /// <example>2022-05-09T12:20:19Z</example>
-        public DateTime? UpdatedDate { get; set; }
-        /// <summary>
-        /// The update by.
-        /// </summary>
-        /// <value>
-        /// The update by.
-        /// </value>
-        /// <example>99</example>
-        public int? UpdatedBy { get; set; }
-        /// <summary>
-        /// The create date.
-        /// </summary>
-        /// <value>
-        /// The create date.
-        /// </value>
-        /// <example>2022-05-09T12:20:19Z</example>
-        public DateTime? CreatedDate { get; set; }
-        /// <summary>
-        /// The create by.
-        /// </summary>
-        /// <value>
-        /// The create by.
-        /// </value>
-        /// <example>99</example>
-        public int? CreatedBy { get; set; }
+        public List<ComplianceSourceTypesResponse>? ComplianceSourceType { get; set; }
 
     }
 }

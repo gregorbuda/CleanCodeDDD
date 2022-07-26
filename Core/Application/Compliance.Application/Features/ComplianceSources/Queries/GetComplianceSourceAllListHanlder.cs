@@ -37,6 +37,7 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
 
                 ComplianceSourceResponse = _mapper.Map<IReadOnlyList<ComplianceSourceResponse>>(ComplianceSource);
 
+              
                 if (ComplianceSource.Count > 0)
                 {
                     CodeResult = StatusCodes.Status200OK.ToString();

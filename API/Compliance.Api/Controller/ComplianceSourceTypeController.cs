@@ -100,7 +100,7 @@ namespace Compliance.Api.Controller
         /// Get Compliance Source Type All
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
-        [HttpGet("GetComplianceSourceTypeAll")]
+        [HttpGet("ComplianceSourceTypeAll")]
         [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceSourceTypesResponse>>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceSourceTypesResponse>>>> GetComplianceSourceTypeAll()
         {
@@ -120,7 +120,7 @@ namespace Compliance.Api.Controller
         /// Get Compliance Source Type By Id
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
-        [HttpGet("GetComplianceSourceTypeById")]
+        [HttpGet("ComplianceSourceTypeById")]
         [ProducesResponseType(typeof(ApiResponse<ComplianceSourceTypesResponse>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<ComplianceSourceTypesResponse>>> GetComplianceSourceTypeById(Int32 ComplianceSourceTypeId)
         {

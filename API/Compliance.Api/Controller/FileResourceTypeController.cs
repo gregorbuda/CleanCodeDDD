@@ -99,7 +99,7 @@ namespace Compliance.Api.Controller
         /// Get File Resource Type All
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
-        [HttpGet("GetFileResourceTypeAll")]
+        [HttpGet("FileResourceTypeAll")]
         [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<FileResourceTypeResponse>>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<IReadOnlyList<FileResourceTypeResponse>>>> GetFileResourceTypeAll()
         {
@@ -120,7 +120,7 @@ namespace Compliance.Api.Controller
         /// Get File Resource Type By Id
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
-        [HttpGet("GetFileResourceTypeById")]
+        [HttpGet("FileResourceTypeById")]
         [ProducesResponseType(typeof(ApiResponse<FileResourceTypeResponse>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<FileResourceTypeResponse>>> GetFileResourceTypeById(Int32 FileResourceTypeId)
         {
