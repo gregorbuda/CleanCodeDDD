@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Contracts.Persistence
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
         IComplianceSourceRepository complianceSourceRepository { get; }
 

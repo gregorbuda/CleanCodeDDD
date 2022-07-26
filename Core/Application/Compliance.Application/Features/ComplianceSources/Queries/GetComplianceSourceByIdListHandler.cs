@@ -58,7 +58,6 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
                         complianceSourceTypesResponse.WidthPx = complianceSourceTypesList.WidthPx;
 
                         complianceSourceTypesResponseList.Add(complianceSourceTypesResponse);
-
                     }
 
                     ComplianceSourceResponse.ComplianceSourceType = complianceSourceTypesResponseList;
