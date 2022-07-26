@@ -12,6 +12,7 @@ namespace Compliance.Domain.Models
     /// </summary>
     public class ComplianceSourceResponse
     {
+        
         /// <summary>
         /// The Compliance identifier.
         /// </summary>
@@ -43,7 +44,7 @@ namespace Compliance.Domain.Models
         /// <value>
         /// Compliance Source Types
         /// </value>
-        public List<ComplianceSourceTypesResponse>? ComplianceSourceType { get; set; }
+        public List<ComplianceSourceTypesResponse> ComplianceSourceType { get; set; }
 
     }
 }

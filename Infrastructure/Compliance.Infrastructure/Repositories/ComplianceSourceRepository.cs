@@ -15,7 +15,5 @@ namespace Compliance.Infrastructure.Repositories
         public ComplianceSourceRepository(ApplicationDbContext context) : base(context)
         {
         }
-
-
     }
 }

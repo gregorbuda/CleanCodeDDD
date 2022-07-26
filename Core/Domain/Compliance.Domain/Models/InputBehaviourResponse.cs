@@ -9,8 +9,17 @@ namespace Compliance.Domain.Models
     public class InputBehaviourResponse
     {
         public int InputBehaviourId { get; set; }
+
         public string InputBehaviourName { get; set; } = string.Empty;
         /// <example>Active</example>
         public EnumComplianceSourceStatus Status { get; set; }
+
+        /// <summary>
+        /// Compliance Field Type
+        /// </summary>
+        /// <value>
+        /// Compliance Field Type
+        /// </value>
+        public List<ComplianceFieldTypeResponse> ComplianceFieldType{ get; set; }
     }
 }

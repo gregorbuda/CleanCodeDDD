@@ -15,7 +15,7 @@ namespace Compliance.Infrastructure.Repositories
         public ComplianceSourceTypesRepository(ApplicationDbContext context) : base(context)
         {
         }
-        public async Task<IEnumerable<ComplianceSourceTypes>> GetComplianceSourceTypeByCompianceSourceId(Int32 ComplianceSourceId)
+        public async Task<List<ComplianceSourceTypes>> GetComplianceSourceTypeByCompianceSourceId(Int32 ComplianceSourceId)
         {
             return await _context.ComplianceSourceTypes!.Where(v => v.ComplianceSourceId == ComplianceSourceId).ToListAsync();
         }
