@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Queries
 {
-    public class GetByComplianceSourceTypeMarketById : IRequest<ApiResponse<IEnumerable<ComplianceSourceTypeMarkets>>>
+    public class GetByComplianceSourceTypeMarketById : IRequest<ApiResponse<IReadOnlyList<ComplianceSourceTypeMarketsResponse>>>
     {
         public Int32 _complianceSourceTypeId { get; set; }
 

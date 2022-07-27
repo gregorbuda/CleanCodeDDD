@@ -110,26 +110,23 @@ namespace Compliance.Api.Controller
         }
 
         /// <summary>
-        /// Get Compliance Source Type By Id
+        /// Get Compliance Source Type Market By Id
         /// </summary>
-        /// <param name="InputBehaviourId">The Input Behaviour Id.</param>
+        /// <param name="ComplianceSourceTypeId">The Compliance Source Type Id.</param>
         /// <returns>
-        /// A Compliance Source Type By Id
+        /// A Compliance Source Type Market By Id
         /// </returns>
         /// <remarks>
-        /// Get Compliance Source Type By Id
+        /// Get Compliance Source Type Market By Id
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
-        [HttpGet("ComplianceSourceTypeById")]
-        [ProducesResponseType(typeof(ApiResponse<ComplianceSourceTypesResponse>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<ComplianceSourceTypesResponse>>> GetComplianceSourceTypeById(Int32 ComplianceSourceTypeId)
+        [HttpGet("ComplianceSourceTypeMarketById")]
+        [ProducesResponseType(typeof(ApiResponse<ComplianceSourceTypeMarkets>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<ComplianceSourceTypeMarkets>>> GetComplianceSourceTypeMarketById(Int32 ComplianceSourceTypeId)
         {
             var query = new GetComplianceSourceTypeByIdList(ComplianceSourceTypeId);
             var test = await _mediator.Send(query);
             return Ok(test);
         }
-
-
-
     }
 }

@@ -14,12 +14,5 @@ namespace Compliance.Domain.Models
         /// <example>Active</example>
         public EnumComplianceSourceStatus Status { get; set; }
 
-        /// <summary>
-        /// Compliance Field Type
-        /// </summary>
-        /// <value>
-        /// Compliance Field Type
-        /// </value>
-        public List<ComplianceFieldTypeResponse> ComplianceFieldType{ get; set; }
     }
 }
