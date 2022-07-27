@@ -12,12 +12,12 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceSourceType.Queries
 {
-    public class GetComplianceSourceTypeAllListHandler : IRequestHandler<GetComplianceSourceTypeAllList, ApiResponse<IReadOnlyList<ComplianceSourceTypesResponse>>>
+    public class GetComplianceSourceTypeTypeAllListHandler : IRequestHandler<GetComplianceSourceTypeAllList, ApiResponse<IReadOnlyList<ComplianceSourceTypesResponse>>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public GetComplianceSourceTypeAllListHandler(IUnitOfWork unitOfWork, IMapper mapper)
+        public GetComplianceSourceTypeTypeAllListHandler(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;

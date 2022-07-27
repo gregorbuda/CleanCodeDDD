@@ -10,5 +10,9 @@ namespace Compliance.Application.Contracts.Persistence
     public interface IComplianceSourceTypesRepository : IAsyncRepository<ComplianceSourceTypes>
     {
         Task<List<ComplianceSourceTypes>> GetComplianceSourceTypeByCompianceSourceId(Int32 CompianceSourceId);
+
+        Task<IReadOnlyList<ComplianceSourceTypes>> GetItemFullDataList();
+
+        Task<ComplianceSourceTypes> GetFullDataById(Int32 ComplianceFieldTypeId);
     }
 }

@@ -20,7 +20,15 @@ namespace Compliance.Application.Mappings
             .ForMember(dest => dest.ComplianceSourceTypeId, opt => opt.MapFrom(src => src.ComplianceSourceTypeId));
 
             CreateMap<ComplianceSourceTypes, ComplianceSourceTypesResponse>()
-                .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)(EnumComplianceSourceStatus)src.Status)); ;
+                .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)(EnumComplianceSourceStatus)src.Status));
+
+            CreateMap<ComplianceSourceTypes, ComplianceSourceTypesFullDataResponse>()
+                .ForMember(dest => dest.ComplianceFieldType, opt => opt.MapFrom(src => src.ComplianceFieldType))
+                .ForMember(dest => dest.ComplianceSource, opt => opt.MapFrom(src => src.ComplianceSource))
+                .ForMember(dest => dest.ComplianceSourceTypeMarkets, opt => opt.MapFrom(src => src.ComplianceSourceTypeMarkets))
+                .ForMember(dest => dest.ComplianceDistributorData, opt => opt.MapFrom(src => src.ComplianceDistributorData))
+                .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)(EnumComplianceSourceStatus)src.Status));
+
 
             CreateMap<UpdateComplianceSourceTypeCommand, ComplianceSourceTypes>();
         }

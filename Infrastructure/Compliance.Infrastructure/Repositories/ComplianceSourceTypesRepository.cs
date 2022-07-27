@@ -19,5 +19,30 @@ namespace Compliance.Infrastructure.Repositories
         {
             return await _context.ComplianceSourceTypes!.Where(v => v.ComplianceSourceId == ComplianceSourceId).ToListAsync();
         }
+
+
+        public async Task<IReadOnlyList<ComplianceSourceTypes>> GetItemFullDataList()
+        {
+            var result = await _context.ComplianceSourceTypes
+                  .Include(complianceSourceType => complianceSourceType.ComplianceSource)
+                  .Include(compliancesourceType => compliancesourceType.ComplianceFieldType.InputBehaviour)
+                  .Include(complianceSourceType => complianceSourceType.ComplianceSourceTypeMarkets)
+                  .Where(complianceSourceType => complianceSourceType.Status != 2)
+                  .ToListAsync();
+
+            return result;
+        }
+
+        public async Task<ComplianceSourceTypes> GetFullDataById(Int32 ComplianceSourceTypesId)
+        {
+            var result = await _context.ComplianceSourceTypes
+                .Include(complianceSourceType => complianceSourceType.ComplianceSource)
+                .Include(complianceSourceType => complianceSourceType.ComplianceFieldType)
+                .Include(complianceSourceType => complianceSourceType.ComplianceSourceTypeMarkets)
+                .Where(complianceSourceType => complianceSourceType.ComplianceSourceTypeId == ComplianceSourceTypesId)
+                .FirstOrDefaultAsync();
+
+            return result;
+        }
     }
 }

@@ -128,5 +128,49 @@ namespace Compliance.Api.Controller
             var test = await _mediator.Send(query);
             return Ok(test);
         }
+
+
+
+        /// <summary>
+        /// Get Compliance Source Types Full Data
+        /// </summary>
+        /// <param></param>
+        /// <returns>
+        /// A Compliance Source Types Full Data
+        /// </returns>
+        /// <remarks>
+        /// Get Compliance Source Types Full Data
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpGet("ComplianceSourceTypesFullData")]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceSourceTypesFullDataResponse>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceSourceTypesFullDataResponse>>>> GetComplianceSourceTypesFullData()
+        {
+            var query = new GetComplianceSourceTypesIdFullDataList();
+            var test = await _mediator.Send(query);
+            return Ok(test);
+        }
+
+
+        /// <summary>
+        /// Get ComplianceSource Type Full Data By Id
+        /// </summary>
+        /// <param name="ComplianceSourceTypeId">The Compliance Source Type Id.</param>
+        /// <returns>
+        /// A ComplianceSource Type Full Data By Id
+        /// </returns>
+        /// <remarks>
+        /// Get ComplianceSource Type Full Data By Id
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpGet("ComplianceSourceTypeFullDataById")]
+        [ProducesResponseType(typeof(ApiResponse<ComplianceSourceTypeMarkets>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<ComplianceSourceTypeMarkets>>> GetComplianceSourceTypeFullDataById(Int32 ComplianceSourceTypeId)
+        {
+            var query = new GetComplianceSourceTypeFullDataById(ComplianceSourceTypeId);
+            var test = await _mediator.Send(query);
+            return Ok(test);
+        }
+
     }
 }

@@ -225,6 +225,32 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.GetComplianceSourceTypesFullData">
+            <summary>
+            Get Compliance Source Types Full Data
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Source Types Full Data
+            </returns>
+            <remarks>
+            Get Compliance Source Types Full Data
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.GetComplianceSourceTypeFullDataById(System.Int32)">
+            <summary>
+            Get ComplianceSource Type Full Data By Id
+            </summary>
+            <param name="ComplianceSourceTypeId">The Compliance Source Type Id.</param>
+            <returns>
+            A ComplianceSource Type Full Data By Id
+            </returns>
+            <remarks>
+            Get ComplianceSource Type Full Data By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.CreateComplianceSourceTypeMarkets(Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand)">
             <summary>
             Create Compliance Source Type Markets

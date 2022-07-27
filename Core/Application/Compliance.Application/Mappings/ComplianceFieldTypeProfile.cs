@@ -19,7 +19,7 @@ namespace Compliance.Application.Mappings
             CreateMap<ComplianceFieldType, ComplianceFieldTypeCreateResponse>()
                 .ForMember(dest => dest.ComplianceFieldTypeId, opt => opt.MapFrom(src => src.ComplianceFieldTypeId));
 
-            CreateMap<ComplianceFieldType, ComplianceSourceResponse>()
+            CreateMap<ComplianceFieldType, ComplianceFieldTypeResponse>()
                 .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)(EnumComplianceSourceStatus)src.Status));
 
             CreateMap<UpdateComplianceFieldTypeCommand, ComplianceFieldType>();
