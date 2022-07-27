@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
 {
-    public class GetComplianceFieldTypeFullDataByIdHandler : IRequestHandler<GetComplianceFieldTypeFullDataById, ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>>
+    public class GetComplianceFieldTypeFullDataByIdHandler : IRequestHandler<GetComplianceFieldTypeFullDataById, ApiResponse<ComplianceFieldTypeFullDataResponse>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
@@ -19,21 +19,21 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
         }
 
 
-        public async Task<ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>> Handle(GetComplianceFieldTypeFullDataById request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<ComplianceFieldTypeFullDataResponse>> Handle(GetComplianceFieldTypeFullDataById request, CancellationToken cancellationToken)
         {
             Boolean success = false;
             String Message = "";
-            IReadOnlyList<ComplianceFieldType> ComplianceSourceFieldType = null;
-            IReadOnlyList<ComplianceFieldTypeFullDataResponse> ComplianceSourceResponseFieldType = null;
+            ComplianceFieldType ComplianceSourceFieldType = null;
+            ComplianceFieldTypeFullDataResponse ComplianceSourceResponseFieldType = null;
             String CodeResult = "";
 
             try
             {
                 ComplianceSourceFieldType = await _unitOfWork.complianceFieldTypeRepository.GetFullDataById(request._complianceFieldTypeId);
 
-                if (ComplianceSourceFieldType.Count > 0)
+                if (ComplianceSourceFieldType != null)
                 {
-                    ComplianceSourceResponseFieldType = _mapper.Map<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>(ComplianceSourceFieldType);
+                    ComplianceSourceResponseFieldType = _mapper.Map<ComplianceFieldTypeFullDataResponse>(ComplianceSourceFieldType);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -55,7 +55,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
                 success = false;
             }
 
-            ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>> response = new ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>
+            ApiResponse<ComplianceFieldTypeFullDataResponse> response = new ApiResponse<ComplianceFieldTypeFullDataResponse>
             {
                 CodeResult = CodeResult,
                 Message = Message,

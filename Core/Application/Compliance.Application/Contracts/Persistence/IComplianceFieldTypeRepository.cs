@@ -11,6 +11,6 @@ namespace Compliance.Application.Contracts.Persistence
     {
         Task<IReadOnlyList<ComplianceFieldType>> GetItemFullDataList();
 
-        Task<IReadOnlyList<ComplianceFieldType>> GetFullDataById(Int32 ComplianceFieldTypeId);
+        Task<ComplianceFieldType> GetFullDataById(Int32 ComplianceFieldTypeId);
     }
 }

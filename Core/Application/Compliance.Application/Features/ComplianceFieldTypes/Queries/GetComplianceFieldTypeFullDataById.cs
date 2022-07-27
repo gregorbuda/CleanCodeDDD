@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
 {
-    public class GetComplianceFieldTypeFullDataById : IRequest<ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>>
+    public class GetComplianceFieldTypeFullDataById : IRequest<ApiResponse<ComplianceFieldTypeFullDataResponse>>
     {
         public Int32 _complianceFieldTypeId { get; set; }
 

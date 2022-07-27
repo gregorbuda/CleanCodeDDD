@@ -26,13 +26,13 @@ namespace Compliance.Infrastructure.Repositories
             return result;
         }
 
-        public async Task<IReadOnlyList<ComplianceFieldType>> GetFullDataById(Int32 ComplianceFieldTypeId)
+        public async Task<ComplianceFieldType> GetFullDataById(Int32 ComplianceFieldTypeId)
         {
             var result = await _context.ComplianceFieldType
                 .Include(complianceFieldType => complianceFieldType.InputBehaviour)
                 .Include(complianceFieldType => complianceFieldType.FileResourceType)
                 .Where(complianceFieldType => complianceFieldType.ComplianceFieldTypeId == ComplianceFieldTypeId)
-                .ToListAsync();
+                .FirstOrDefaultAsync();
             
             return result;
         }

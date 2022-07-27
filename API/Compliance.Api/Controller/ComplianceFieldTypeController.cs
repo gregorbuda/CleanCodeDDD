@@ -162,8 +162,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("ComplianceFieldTypeFullDataById")]
-        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>>> GetComplianceFieldTypeFullDataById(Int32 ComplianceFieldTypeId)
+        [ProducesResponseType(typeof(ApiResponse<ComplianceFieldTypeFullDataResponse>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<ComplianceFieldTypeFullDataResponse>>> GetComplianceFieldTypeFullDataById(Int32 ComplianceFieldTypeId)
         {
             var query = new GetComplianceFieldTypeFullDataById(ComplianceFieldTypeId);
             var test = await _mediator.Send(query);
