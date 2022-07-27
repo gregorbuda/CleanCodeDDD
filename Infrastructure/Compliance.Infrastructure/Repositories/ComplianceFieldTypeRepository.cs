@@ -1,6 +1,7 @@
 ﻿using Compliance.Application.Contracts.Persistence;
 using Compliance.Domain.Models;
 using Compliance.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,27 @@ namespace Compliance.Infrastructure.Repositories
     {
         public ComplianceFieldTypeRepository(ApplicationDbContext context) : base(context)
         {
+        }
+
+        public async Task<IReadOnlyList<ComplianceFieldType>> GetItemFullDataList()
+        {
+            var result = await _context.ComplianceFieldType
+                .Include(complianceFieldType => complianceFieldType.InputBehaviour)
+                .Include(complianceFieldType => complianceFieldType.FileResourceType)
+                .ToListAsync();
+
+            return result;
+        }
+
+        public async Task<IReadOnlyList<ComplianceFieldType>> GetFullDataById(Int32 ComplianceFieldTypeId)
+        {
+            var result = await _context.ComplianceFieldType
+                .Include(complianceFieldType => complianceFieldType.InputBehaviour)
+                .Include(complianceFieldType => complianceFieldType.FileResourceType)
+                .Where(complianceFieldType => complianceFieldType.ComplianceFieldTypeId == ComplianceFieldTypeId)
+                .ToListAsync();
+            
+            return result;
         }
     }
 }

@@ -130,6 +130,44 @@ namespace Compliance.Api.Controller
             return Ok(test);
         }
 
+        /// <summary>
+        /// Get Compliance Field Type Full Data List
+        /// </summary>
+        /// <param></param>
+        /// <returns>
+        /// A Compliance Field Type Full Data List
+        /// </returns>
+        /// <remarks>
+        /// Get Compliance Field Type Full Data List
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpGet("ComplianceFieldTypeFullDataList")]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>>> GetComplianceFieldTypeFullDataList()
+        {
+            var query = new GetComplianceFieldTypeFullDataList();
+            var test = await _mediator.Send(query);
+            return Ok(test);
+        }
 
+        /// <summary>
+        /// Get Compliance Field Type Full Data By Id
+        /// </summary>
+        /// <param name="ComplianceFieldTypeId">The Compliance Field Type Id.</param>
+        /// <returns>
+        /// A Compliance Field Type Id
+        /// </returns>
+        /// <remarks>
+        /// Get Compliance Field Type Full Data By Id
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpGet("ComplianceFieldTypeFullDataById")]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>>> GetComplianceFieldTypeFullDataById(Int32 ComplianceFieldTypeId)
+        {
+            var query = new GetComplianceFieldTypeFullDataById(ComplianceFieldTypeId);
+            var test = await _mediator.Send(query);
+            return Ok(test);
+        }
     }
 }

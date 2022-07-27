@@ -69,6 +69,32 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.GetComplianceFieldTypeFullDataList">
+            <summary>
+            Get Compliance Field Type Full Data List
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Field Type Full Data List
+            </returns>
+            <remarks>
+            Get Compliance Field Type Full Data List
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.GetComplianceFieldTypeFullDataById(System.Int32)">
+            <summary>
+            Get Compliance Field Type Full Data By Id
+            </summary>
+            <param name="ComplianceFieldTypeId">The Compliance Field Type Id.</param>
+            <returns>
+            A Compliance Field Type Id
+            </returns>
+            <remarks>
+            Get Compliance Field Type Full Data By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.ComplianceSourceController.CreateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand)">
             <summary>
             Create Compliance Source

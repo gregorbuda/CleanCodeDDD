@@ -35,10 +35,12 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Queries
             {
                 complianceSourceTypeMarkets = await _unitOfWork.complianceSourceTypeMarketsRepository.GetByComplianceSourceTypeId(request._complianceSourceTypeId);
 
-                complianceSourceTypesResponse = _mapper.Map<IReadOnlyList<ComplianceSourceTypeMarketsResponse>>(complianceSourceTypeMarkets);
+             
 
                 if (complianceSourceTypeMarkets != null)
-                {                 
+                {
+                    complianceSourceTypesResponse = _mapper.Map<IReadOnlyList<ComplianceSourceTypeMarketsResponse>>(complianceSourceTypeMarkets);
+
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
                     success = true;

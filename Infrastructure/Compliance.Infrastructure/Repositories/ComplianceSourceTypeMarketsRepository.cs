@@ -24,8 +24,6 @@ namespace Compliance.Infrastructure.Repositories
                 .FindAll(complianceSourceType => complianceSourceType.ComplianceSourceTypeId == complianceSourceTypeId);
 
             return result;
-
-
         }
     }
 }

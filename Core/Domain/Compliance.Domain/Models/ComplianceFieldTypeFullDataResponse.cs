@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Domain.Models
 {
-    public class ComplianceFieldTypeResponse
+    public class ComplianceFieldTypeFullDataResponse
     {
         public int ComplianceFieldTypeId { get; set; }
         public string ComplianceFieldTypeName { get; set; }
@@ -18,5 +18,10 @@ namespace Compliance.Domain.Models
         /// <example>Active</example>
         public EnumComplianceSourceStatus Status { get; set; }
 
+        public InputBehaviourResponse InputBehaviour { get; set; }
+
+        public  FileResourceTypeResponse FileResourceType { get; set; }
+
+        public  List<ComplianceSourceTypesResponse> ComplianceSourceTypes { get; set; }
     }
 }

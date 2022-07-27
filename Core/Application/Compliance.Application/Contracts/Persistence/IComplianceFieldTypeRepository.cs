@@ -9,6 +9,8 @@ namespace Compliance.Application.Contracts.Persistence
 {
     public interface IComplianceFieldTypeRepository : IAsyncRepository<ComplianceFieldType>
     {
+        Task<IReadOnlyList<ComplianceFieldType>> GetItemFullDataList();
 
+        Task<IReadOnlyList<ComplianceFieldType>> GetFullDataById(Int32 ComplianceFieldTypeId);
     }
 }

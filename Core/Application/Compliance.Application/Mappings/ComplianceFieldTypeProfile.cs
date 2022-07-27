@@ -23,6 +23,13 @@ namespace Compliance.Application.Mappings
                 .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)(EnumComplianceSourceStatus)src.Status));
 
             CreateMap<UpdateComplianceFieldTypeCommand, ComplianceFieldType>();
+
+            CreateMap<ComplianceFieldType, ComplianceFieldTypeFullDataResponse>()
+                .ForMember(dest => dest.FileResourceType, opt => opt.MapFrom(src => src.FileResourceType))
+                .ForMember(dest => dest.InputBehaviour, opt => opt.MapFrom(src => src.InputBehaviour))
+                .ForMember(dest => dest.ComplianceSourceTypes, opt => opt.MapFrom(src => src.ComplianceSourceTypes))
+                .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)(EnumComplianceSourceStatus)src.Status));
+
         }
     }
 }
