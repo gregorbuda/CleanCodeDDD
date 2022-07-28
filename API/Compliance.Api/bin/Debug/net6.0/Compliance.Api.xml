@@ -56,6 +56,19 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataLogsController.CreateBatchComplianceDistributorDataLogs(Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsListCommand)">
+            <summary>
+            Create Batch Compliance Compliance Distributor Data Logs
+            </summary>
+            <param name="command">The data Input Compliance Distributor Data Logs.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Create Batch Compliance Compliance Distributor Data Logs
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.CreateComplianceFieldType(Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand)">
             <summary>
             Create Compliance Field Type

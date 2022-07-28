@@ -19,7 +19,7 @@ namespace Compliance.Api.Controller
     [ProducesResponseType(typeof(ProblemDetailsNotAcceptable), (int)HttpStatusCode.NotAcceptable)]
     [ProducesResponseType(typeof(ProblemDetailsInternalServerError), (int)HttpStatusCode.InternalServerError)]
     [ProducesResponseType(typeof(ProblemDetailsUnauthorized), (int)HttpStatusCode.Unauthorized)]
-    [SwaggerTag("The Compliance Field Type REST services")]
+    [SwaggerTag("The Compliance Distributor Data REST services")]
     public class ComplianceDistributorDataController : ControllerBaseCustom
     {
         private readonly IMediator _mediator;
