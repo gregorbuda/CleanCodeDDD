@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 // Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
 // If you have enabled NRTs for your project, then un-comment the following line:
@@ -14,6 +15,7 @@ namespace Compliance.Domain.Models
             ComplianceSourceTypes = new HashSet<ComplianceSourceTypes>();
         }
 
+        [Key]
         public int ComplianceSourceId { get; set; }
         public string ComplianceSourceName { get; set; }
         public byte Status { get; set; }

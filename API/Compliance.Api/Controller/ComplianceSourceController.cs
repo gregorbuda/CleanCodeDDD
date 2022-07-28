@@ -1,6 +1,7 @@
 ﻿using Compliance.Api.Utils;
 using Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources;
 using Compliance.Application.Features.ComplianceSources.Commands.DeleteComplianceSources;
+using Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources;
 using Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources;
 using Compliance.Application.Features.ComplianceSources.Queries;
 using Compliance.Application.Responses;
@@ -124,6 +125,25 @@ namespace Compliance.Api.Controller
         [HttpDelete()]
         [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<Boolean>>> DeleteComplianceSource([FromBody] DeleteComplianceSourceCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// Update Batch Compliance Source
+        /// </summary>
+        /// <param name="command">The data Compliance Source.</param>
+        /// <returns>
+        /// A Boolean
+        /// </returns>
+        /// <remarks>
+        /// Update Batch Compliance Source.\
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpPut("Batch")]
+        [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<Boolean>>> UpdateBatchComplianceSource([FromBody] UpdateBatchComplainceSourcesListCommand command)
         {
             var result = await _mediator.Send(command);
             return Ok(result);

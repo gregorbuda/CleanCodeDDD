@@ -29,6 +29,8 @@ namespace Compliance.Infrastructure
             services.AddScoped<IComplianceFieldTypeRepository, ComplianceFieldTypeRepository>();
             services.AddScoped<IComplianceSourceTypesRepository, ComplianceSourceTypesRepository>();
             services.AddScoped<IFileResourceTypeRepository, FileResourceTypeRepository>();
+            services.AddScoped<IComplianceDistributorDataRepository, ComplianceDistributorDataRepository>();
+            services.AddScoped<IComplianceDistributorDataLogsRepository, ComplianceDistributorDataLogsRepository>();
 
             return services;
         }

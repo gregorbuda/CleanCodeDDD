@@ -41,7 +41,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateCo
 
                     if (inputBehaviour != null)
                     {
-                        var ComplianceFieldTypeToUpdate = await _unitOfWork.complianceFieldTypeRepository.GetByIdAsync(request.ComplianceSourceTypeId);
+                        var ComplianceFieldTypeToUpdate = await _unitOfWork.complianceFieldTypeRepository.GetByIdAsync(request.ComplianceFieldTypeId);
 
                         if (ComplianceFieldTypeToUpdate != null)
                         {
@@ -59,7 +59,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateCo
                         else
                         {
                             CodeResult = StatusCodes.Status404NotFound.ToString();
-                            Message = $"Compliance Field Type Id {request.ComplianceSourceTypeId} Not Found";
+                            Message = $"Compliance Field Type Id {request.ComplianceFieldTypeId} Not Found";
                             Result = false;
                             success = false;
                         }

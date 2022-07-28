@@ -1,6 +1,7 @@
 ﻿using Compliance.Api.Utils;
 using Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType;
 using Compliance.Application.Features.ComplianceFieldTypes.Commands.DeleteComplianceFieldType;
+using Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType;
 using Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType;
 using Compliance.Application.Features.ComplianceFieldTypes.Queries;
 using Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources;
@@ -168,6 +169,25 @@ namespace Compliance.Api.Controller
             var query = new GetComplianceFieldTypeFullDataById(ComplianceFieldTypeId);
             var test = await _mediator.Send(query);
             return Ok(test);
+        }
+
+        /// <summary>
+        /// Update Batch Compliance Field Type
+        /// </summary>
+        /// <param name="command">The data Compliance Field Type.</param>
+        /// <returns>
+        /// A Boolean
+        /// </returns>
+        /// <remarks>
+        /// Update Batch Compliance Field Type
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpPut("Batch")]
+        [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<Boolean>>> UpdateBatchComplianceFieldType([FromBody] UpdateBatchComplianceFieldTypeListCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
         }
     }
 }

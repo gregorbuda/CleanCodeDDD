@@ -95,6 +95,19 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.UpdateBatchComplianceFieldType(Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeListCommand)">
+            <summary>
+            Update Batch Compliance Field Type
+            </summary>
+            <param name="command">The data Compliance Field Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Compliance Field Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.ComplianceSourceController.CreateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand)">
             <summary>
             Create Compliance Source
@@ -157,6 +170,19 @@
             </returns>
             <remarks>
             Delete Compliance Source.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.UpdateBatchComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesListCommand)">
+            <summary>
+            Update Batch Compliance Source
+            </summary>
+            <param name="command">The data Compliance Source.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Compliance Source.\
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
