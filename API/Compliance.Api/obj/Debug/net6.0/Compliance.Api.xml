@@ -277,6 +277,19 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.UpdateBatchComplianceSourceTypes(Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeListCommand)">
+            <summary>
+            Update Batch Compliance Source Types
+            </summary>
+            <param name="command">The data Compliance Source Types.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Compliance Source Types
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.CreateComplianceSourceTypeMarkets(Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand)">
             <summary>
             Create Compliance Source Type Markets

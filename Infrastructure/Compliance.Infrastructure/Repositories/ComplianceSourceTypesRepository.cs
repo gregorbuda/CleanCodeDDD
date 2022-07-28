@@ -44,5 +44,14 @@ namespace Compliance.Infrastructure.Repositories
 
             return result;
         }
+
+        public async Task<Boolean> UpdateBatch(IEnumerable<ComplianceSourceTypes> itemList)
+        {
+            _context.ChangeTracker.Clear();
+
+            _context.ComplianceSourceTypes.UpdateRange(itemList);
+
+            return _context.SaveChanges() > 0;
+        }
     }
 }

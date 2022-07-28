@@ -14,7 +14,6 @@ C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\bi
 C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\Compliance.Domain.dll
 C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\ref\Compliance.Domain.dll
 C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\Compliance.Domain.pdb
-C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.csproj.AssemblyReference.cache
 C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.AssemblyInfoInputs.cache
 C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.AssemblyInfo.cs

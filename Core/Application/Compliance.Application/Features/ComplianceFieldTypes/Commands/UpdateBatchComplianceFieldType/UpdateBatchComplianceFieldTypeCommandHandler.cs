@@ -24,10 +24,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBa
             String Message = "";
             String CodeResult = "";
             Boolean Result = false;
-            FileResourceType fileResourceType = null;
-            InputBehaviour inputBehaviour = null;
-            ComplianceFieldType complianceFieldType = new ComplianceFieldType();
-            ApiResponse<IReadOnlyList<ComplianceFieldType>> complianceFieldTypeList = null;
+
             try
             {
                 var ListcomplianceFieldType = await Validate(request);

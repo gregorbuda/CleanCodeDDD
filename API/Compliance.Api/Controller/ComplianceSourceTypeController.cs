@@ -1,6 +1,7 @@
 ﻿using Compliance.Api.Utils;
 using Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType;
 using Compliance.Application.Features.ComplianceSourceType.Commands.DeleteComplianceSourceType;
+using Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType;
 using Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType;
 using Compliance.Application.Features.ComplianceSourceType.Queries;
 using Compliance.Application.Responses;
@@ -164,12 +165,31 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("ComplianceSourceTypeFullDataById")]
-        [ProducesResponseType(typeof(ApiResponse<ComplianceSourceTypeMarkets>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<ComplianceSourceTypeMarkets>>> GetComplianceSourceTypeFullDataById(Int32 ComplianceSourceTypeId)
+        [ProducesResponseType(typeof(ApiResponse<ComplianceSourceTypesFullDataResponse>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<ComplianceSourceTypesFullDataResponse>>> GetComplianceSourceTypeFullDataById(Int32 ComplianceSourceTypeId)
         {
             var query = new GetComplianceSourceTypeFullDataById(ComplianceSourceTypeId);
             var test = await _mediator.Send(query);
             return Ok(test);
+        }
+
+        /// <summary>
+        /// Update Batch Compliance Source Types
+        /// </summary>
+        /// <param name="command">The data Compliance Source Types.</param>
+        /// <returns>
+        /// A Boolean
+        /// </returns>
+        /// <remarks>
+        /// Update Batch Compliance Source Types
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpPut("Batch")]
+        [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<Boolean>>> UpdateBatchComplianceSourceTypes([FromBody] UpdateBatchComplianceSourceTypeListCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
         }
 
     }

@@ -24,8 +24,56 @@ namespace Compliance.Application.Features.ComplianceSources.Commands.UpdateBatch
             String Message = "";
             String CodeResult = "";
             Boolean Result = false;
+            try
+            {
+                var ListcomplianceSource = await Validate(request);
+
+                if (ListcomplianceSource.Data.Count > 0)
+                {
+
+                    var result = _unitOfWork.complianceSourceRepository.UpdateBatch(ListcomplianceSource.Data);
+
+                    CodeResult = StatusCodes.Status200OK.ToString();
+                    Message = "Success, and there is a response body.";
+                    success = true;
+                    Result = true;
+                }
+                else
+                {
+                    CodeResult = ListcomplianceSource.CodeResult;
+                    Message = ListcomplianceSource.Message;
+                    success = false;
+                    Result = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                CodeResult = StatusCodes.Status500InternalServerError.ToString();
+                Message = "Internal Server Error";
+                success = false;
+                Result = false;
+            }
+
+            ApiResponse<Boolean> response = new ApiResponse<Boolean>
+            {
+                CodeResult = CodeResult,
+                Message = Message,
+                Data = Result,
+                Success = success
+            };
+
+            return response;
+        }
+
+        public async Task<ApiResponse<IReadOnlyList<ComplianceSource>>> Validate(UpdateBatchComplainceSourcesListCommand request)
+        {
+            Boolean success = false;
+            String Message = "";
+            String CodeResult = "";
+            Boolean Result = false;
             ComplianceSource complianceSource = new ComplianceSource();
             List<ComplianceSource> complianceSourceList = new List<ComplianceSource>();
+
             try
             {
                 foreach (var ComplianceSourceList in request.ComplainceSourcesList)
@@ -54,14 +102,6 @@ namespace Compliance.Application.Features.ComplianceSources.Commands.UpdateBatch
                         break;
                     }
                 }
-
-                var result = _unitOfWork.complianceSourceRepository.UpdateBatch(complianceSourceList);
-
-                CodeResult = StatusCodes.Status200OK.ToString();
-                Message = "Success, and there is a response body.";
-                success = true;
-                Result = true;
-
             }
             catch (Exception ex)
             {
@@ -71,15 +111,16 @@ namespace Compliance.Application.Features.ComplianceSources.Commands.UpdateBatch
                 Result = false;
             }
 
-            ApiResponse<Boolean> response = new ApiResponse<Boolean>
+            ApiResponse<IReadOnlyList<ComplianceSource>> response = new ApiResponse<IReadOnlyList<ComplianceSource>>
             {
                 CodeResult = CodeResult,
                 Message = Message,
-                Data = Result,
+                Data = complianceSourceList,
                 Success = success
             };
 
             return response;
+
         }
     }
 }
