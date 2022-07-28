@@ -1,7 +1,9 @@
 ﻿using Compliance.Api.Utils;
 using Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData;
 using Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData;
+using Compliance.Application.Features.ComplianceDistributorsData.Queries;
 using Compliance.Application.Responses;
+using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -65,5 +67,46 @@ namespace Compliance.Api.Controller
             var result = await _mediator.Send(command);
             return Ok(result);
         }
+
+        /// <summary>
+        /// Get Compliance Distributor Data Full Data
+        /// </summary>
+        /// <param></param>
+        /// <returns>
+        /// A Compliance Distributor Data Full Data
+        /// </returns>
+        /// <remarks>
+        /// Get Compliance Distributor Data Full Data
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpGet("ComplianceDistributorDataFullData")]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>> GetComplianceDistributorDataFullData()
+        {
+            var query = new GetComplianceDistributorDataFullDataList();
+            var test = await _mediator.Send(query);
+            return Ok(test);
+        }
+
+        /// <summary>
+        /// Get Compliance Distributor Data Full Data List By Distributor Id
+        /// </summary>
+        /// <param name="DistributorId">Distributor Id</param>
+        /// <returns>
+        /// A Compliance Distributor Data Full Data List by  Distributor Id
+        /// </returns>
+        /// <remarks>
+        /// Get Compliance Distributor Data Full Data List By Distributor Id
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpGet("ComplianceDistributorDataFullDataListByDistributor")]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>> GetComplianceDistributorDataFullDataListByDistributor(Int32 DistributorId)
+        {
+            var query = new GetComplianceDistributorDataFullDataByDistributorId(DistributorId);
+            var test = await _mediator.Send(query);
+            return Ok(test);
+        }
+
     }
 }

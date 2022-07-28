@@ -30,6 +30,32 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataController.GetComplianceDistributorDataFullData">
+            <summary>
+            Get Compliance Distributor Data Full Data
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Distributor Data Full Data
+            </returns>
+            <remarks>
+            Get Compliance Distributor Data Full Data
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataController.GetComplianceDistributorDataFullDataListByDistributor(System.Int32)">
+            <summary>
+            Get Compliance Distributor Data Full Data List By Distributor Id
+            </summary>
+            <param name="DistributorId">Distributor Id</param>
+            <returns>
+            A Compliance Distributor Data Full Data List by  Distributor Id
+            </returns>
+            <remarks>
+            Get Compliance Distributor Data Full Data List By Distributor Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.CreateComplianceFieldType(Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand)">
             <summary>
             Create Compliance Field Type
