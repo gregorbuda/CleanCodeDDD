@@ -32,5 +32,9 @@ namespace Compliance.Application.Contracts.Persistence
 
         void DeleteEntity(T entity);
 
+        Task<Boolean> UpdateBatch(IEnumerable<T> itemList);
+
+        Task<Boolean> SaveBatch(IEnumerable<T> itemList);
+
     }
 }

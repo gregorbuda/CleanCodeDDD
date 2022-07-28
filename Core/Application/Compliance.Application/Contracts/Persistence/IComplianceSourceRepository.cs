@@ -9,6 +9,5 @@ namespace Compliance.Application.Contracts.Persistence
 {
     public interface IComplianceSourceRepository : IAsyncRepository<ComplianceSource>
     {
-        Task<Boolean> UpdateBatch(IEnumerable<ComplianceSource> itemList);
     }
 }

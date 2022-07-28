@@ -14,7 +14,5 @@ namespace Compliance.Application.Contracts.Persistence
         Task<IReadOnlyList<ComplianceSourceTypes>> GetItemFullDataList();
 
         Task<ComplianceSourceTypes> GetFullDataById(Int32 ComplianceFieldTypeId);
-
-        Task<Boolean> UpdateBatch(IEnumerable<ComplianceSourceTypes> itemList);
     }
 }

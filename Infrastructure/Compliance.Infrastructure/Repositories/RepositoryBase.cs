@@ -105,5 +105,23 @@ namespace Compliance.Infrastructure.Repositories
         {
             _context.Set<T>().Remove(entity);
         }
+
+        public async Task<Boolean> SaveBatch(IEnumerable<T> itemList)
+        {
+            _context.ChangeTracker.Clear();
+
+            _context.AddRange(itemList);
+
+            return _context.SaveChanges() > 0;
+        }
+
+        public async Task<Boolean> UpdateBatch(IEnumerable<T> itemList)
+        {
+            _context.ChangeTracker.Clear();
+
+            _context.UpdateRange(itemList);
+
+            return _context.SaveChanges() > 0;
+        }
     }
 }
