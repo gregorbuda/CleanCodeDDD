@@ -7,11 +7,11 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Queries
 {
     public class GetComplianceDistributorDataFullDataByDistributorId : IRequest<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>
     {
-        public Int32 _distributorId { get; set; }
+        public Int32 _complianceDistributorDataId { get; set; }
 
-        public GetComplianceDistributorDataFullDataByDistributorId(Int32 DistributorId)
+        public GetComplianceDistributorDataFullDataByDistributorId(Int32 complianceDistributorDataId)
         {
-            _distributorId = DistributorId;
+            _complianceDistributorDataId = complianceDistributorDataId;
         }
     }
 }

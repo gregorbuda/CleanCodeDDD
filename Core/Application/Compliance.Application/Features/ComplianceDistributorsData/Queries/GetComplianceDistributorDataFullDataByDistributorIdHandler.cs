@@ -33,7 +33,7 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Queries
 
             try
             {
-                complianceDistributorData = await _unitOfWork.complianceDistributorDataRepository.ItemFullDataListByDistributor(request._distributorId);
+                complianceDistributorData = await _unitOfWork.complianceDistributorDataRepository.ItemFullDataListByDistributor(request._complianceDistributorDataId);
 
                 if (complianceDistributorData != null)
                 {

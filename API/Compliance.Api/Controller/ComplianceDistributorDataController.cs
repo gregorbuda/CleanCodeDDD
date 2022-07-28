@@ -91,7 +91,7 @@ namespace Compliance.Api.Controller
         /// <summary>
         /// Get Compliance Distributor Data Full Data List By Distributor Id
         /// </summary>
-        /// <param name="DistributorId">Distributor Id</param>
+        /// <param name="complianceDistributorId">compliance DistributorId Id</param>
         /// <returns>
         /// A Compliance Distributor Data Full Data List by  Distributor Id
         /// </returns>
@@ -101,9 +101,9 @@ namespace Compliance.Api.Controller
         /// </remarks>
         [HttpGet("ComplianceDistributorDataFullDataListByDistributor")]
         [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>> GetComplianceDistributorDataFullDataListByDistributor(Int32 DistributorId)
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>> GetComplianceDistributorDataFullDataListByDistributor(Int32 complianceDistributorId)
         {
-            var query = new GetComplianceDistributorDataFullDataByDistributorId(DistributorId);
+            var query = new GetComplianceDistributorDataFullDataByDistributorId(complianceDistributorId);
             var test = await _mediator.Send(query);
             return Ok(test);
         }

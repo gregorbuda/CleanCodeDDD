@@ -1,6 +1,8 @@
 ﻿using Compliance.Api.Utils;
 using Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls;
+using Compliance.Application.Features.ComplianceDistributorDataLogsBls.Queries;
 using Compliance.Application.Responses;
+using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -43,6 +45,26 @@ namespace Compliance.Api.Controller
         {
             var result = await _mediator.Send(command);
             return Ok(result);
+        }
+
+        /// <summary>
+        /// Get Compliance Distributor Data Full Data Logs List By Distributor Id
+        /// </summary>
+        /// <param name="complianceDistributorId">Distributor Id</param>
+        /// <returns>
+        /// A Compliance Distributor Data Full Data Logs List by  Distributor Id
+        /// </returns>
+        /// <remarks>
+        /// Get Compliance Distributor Data Full Data Logs List By Distributor Id
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpGet("ComplianceDistributorDataLogsFullDataListByDistributor")]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorDataLogsResponse>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorDataLogsResponse>>>> GetComplianceDistributorDataFullDataListByDistributor(Int32 complianceDistributorId)
+        {
+            var query = new GetComplianceDistributorDataLogsFullDataByDistributorId(complianceDistributorId);
+            var test = await _mediator.Send(query);
+            return Ok(test);
         }
 
     }

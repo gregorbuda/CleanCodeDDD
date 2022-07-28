@@ -47,7 +47,7 @@
             <summary>
             Get Compliance Distributor Data Full Data List By Distributor Id
             </summary>
-            <param name="DistributorId">Distributor Id</param>
+            <param name="complianceDistributorId">compliance DistributorId Id</param>
             <returns>
             A Compliance Distributor Data Full Data List by  Distributor Id
             </returns>
@@ -66,6 +66,19 @@
             </returns>
             <remarks>
             Create Batch Compliance Compliance Distributor Data Logs
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataLogsController.GetComplianceDistributorDataFullDataListByDistributor(System.Int32)">
+            <summary>
+            Get Compliance Distributor Data Full Data Logs List By Distributor Id
+            </summary>
+            <param name="complianceDistributorId">Distributor Id</param>
+            <returns>
+            A Compliance Distributor Data Full Data Logs List by  Distributor Id
+            </returns>
+            <remarks>
+            Get Compliance Distributor Data Full Data Logs List By Distributor Id
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
