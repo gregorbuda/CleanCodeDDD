@@ -1,5 +1,6 @@
 ﻿using Compliance.Api.Utils;
 using Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData;
+using Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData;
 using Compliance.Application.Responses;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -40,6 +41,26 @@ namespace Compliance.Api.Controller
         [HttpPost("Batch")]
         [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ApiResponse<Boolean>>> CreateBatchComplianceDistributorData([FromBody] CreateBatchComplianceDistributorDataListCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
+        }
+
+
+        /// <summary>
+        /// Update Batch Compliance Compliance Distributor Data
+        /// </summary>
+        /// <param name="command">The data Input Compliance Distributor Data.</param>
+        /// <returns>
+        /// A Boolean
+        /// </returns>
+        /// <remarks>
+        /// Update Batch Compliance Compliance Distributor Data
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpPut("Batch")]
+        [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<Boolean>>> UpdateBatchComplianceDistributorData([FromBody] UpdateBatchComplianceDistributorsDataListCommand command)
         {
             var result = await _mediator.Send(command);
             return Ok(result);
