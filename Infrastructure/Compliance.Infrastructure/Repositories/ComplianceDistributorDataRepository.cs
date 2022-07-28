@@ -31,24 +31,5 @@ namespace Compliance.Infrastructure.Repositories
 
             return result;
         }
-
-        public async Task<Boolean> SaveBatch(IEnumerable<ComplianceDistributorData> itemList)
-        {
-            _context.ComplianceDistributorData.AddRange(itemList);
-            return _context.SaveChanges() > 0;
-        }
-
-        public async Task<Boolean> UpdateBatch(IEnumerable<ComplianceDistributorData> itemList)
-        {
-            _context.ComplianceDistributorData.UpdateRange(itemList);
-            return _context.SaveChanges() > 0;
-        }
-
-        public async Task<IReadOnlyList<ComplianceDistributorData>> UpdateBatchAnReturn(List<ComplianceDistributorData> itemList)
-        {
-            _context.ComplianceDistributorData.UpdateRange(itemList);
-            _context.SaveChanges();
-            return itemList;
-        }
     }
 }

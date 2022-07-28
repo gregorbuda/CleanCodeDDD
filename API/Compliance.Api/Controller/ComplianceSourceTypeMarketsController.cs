@@ -1,4 +1,5 @@
 ﻿using Compliance.Api.Utils;
+using Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket;
 using Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket;
 using Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket;
 using Compliance.Application.Features.ComplianceSourceTypeMarket.Queries;
@@ -87,6 +88,24 @@ namespace Compliance.Api.Controller
             return Ok(result);
         }
 
+        /// <summary>
+        /// Create Batch Compliance Source Type Markets
+        /// </summary>
+        /// <param name="command">The data Input Compliance Source Type Markets.</param>
+        /// <returns>
+        /// A Boolean
+        /// </returns>
+        /// <remarks>
+        /// Create Batch Compliance Source Type Markets
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpPost("Batch")]
+        [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<Boolean>>> CreateBatchComplianceSourceTypeMarkets([FromBody] CreateBatchComplianceSourceTypeMarketListCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
+        }
 
     }
 }

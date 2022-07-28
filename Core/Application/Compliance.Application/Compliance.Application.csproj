@@ -20,4 +20,8 @@
     <ProjectReference Include="..\..\Domain\Compliance.Domain\Compliance.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\ComplianceDistributorsData\Queries\" />
+  </ItemGroup>
+
 </Project>

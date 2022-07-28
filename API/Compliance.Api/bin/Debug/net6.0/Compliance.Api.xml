@@ -4,6 +4,19 @@
         <name>Compliance.Api</name>
     </assembly>
     <members>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataController.CreateBatchComplianceDistributorData(Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataListCommand)">
+            <summary>
+            Create Batch Compliance Compliance Distributor Data
+            </summary>
+            <param name="command">The data Input Compliance Distributor Data.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Create Batch Compliance Compliance Distributor Data
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.CreateComplianceFieldType(Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand)">
             <summary>
             Create Compliance Field Type
@@ -326,6 +339,19 @@
             </returns>
             <remarks>
             Update Batch Compliance Source Type Markets
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.CreateBatchComplianceSourceTypeMarkets(Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketListCommand)">
+            <summary>
+            Create Batch Compliance Source Type Markets
+            </summary>
+            <param name="command">The data Input Compliance Source Type Markets.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Create Batch Compliance Source Type Markets
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
