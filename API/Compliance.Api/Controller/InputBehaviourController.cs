@@ -1,6 +1,7 @@
 ﻿using Compliance.Api.Utils;
 using Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours;
 using Compliance.Application.Features.InputBehaviours.Commands.DeleteInputBehaviours;
+using Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours;
 using Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours;
 using Compliance.Application.Features.InputBehaviours.Queries;
 using Compliance.Application.Responses;
@@ -127,6 +128,26 @@ namespace Compliance.Api.Controller
             var test = await _mediator.Send(query);
             return Ok(test);
         }
+
+        /// <summary>
+        /// Update Batch Input Behaviour
+        /// </summary>
+        /// <param name="command">The data Input Behaviour.</param>
+        /// <returns>
+        /// A Boolean
+        /// </returns>
+        /// <remarks>
+        /// Update Batch Input Behaviour
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpPut("Batch")]
+        [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<Boolean>>> UpdateBatchInputBehaviour([FromBody] UpdateBatchInputBehavioursListCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
+        }
+
 
     }
 }

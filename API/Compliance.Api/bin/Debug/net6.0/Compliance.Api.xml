@@ -316,6 +316,19 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.UpdateBatchComplianceSourceTypeMarkets(Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketListCommand)">
+            <summary>
+            Update Batch Compliance Source Type Markets
+            </summary>
+            <param name="command">The data Input Compliance Source Type Markets.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Compliance Source Type Markets
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.FileResourceTypeController.CreateFileResourceType(Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand)">
             <summary>
             Create File Resource Type
@@ -443,6 +456,19 @@
             </returns>
             <remarks>
             Get Input Behaviour By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.UpdateBatchInputBehaviour(Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursListCommand)">
+            <summary>
+            Update Batch Input Behaviour
+            </summary>
+            <param name="command">The data Input Behaviour.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Input Behaviour
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
