@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
-using Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours;
+using Compliance.Application.Features.InputBehaviours.Queries;
 using Compliance.Application.Mappings;
 using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
+using Microsoft.AspNetCore.Http;
 using Moq;
 using Shouldly;
 using System;
@@ -15,41 +16,37 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Compliance.UnitTest.Features.InputBehaviours.CreateInputBehaviours
+namespace Compliance.UnitTest.Features.InputBehaviours.Queries
 {
-    public class CreateInputBehavioursXUnitTests
+    public class GetInputBehavioursAllListXUnitTests
     {
         private readonly IMapper _mapper;
         private readonly Mock<UnitOfWork> _unitOfWork;
 
-        public CreateInputBehavioursXUnitTests()
+        public GetInputBehavioursAllListXUnitTests()
         {
             _unitOfWork = MockUnitOfWork.GetUnitOfWork();
-
             var mapperConfig = new MapperConfiguration(c =>
             {
                 c.AddProfile<InputBehaviourProfile>();
             });
-
             _mapper = mapperConfig.CreateMapper();
 
             MockInputBehaviourRepository.AddDataInputBehaviourRepository(_unitOfWork.Object.applicationDbContext);
         }
 
         [Fact]
-        public async Task CreateInputBehaviour_InputBehaviour_Return()
+        public async Task GetInputBehavioursAllList_Return()
         {
-            var inputBehaviourInput = new CreateInputBehavioursCommand
-            {
-                InputBehaviourName = "Gregor",
-                Status = 1
-            };
+            var handler = new GetInputBehavioursAllListHandler(_unitOfWork.Object, _mapper);
 
-            var inputBehaviourOutput = new CreateInputBehavioursCommandHandler(_unitOfWork.Object, _mapper);
+            var request = new GetInputBehavioursAllList();
 
-            var result = await inputBehaviourOutput.Handle(inputBehaviourInput, CancellationToken.None);
+            var result = await handler.Handle(request, CancellationToken.None);
 
-            result.ShouldBeOfType<ApiResponse<InputBehaviourCreateResponse>>();
-        }
+            result.ShouldBeOfType<ApiResponse<IReadOnlyList<InputBehaviourResponse>>>();
+
+            result.CodeResult = StatusCodes.Status200OK.ToString();
+        } 
     }
 }

@@ -21,11 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\InputBehaviours\DeleteInputBehaviours\" />
-    <Folder Include="Features\InputBehaviours\UpdateInputBehaviours\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Core\Application\Compliance.Application\Compliance.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Compliance.Infrastructure\Compliance.Infrastructure.csproj" />
   </ItemGroup>
