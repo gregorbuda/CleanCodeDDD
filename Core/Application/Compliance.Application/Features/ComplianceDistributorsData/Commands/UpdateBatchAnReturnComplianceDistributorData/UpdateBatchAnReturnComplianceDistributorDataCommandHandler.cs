@@ -10,25 +10,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData
+namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData
 {
-    public class UpdateBatchComplianceDistributorsDataCommandHandler : IRequestHandler<UpdateBatchComplianceDistributorsDataListCommand, ApiResponse<Boolean>>
+    public class UpdateBatchAnReturnComplianceDistributorDataCommandHandler : IRequestHandler<UpdateBatchAnReturnComplianceDistributorDataListCommand, ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public UpdateBatchComplianceDistributorsDataCommandHandler(IUnitOfWork unitOfWork, IMapper mapper)
+        public UpdateBatchAnReturnComplianceDistributorDataCommandHandler(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
 
-        public async Task<ApiResponse<Boolean>> Handle(UpdateBatchComplianceDistributorsDataListCommand request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>> Handle(UpdateBatchAnReturnComplianceDistributorDataListCommand request, CancellationToken cancellationToken)
         {
             Boolean success = false;
             String Message = "";
             String CodeResult = "";
             Boolean Result = false;
+            IReadOnlyList<ComplianceDistributorDataResponse> complianceDistributorDataResponse = null;
             try
             {
                 var ListcomplianceDistributorData = await Validate(request);
@@ -37,6 +38,8 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.Up
                 {
 
                     var result = _unitOfWork.complianceDistributorDataRepository.UpdateBatch(ListcomplianceDistributorData.Data);
+
+                   complianceDistributorDataResponse = _mapper.Map<IReadOnlyList<ComplianceDistributorDataResponse>>(ListcomplianceDistributorData.Data);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -59,18 +62,18 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.Up
                 Result = false;
             }
 
-            ApiResponse<Boolean> response = new ApiResponse<Boolean>
+            ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>> response = new ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>
             {
                 CodeResult = CodeResult,
                 Message = Message,
-                Data = Result,
+                Data = complianceDistributorDataResponse,
                 Success = success
             };
 
             return response;
         }
 
-        public async Task<ApiResponse<IReadOnlyList<ComplianceDistributorData>>> Validate(UpdateBatchComplianceDistributorsDataListCommand request)
+        public async Task<ApiResponse<IReadOnlyList<ComplianceDistributorData>>> Validate(UpdateBatchAnReturnComplianceDistributorDataListCommand request)
         {
             Boolean success = false;
             String Message = "";

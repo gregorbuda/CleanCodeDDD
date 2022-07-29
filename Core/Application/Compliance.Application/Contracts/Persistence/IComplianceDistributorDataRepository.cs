@@ -13,6 +13,6 @@ namespace Compliance.Application.Contracts.Persistence
 
         Task<IReadOnlyList<ComplianceDistributorData>> ItemFullDataListByDistributor(Int32 distributorId);
 
-      
+        Task<IReadOnlyList<ComplianceDistributorData>> UpdateBatchAnReturn(IReadOnlyList<ComplianceDistributorData> itemList);
     }
 }

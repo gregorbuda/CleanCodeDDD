@@ -31,5 +31,17 @@ namespace Compliance.Infrastructure.Repositories
 
             return result;
         }
+
+
+        public Task<IReadOnlyList<ComplianceDistributorData>> UpdateBatchAnReturn(IReadOnlyList<ComplianceDistributorData> itemList)
+        {
+            _context.ChangeTracker.Clear();
+
+            _context.UpdateRange(itemList);
+
+            _context.SaveChanges();
+
+            return (Task<IReadOnlyList<ComplianceDistributorData>>)itemList;
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Compliance.Api.Utils;
 using Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData;
+using Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData;
 using Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData;
 using Compliance.Application.Features.ComplianceDistributorsData.Queries;
 using Compliance.Application.Responses;
@@ -106,6 +107,25 @@ namespace Compliance.Api.Controller
             var query = new GetComplianceDistributorDataFullDataByDistributorId(complianceDistributorId);
             var test = await _mediator.Send(query);
             return Ok(test);
+        }
+
+        /// <summary>
+        /// Update Batch Compliance Compliance Distributor Data
+        /// </summary>
+        /// <param name="command">The data Input Compliance Distributor Data.</param>
+        /// <returns>
+        /// A List of Compliance Compliance Distributor Data
+        /// </returns>
+        /// <remarks>
+        /// Update Batch Compliance Compliance Distributor Data
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpPut("UpdateBatchReturnList")]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>> UpdateBatchReturnListComplianceDistributorData([FromBody] UpdateBatchAnReturnComplianceDistributorDataListCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
         }
 
     }

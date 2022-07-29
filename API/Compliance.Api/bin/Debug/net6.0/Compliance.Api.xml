@@ -56,6 +56,19 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataController.UpdateBatchReturnListComplianceDistributorData(Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataListCommand)">
+            <summary>
+            Update Batch Compliance Compliance Distributor Data
+            </summary>
+            <param name="command">The data Input Compliance Distributor Data.</param>
+            <returns>
+            A List of Compliance Compliance Distributor Data
+            </returns>
+            <remarks>
+            Update Batch Compliance Compliance Distributor Data
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
         <member name="M:Compliance.Api.Controller.ComplianceDistributorDataLogsController.CreateBatchComplianceDistributorDataLogs(Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsListCommand)">
             <summary>
             Create Batch Compliance Compliance Distributor Data Logs
