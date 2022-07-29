@@ -31,7 +31,7 @@ namespace Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchIn
                 if (ListinputBehaviour.Data.Count > 0)
                 {
 
-                    var result = _unitOfWork.inputBehaviourRepository.UpdateBatch(ListinputBehaviour.Data);
+                    _unitOfWork.inputBehaviourRepository.UpdateBatch(ListinputBehaviour.Data);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -71,7 +71,7 @@ namespace Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchIn
             String Message = "";
             String CodeResult = "";
             Boolean Result = false;
-            InputBehaviour inputBehaviours = new InputBehaviour();
+           
             List<InputBehaviour> inputBehavioursList = new List<InputBehaviour>();
 
             try
@@ -82,7 +82,7 @@ namespace Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchIn
 
                     if (inputBehavioursToUpdate != null)
                     {
-
+                        InputBehaviour inputBehaviours = new InputBehaviour();
                         inputBehaviours.InputBehaviourId = ListinputBehaviours.InputBehaviourId;
                         inputBehaviours.InputBehaviourName = ListinputBehaviours.InputBehaviourName;
                         inputBehaviours.Status = ListinputBehaviours.Status;

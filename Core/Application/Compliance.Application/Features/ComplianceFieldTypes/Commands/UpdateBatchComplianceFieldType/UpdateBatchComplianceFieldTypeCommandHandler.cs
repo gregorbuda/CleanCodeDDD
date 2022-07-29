@@ -31,7 +31,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBa
 
                 if (ListcomplianceFieldType.Data.Count > 0)
                 {
-                    var result = _unitOfWork.complianceFieldTypeRepository.UpdateBatch(ListcomplianceFieldType.Data);
+                    _unitOfWork.complianceFieldTypeRepository.UpdateBatch(ListcomplianceFieldType.Data);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -73,7 +73,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBa
             Boolean Result = false;
             FileResourceType fileResourceType = null;
             InputBehaviour inputBehaviour = null;
-            ComplianceFieldType complianceFieldType = new ComplianceFieldType();
+
             List<ComplianceFieldType> complianceFieldTypeList = new List<ComplianceFieldType>();
 
             try
@@ -92,6 +92,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBa
 
                             if (inputBehaviour != null)
                             {
+                                ComplianceFieldType complianceFieldType = new ComplianceFieldType();
                                 complianceFieldType.ComplianceFieldTypeId = ComplianceFieldList.ComplianceFieldTypeId;
                                 complianceFieldType.ComplianceFieldTypeName = ComplianceFieldList.ComplianceFieldTypeName;
                                 complianceFieldType.TranslationKey = ComplianceFieldList.TranslationKey;

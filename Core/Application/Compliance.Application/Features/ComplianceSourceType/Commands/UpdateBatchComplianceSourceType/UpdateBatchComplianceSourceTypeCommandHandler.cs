@@ -32,7 +32,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBa
                 if (ListcomplianceSourceType.Data.Count > 0)
                 {
 
-                    var result = _unitOfWork.complianceSourceTypesRepository.UpdateBatch(ListcomplianceSourceType.Data);
+                    _unitOfWork.complianceSourceTypesRepository.UpdateBatch(ListcomplianceSourceType.Data);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -74,7 +74,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBa
             Boolean Result = false;
             ComplianceSource ComplianceSource = null;
             ComplianceFieldType complianceFieldType = null;
-            ComplianceSourceTypes complianceSource = new ComplianceSourceTypes();
+
             List<ComplianceSourceTypes> ListcomplianceSourceType = new List<ComplianceSourceTypes>();
 
             try
@@ -93,7 +93,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBa
 
                             if (ComplianceSource != null)
                             {
-
+                                ComplianceSourceTypes complianceSource = new ComplianceSourceTypes();
                                 complianceSource.ComplianceSourceTypeId = ComplianceSourceTypeList.ComplianceSourceTypeId;
                                 complianceSource.ComplianceSourceId = ComplianceSourceTypeList.ComplianceSourceId;
                                 complianceSource.ComplianceFieldTypeId = ComplianceSourceTypeList.ComplianceFieldTypeId;

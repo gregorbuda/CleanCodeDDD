@@ -36,7 +36,7 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.Cr
                 if (ListcomplianceSourceTypeMarket.Data.Count > 0)
                 {
 
-                    var result = _unitOfWork.complianceSourceTypeMarketsRepository.SaveBatch(ListcomplianceSourceTypeMarket.Data);
+                    _unitOfWork.complianceSourceTypeMarketsRepository.SaveBatch(ListcomplianceSourceTypeMarket.Data);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -77,7 +77,7 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.Cr
             String CodeResult = "";
             Boolean Result = false;
             ComplianceSourceTypes ComplianceSourceTypes = null;
-            ComplianceSourceTypeMarkets complianceSourcTypeMarket = new ComplianceSourceTypeMarkets();
+          
             List<ComplianceSourceTypeMarkets> ListcomplianceSourceTypeMarket = new List<ComplianceSourceTypeMarkets>();
             try
             {
@@ -88,6 +88,7 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.Cr
 
                     if (ComplianceSourceTypes != null)
                     {
+                        ComplianceSourceTypeMarkets complianceSourcTypeMarket = new ComplianceSourceTypeMarkets();
                         complianceSourcTypeMarket.ComplianceSourceTypeId = ComplianceSourceTypeMarketList.ComplianceSourceTypeId;
                         complianceSourcTypeMarket.MarketId = ComplianceSourceTypeMarketList.MarketId;
                         complianceSourcTypeMarket.Status = ComplianceSourceTypeMarketList.Status;

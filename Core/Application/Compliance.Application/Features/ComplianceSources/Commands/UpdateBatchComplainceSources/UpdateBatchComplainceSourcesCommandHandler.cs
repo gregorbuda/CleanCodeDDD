@@ -31,7 +31,7 @@ namespace Compliance.Application.Features.ComplianceSources.Commands.UpdateBatch
                 if (ListcomplianceSource.Data.Count > 0)
                 {
 
-                    var result = _unitOfWork.complianceSourceRepository.UpdateBatch(ListcomplianceSource.Data);
+                    _unitOfWork.complianceSourceRepository.UpdateBatch(ListcomplianceSource.Data);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -71,7 +71,7 @@ namespace Compliance.Application.Features.ComplianceSources.Commands.UpdateBatch
             String Message = "";
             String CodeResult = "";
             Boolean Result = false;
-            ComplianceSource complianceSource = new ComplianceSource();
+        
             List<ComplianceSource> complianceSourceList = new List<ComplianceSource>();
 
             try
@@ -82,7 +82,7 @@ namespace Compliance.Application.Features.ComplianceSources.Commands.UpdateBatch
 
                     if (ComplianceSourceToUpdate != null)
                     {
-
+                        ComplianceSource complianceSource = new ComplianceSource();
                         complianceSource.ComplianceSourceId = ComplianceSourceList.ComplianceSourceId;
                         complianceSource.ComplianceSourceName = ComplianceSourceList.ComplianceSourceName;
                         complianceSource.Status = ComplianceSourceList.Status;

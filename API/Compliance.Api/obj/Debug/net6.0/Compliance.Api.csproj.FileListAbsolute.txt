@@ -90,6 +90,10 @@ C:\Users\wilom\source\repos\Xirect\Compliance\API\Compliance.Api\bin\Debug\net6.
 C:\Users\wilom\source\repos\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.dll
 C:\Users\wilom\source\repos\compliance\API\Compliance.Api\obj\Debug\net6.0\ref\Compliance.Api.dll
 C:\Users\wilom\source\repos\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.pdb
+C:\Users\wilom\source\repos\Xirect\compliance\API\Compliance.Api\bin\Debug\net6.0\Compliance.Api.xml
+C:\Users\wilom\source\repos\Xirect\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\wilom\source\repos\Xirect\compliance\API\Compliance.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\wilom\source\repos\Xirect\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.xml
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.csproj.AssemblyReference.cache
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.AssemblyInfoInputs.cache
@@ -104,6 +108,7 @@ C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Compliance.Api.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\ref\Compliance.Api.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Compliance.Api.pdb
+C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Compliance.Api.xml
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\AutoMapper.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Azure.Core.dll
@@ -114,6 +119,7 @@ C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\MediatR.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\MediatR.Contracts.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -140,6 +146,7 @@ C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -176,14 +183,6 @@ C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.csproj.CopyComplete
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.dll
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\ref\Compliance.Api.dll
+C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.xml
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.pdb
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.genruntimeconfig.cache
-C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
-C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
-C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Compliance.Api.xml
-C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.xml
-C:\Users\wilom\source\repos\Xirect\compliance\API\Compliance.Api\bin\Debug\net6.0\Compliance.Api.xml
-C:\Users\wilom\source\repos\Xirect\compliance\API\Compliance.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
-C:\Users\wilom\source\repos\Xirect\compliance\API\Compliance.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
-C:\Users\wilom\source\repos\Xirect\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.xml

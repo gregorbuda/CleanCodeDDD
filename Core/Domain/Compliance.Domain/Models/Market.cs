@@ -10,8 +10,9 @@ namespace Compliance.Domain.Models
     public partial class Market
     {
         public int Id { get; set; }
-        public string MarketName { get; set; }
-        public string MarketDescription { get; set; }
+        public string MarketName { get; set; } = string.Empty;
+
+        public string MarketDescription { get; set; } = string.Empty;
         public string MarketCurrency { get; set; }
         public string CurrencySymbol { get; set; }
         public int? Primarywarehouse { get; set; }

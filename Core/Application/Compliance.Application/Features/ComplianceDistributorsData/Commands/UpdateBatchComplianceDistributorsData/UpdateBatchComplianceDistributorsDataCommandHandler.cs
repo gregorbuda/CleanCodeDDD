@@ -36,7 +36,7 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.Up
                 if (ListcomplianceDistributorData.Data.Count > 0)
                 {
 
-                    var result = _unitOfWork.complianceDistributorDataRepository.UpdateBatch(ListcomplianceDistributorData.Data);
+                    _unitOfWork.complianceDistributorDataRepository.UpdateBatch(ListcomplianceDistributorData.Data);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -77,7 +77,7 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.Up
             String CodeResult = "";
             Boolean Result = false;
             ComplianceSourceTypes ComplianceSourceTypes = null;
-            ComplianceDistributorData complianceDistributorData = new ComplianceDistributorData();
+            //ComplianceDistributorData complianceDistributorData = new ComplianceDistributorData();
             List<ComplianceDistributorData> ListcomplianceDistributorData = new List<ComplianceDistributorData>();
             try
             {
@@ -91,6 +91,7 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.Up
 
                         if (ComplianceSourceTypes != null)
                         {
+                            ComplianceDistributorData complianceDistributorData = new ComplianceDistributorData();
                             complianceDistributorData.ComplianceDistributorDataId = complianceDistributorDataList.ComplianceDistributorDataId;
                             complianceDistributorData.ComplianceSourceTypeId = complianceDistributorDataList.ComplianceSourceTypeId;
                             complianceDistributorData.DistributorId = complianceDistributorDataList.DistributorId;
