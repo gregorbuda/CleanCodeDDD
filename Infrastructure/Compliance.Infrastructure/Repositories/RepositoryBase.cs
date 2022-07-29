@@ -117,6 +117,7 @@ namespace Compliance.Infrastructure.Repositories
 
         public  void UpdateBatch(IEnumerable<T> itemList)
         {
+            _context.ChangeTracker.Clear();
 
             _context.UpdateRange(itemList);
 

@@ -6,6 +6,6 @@ namespace Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchIn
 {
     public class UpdateBatchInputBehavioursListCommand : IRequest<ApiResponse<Boolean>>
     {
-        public List<UpdateBatchInputBehavioursCommand> ComplainceSourcesList { get; set; }
+        public List<UpdateBatchInputBehavioursCommand>? ComplainceSourcesList { get; set; }
     }
 }

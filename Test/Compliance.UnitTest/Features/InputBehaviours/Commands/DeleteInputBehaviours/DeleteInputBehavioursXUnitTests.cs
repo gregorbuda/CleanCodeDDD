@@ -4,6 +4,7 @@ using Compliance.Application.Mappings;
 using Compliance.Application.Responses;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
+using Microsoft.AspNetCore.Http;
 using Moq;
 using Shouldly;
 using System;
@@ -39,16 +40,18 @@ namespace Compliance.UnitTest.Features.InputBehaviours.DeleteInputBehaviours
         [Fact]
         public async Task DeleteInputBehavioursCommand_Return()
         {
-            var streamerInput = new DeleteInputBehavioursCommand
+            var InputBehavioursInput = new DeleteInputBehavioursCommand
             {
                 InputBehaviourId = 1
             };
 
-            var streamerOutput = new DeleteInputBehavioursCommandHandler(_unitOfWork.Object, _mapper);
+            var InputOutput = new DeleteInputBehavioursCommandHandler(_unitOfWork.Object, _mapper);
 
-            var result = await streamerOutput.Handle(streamerInput, CancellationToken.None);
+            var result = await InputOutput.Handle(InputBehavioursInput, CancellationToken.None);
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
+
+            result.CodeResult = StatusCodes.Status200OK.ToString();
         }
     }
 }

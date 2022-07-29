@@ -5,6 +5,7 @@ using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
+using Microsoft.AspNetCore.Http;
 using Moq;
 using Shouldly;
 using System;
@@ -41,7 +42,7 @@ namespace Compliance.UnitTest.Features.InputBehaviours.CreateInputBehaviours
         {
             var inputBehaviourInput = new CreateInputBehavioursCommand
             {
-                InputBehaviourName = "Gregor",
+                InputBehaviourName = "Test",
                 Status = 1
             };
 
@@ -50,6 +51,8 @@ namespace Compliance.UnitTest.Features.InputBehaviours.CreateInputBehaviours
             var result = await inputBehaviourOutput.Handle(inputBehaviourInput, CancellationToken.None);
 
             result.ShouldBeOfType<ApiResponse<InputBehaviourCreateResponse>>();
+
+            result.CodeResult = StatusCodes.Status200OK.ToString();
         }
     }
 }

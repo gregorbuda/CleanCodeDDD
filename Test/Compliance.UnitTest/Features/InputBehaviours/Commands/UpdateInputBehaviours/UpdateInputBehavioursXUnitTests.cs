@@ -4,6 +4,7 @@ using Compliance.Application.Mappings;
 using Compliance.Application.Responses;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
+using Microsoft.AspNetCore.Http;
 using Moq;
 using Shouldly;
 using System;
@@ -38,18 +39,20 @@ namespace Compliance.UnitTest.Features.InputBehaviours.UpdateInputBehaviours
         [Fact]
         public async Task UpdateInputBehaviour_Return()
         {
-            var streamerInput = new UpdateInputBehavioursCommand
+            var InputBehaviourInput = new UpdateInputBehavioursCommand
             {
                 InputBehaviourId = 1,
                 InputBehaviourName = "Test",
                 Status = 1
             };
 
-            var streamerOutput = new UpdateInputBehavioursCommandHandler(_unitOfWork.Object, _mapper);
+            var InputBehaviourOutput = new UpdateInputBehavioursCommandHandler(_unitOfWork.Object, _mapper);
 
-            var result = await streamerOutput.Handle(streamerInput, CancellationToken.None);
+            var result = await InputBehaviourOutput.Handle(InputBehaviourInput, CancellationToken.None);
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
+
+            result.CodeResult = StatusCodes.Status200OK.ToString();
         }
     }
 }
