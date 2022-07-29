@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours;
 using Compliance.Application.Mappings;
+using Compliance.Application.Responses;
+using Compliance.Domain.Models;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
 using Moq;
@@ -35,7 +37,7 @@ namespace Compliance.UnitTest.Features.InputBehaviours.CreateInputBehaviours
         }
 
         [Fact]
-        public async Task CreateInputBehaviour_InputBehaviour_ReturnNumber()
+        public async Task CreateInputBehaviour_InputBehaviour_Return()
         {
             var inputBehaviourInput = new CreateInputBehavioursCommand
             {
@@ -47,7 +49,7 @@ namespace Compliance.UnitTest.Features.InputBehaviours.CreateInputBehaviours
 
             var result = await inputBehaviourOutput.Handle(inputBehaviourInput, CancellationToken.None);
 
-            result.ShouldBeOfType<Int32>();
+            result.ShouldBeOfType<ApiResponse<InputBehaviourCreateResponse>>();
         }
     }
 }

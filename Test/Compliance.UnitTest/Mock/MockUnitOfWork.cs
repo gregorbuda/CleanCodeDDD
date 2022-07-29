@@ -1,16 +1,13 @@
 ﻿using Compliance.Infrastructure.Persistence;
 using Compliance.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Moq;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Compliance.UnitTest.Mock
 {
-    public class MockUnitOfWork
+    public static class MockUnitOfWork
     {
         public static Mock<UnitOfWork> GetUnitOfWork()
         {
@@ -21,8 +18,6 @@ namespace Compliance.UnitTest.Mock
                 .Options;
 
             var applicationDbContextFake = new ApplicationDbContext(optiones);
-
-            applicationDbContextFake.ChangeTracker.Clear();
 
             applicationDbContextFake.Database.EnsureDeleted();
 

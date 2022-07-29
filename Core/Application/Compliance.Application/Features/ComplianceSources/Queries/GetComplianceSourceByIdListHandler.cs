@@ -29,8 +29,6 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
             String Message = "";
             ComplianceSource ComplianceSource = null;
             ComplianceSourceResponse ComplianceSourceResponse = null;
-            IEnumerable<ComplianceSourceTypes> complianceSourceTypes = null;
-            List<ComplianceSourceTypesResponse> complianceSourceTypesResponseList = new List<ComplianceSourceTypesResponse>();
             String CodeResult = "";
 
             try
@@ -40,27 +38,6 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
                 if (ComplianceSource != null)
                 {
                     ComplianceSourceResponse = _mapper.Map<ComplianceSourceResponse>(ComplianceSource);
-
-                    complianceSourceTypes = await _unitOfWork.complianceSourceTypesRepository.GetComplianceSourceTypeByCompianceSourceId(request._complianceSourceId);
-
-                    foreach (var complianceSourceTypesList in complianceSourceTypes)
-                    {
-
-                        ComplianceSourceTypesResponse complianceSourceTypesResponse = new ComplianceSourceTypesResponse();
-                        complianceSourceTypesResponse.Status = (EnumComplianceSourceStatus)complianceSourceTypesList.Status;
-                        complianceSourceTypesResponse.ComplianceFieldTypeId = complianceSourceTypesList.ComplianceFieldTypeId;
-                        complianceSourceTypesResponse.ComplianceFileSizeKb = complianceSourceTypesList.ComplianceFileSizeKb;
-                        complianceSourceTypesResponse.ComplianceSourceId = complianceSourceTypesList.ComplianceSourceId;
-                        complianceSourceTypesResponse.ComplianceSourceTypeId = complianceSourceTypesList.ComplianceSourceTypeId;
-                        complianceSourceTypesResponse.DistributorId = complianceSourceTypesList.DistributorId;
-                        complianceSourceTypesResponse.RequiresCompliance = complianceSourceTypesList.RequiresCompliance;
-                        complianceSourceTypesResponse.HeightPx = complianceSourceTypesList.HeightPx;
-                        complianceSourceTypesResponse.WidthPx = complianceSourceTypesList.WidthPx;
-
-                        complianceSourceTypesResponseList.Add(complianceSourceTypesResponse);
-                    }
-
-                    ComplianceSourceResponse.ComplianceSourceType = complianceSourceTypesResponseList;
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";

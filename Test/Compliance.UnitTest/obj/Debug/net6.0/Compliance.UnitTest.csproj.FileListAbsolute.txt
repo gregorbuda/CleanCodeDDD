@@ -139,8 +139,6 @@ C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Deb
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\AutoFixture.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\AutoMapper.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Azure.Core.dll
-C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Azure.Identity.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Castle.Core.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\DiffEngine.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\EmptyFiles.dll
@@ -154,7 +152,6 @@ C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Deb
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Features.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.AspNetCore.Routing.Abstractions.dll
-C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -171,7 +168,6 @@ C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Deb
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.Identity.Client.dll
-C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
@@ -199,7 +195,6 @@ C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Deb
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\System.IO.Packaging.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\System.IO.Ports.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\System.Management.dll
-C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\System.Memory.Data.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\System.Private.ServiceModel.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\System.Reflection.Context.dll
 C:\GitRepositories\cleanarchitecture\compliance\Test\Compliance.UnitTest\bin\Debug\net6.0\System.Runtime.Caching.dll
