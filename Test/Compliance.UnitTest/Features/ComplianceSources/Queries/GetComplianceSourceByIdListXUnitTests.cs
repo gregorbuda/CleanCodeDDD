@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Compliance.Application.Features.FileResourceTypes.Queries;
+using Compliance.Application.Features.ComplianceSources.Queries;
 using Compliance.Application.Mappings;
 using Compliance.Application.Responses;
 using Compliance.Domain.Models;
@@ -16,35 +16,35 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Compliance.UnitTest.Features.FileResourceTypes.Queries
+namespace Compliance.UnitTest.Features.ComplianceSources.Queries
 {
-    public class GetFileResourceTypesByIdListXUnitTests
+    public class GetComplianceSourceByIdListXUnitTests
     {
         private readonly IMapper _mapper;
         private readonly Mock<UnitOfWork> _unitOfWork;
 
-        public GetFileResourceTypesByIdListXUnitTests()
+        public GetComplianceSourceByIdListXUnitTests()
         {
             _unitOfWork = MockUnitOfWork.GetUnitOfWork();
             var mapperConfig = new MapperConfiguration(c =>
             {
-                c.AddProfile<FileResourceTypeProfile>();
+                c.AddProfile<ComplianceSourceProfile>();
             });
             _mapper = mapperConfig.CreateMapper();
 
-            MockFileResourceTypesRepository.AddDataInputFileResourceTypes(_unitOfWork.Object.applicationDbContext);
+            MockComplianceSourcesRepository.AddDataInputComplianceSources(_unitOfWork.Object.applicationDbContext);
         }
 
         [Fact]
-        public async Task GetFileResourceTypesByIdList_Return()
+        public async Task GetComplianceSourceByIdList_Return()
         {
-            var handler = new GetFileResourceTypesByIdListHandler(_unitOfWork.Object, _mapper);
+            var handler = new GetComplianceSourceByIdListHandler(_unitOfWork.Object, _mapper);
 
-            var request = new GetFileResourceTypesByIdList(1);
+            var request = new GetComplianceSourceByIdList(1);
 
             var result = await handler.Handle(request, CancellationToken.None);
 
-            result.ShouldBeOfType<ApiResponse<FileResourceTypeResponse>>();
+            result.ShouldBeOfType<ApiResponse<ComplianceSourceResponse>>();
 
             result.CodeResult = StatusCodes.Status200OK.ToString();
         }
