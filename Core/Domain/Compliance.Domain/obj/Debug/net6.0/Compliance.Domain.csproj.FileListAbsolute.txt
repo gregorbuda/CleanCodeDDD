@@ -21,3 +21,4 @@ C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\ob
 C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.dll
 C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\ref\Compliance.Domain.dll
 C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.pdb
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Compliance.Domain.csproj.AssemblyReference.cache

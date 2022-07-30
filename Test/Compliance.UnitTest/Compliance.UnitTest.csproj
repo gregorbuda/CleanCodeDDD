@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -23,10 +23,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Application\Compliance.Application\Compliance.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Compliance.Infrastructure\Compliance.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Features\ComplianceSourceTypeMarket\Queries\" />
   </ItemGroup>
 
 </Project>
