@@ -34,9 +34,7 @@ namespace Compliance.Application.Features.FileResourceTypes.Commands.DeleteFileR
 
                 if (fileResourceTypeToDelete != null)
                 {
-                    _unitOfWork.fileResourceTypeRepository.DeleteEntity(fileResourceTypeToDelete);
-
-                    await _unitOfWork.Complete();
+                    _unitOfWork.fileResourceTypeRepository.Delete(fileResourceTypeToDelete.FileResourceTypeId);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";

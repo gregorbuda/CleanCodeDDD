@@ -51,6 +51,12 @@ namespace Compliance.Infrastructure.Repositories
         }
 
 
+        public void Delete(Int32 ComplianceFieldTypeId)
+        {
+            _context.ComplianceSourceTypes.First(x => x.ComplianceSourceTypeId == ComplianceFieldTypeId).Status = 2;
+
+            _context.SaveChanges();
+        }
 
     }
 }

@@ -16,5 +16,11 @@ namespace Compliance.Infrastructure.Repositories
         {
         }
 
+        public void Delete(int ComplianceSourceId)
+        {
+            _context.ComplianceSource.First(x => x.ComplianceSourceId == ComplianceSourceId).Status = 2;
+
+            _context.SaveChanges();
+        }
     }
 }

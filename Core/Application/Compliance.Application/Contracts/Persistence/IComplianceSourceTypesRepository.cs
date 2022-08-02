@@ -16,5 +16,7 @@ namespace Compliance.Application.Contracts.Persistence
         Task<ComplianceSourceTypes> GetFullDataById(Int32 ComplianceFieldTypeId);
 
         ComplianceSourceTypes GetComplianceSourceTypeByComplianceFileTypeId(Int32 ComplianceFieldTypeId);
+
+        void Delete(Int32 ComplianceSourceTypesId);
     }
 }

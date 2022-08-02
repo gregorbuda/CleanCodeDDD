@@ -35,23 +35,7 @@ namespace Compliance.Application.Features.InputBehaviours.Commands.DeleteInputBe
 
                 if (InputBehaviourToDelete != null)
                 {
-                    var ListcomplianceSourceTypes = Validate(request.InputBehaviourId);
-
-                    if (ListcomplianceSourceTypes != null)
-                    {
-                        _unitOfWork.complianceSourceTypesRepository.DeleteBatch((IEnumerable<ComplianceSourceTypes>)ListcomplianceSourceTypes);
-                    }
-
-                    var complianceFieldTypeList = _unitOfWork.complianceFieldTypeRepository.GetComplianceFieldTypeByInputBehaviourId(request.InputBehaviourId);
-
-                    if (complianceFieldTypeList != null)
-                    {
-                        _unitOfWork.complianceFieldTypeRepository.DeleteBatch((IEnumerable<ComplianceFieldType>)complianceFieldTypeList);
-                    }
-
-                    _unitOfWork.inputBehaviourRepository.DeleteEntity(InputBehaviourToDelete);
-
-                    await _unitOfWork.Complete();
+                    _unitOfWork.inputBehaviourRepository.Delete(InputBehaviourToDelete.InputBehaviourId);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -78,46 +62,6 @@ namespace Compliance.Application.Features.InputBehaviours.Commands.DeleteInputBe
                 CodeResult = CodeResult,
                 Message = Message,
                 Data = Result,
-                Success = success
-            };
-
-            return response;
-        }
-
-        public async Task<ApiResponse<IReadOnlyList<ComplianceSourceTypes>>> Validate(Int32 InputBehaviourId)
-        {
-            Boolean success = false;
-            String Message = "";
-            String CodeResult = "";
-            Boolean Result = false;
-            List<ComplianceSourceTypes> complianceSourceTypeListToDelete = new List<ComplianceSourceTypes>();
-            List<ComplianceFieldType> complianceFieldTypeList = new List<ComplianceFieldType>();
-
-            try
-            {
-                complianceFieldTypeList = _unitOfWork.complianceFieldTypeRepository.GetComplianceFieldTypeByInputBehaviourId(InputBehaviourId);
-
-                foreach (var ListComplianceSourceType in complianceFieldTypeList)
-                {
-                    ComplianceSourceTypes complianceSourceTypes = new ComplianceSourceTypes();
-                    complianceSourceTypes = _unitOfWork.complianceSourceTypesRepository.GetComplianceSourceTypeByComplianceFileTypeId(ListComplianceSourceType.ComplianceFieldTypeId);
-                    complianceSourceTypeListToDelete.Add(complianceSourceTypes);
-                }
-            }
-            catch (Exception ex)
-            {
-                CodeResult = StatusCodes.Status500InternalServerError.ToString();
-                Message = "Internal Server Error";
-                success = false;
-                Result = false;
-            }
-
-
-            ApiResponse<IReadOnlyList<ComplianceSourceTypes>> response = new ApiResponse<IReadOnlyList<ComplianceSourceTypes>>
-            {
-                CodeResult = CodeResult,
-                Message = Message,
-                Data = complianceSourceTypeListToDelete,
                 Success = success
             };
 

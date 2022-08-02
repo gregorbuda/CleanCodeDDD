@@ -42,5 +42,12 @@ namespace Compliance.Infrastructure.Repositories
             return  _context.ComplianceFieldType!.Where(v => v.InputBehaviourId == InputBehaviourId).ToList();
         }
 
+        public void Delete(int ComplianceFieldTypeId)
+        {
+            _context.ComplianceFieldType.First(x => x.ComplianceFieldTypeId == ComplianceFieldTypeId).Status = 2;
+
+            _context.SaveChanges();
+        }
+
     }
 }

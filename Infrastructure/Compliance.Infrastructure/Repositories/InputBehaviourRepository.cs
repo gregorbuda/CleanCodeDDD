@@ -16,5 +16,11 @@ namespace Compliance.Infrastructure.Repositories
         {
         }
 
+        public void  Delete(Int32 InputBehaviourId)
+        {
+            _context.InputBehaviour.First(x => x.InputBehaviourId == InputBehaviourId).Status = 2;
+
+            _context.SaveChanges();
+        }
     }
 }

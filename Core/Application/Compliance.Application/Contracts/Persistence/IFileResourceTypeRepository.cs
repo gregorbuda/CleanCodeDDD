@@ -9,5 +9,6 @@ namespace Compliance.Application.Contracts.Persistence
 {
     public interface IFileResourceTypeRepository : IAsyncRepository<FileResourceType>
     {
+        void Delete(Int32 FileResourceTypeId);
     }
 }

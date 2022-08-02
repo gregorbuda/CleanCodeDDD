@@ -33,7 +33,7 @@ namespace Compliance.Application.Mappings
                 .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)(EnumComplianceSourceStatus)src.Status));
 
             CreateMap<Market, MarketResponse>()
-                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.MarketId, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.CurrencySymbol, opt => opt.MapFrom(src => src.CurrencySymbol))
                 .ForMember(dest => dest.MarketCurrency, opt => opt.MapFrom(src => src.MarketCurrency))
                 .ForMember(dest => dest.MarketName, opt => opt.MapFrom(src => src.MarketName));

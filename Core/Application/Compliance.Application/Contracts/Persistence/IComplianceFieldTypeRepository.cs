@@ -14,5 +14,7 @@ namespace Compliance.Application.Contracts.Persistence
         Task<ComplianceFieldType> GetFullDataById(Int32 ComplianceFieldTypeId);
 
         List<ComplianceFieldType> GetComplianceFieldTypeByInputBehaviourId(Int32 InputBehaviourId);
+
+        void Delete(Int32 ComplianceFieldTypeId);
     }
 }

@@ -472,7 +472,7 @@
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
-        <member name="M:Compliance.Api.Controller.FileResourceTypeController.DeleteComplianceSource(Compliance.Application.Features.FileResourceTypes.Commands.DeleteFileResourceTypes.DeleteFileResourceTypesCommand)">
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.DeleteFileResourceType(Compliance.Application.Features.FileResourceTypes.Commands.DeleteFileResourceTypes.DeleteFileResourceTypesCommand)">
             <summary>
             Delete File Resource Type
             </summary>

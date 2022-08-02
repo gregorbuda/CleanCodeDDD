@@ -41,7 +41,7 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Commands.DeleteCompl
         {
             var ComplianceFieldTypeInput = new DeleteComplianceFieldTypeCommand
             {
-                ComplianceFieldTypeId = 1
+                ComplianceFieldTypeId = 2
             };
 
             var ComplianceFieldTypeInputOutput = new DeleteComplianceFieldTypeCommandHandler(_unitOfWork.Object, _mapper);

@@ -9,5 +9,6 @@ namespace Compliance.Application.Contracts.Persistence
 {
     public interface IComplianceSourceRepository : IAsyncRepository<ComplianceSource>
     {
+        void Delete(Int32 ComplianceSourceId);
     }
 }

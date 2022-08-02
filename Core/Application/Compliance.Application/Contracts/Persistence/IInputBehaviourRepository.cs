@@ -9,6 +9,6 @@ namespace Compliance.Application.Contracts.Persistence
 {
     public interface IInputBehaviourRepository : IAsyncRepository<InputBehaviour>
     {
-
+        void Delete(Int32 InputBehaviourId);
     }
 }

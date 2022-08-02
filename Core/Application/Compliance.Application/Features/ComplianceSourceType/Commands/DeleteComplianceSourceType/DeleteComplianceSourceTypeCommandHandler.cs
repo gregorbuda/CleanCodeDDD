@@ -35,9 +35,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Commands.DeleteCo
 
                 if (ComplianceSourceTypeToDelete != null)
                 {
-                    _unitOfWork.complianceSourceTypesRepository.DeleteEntity(ComplianceSourceTypeToDelete);
-
-                    await _unitOfWork.Complete();
+                    _unitOfWork.complianceSourceTypesRepository.Delete(ComplianceSourceTypeToDelete.ComplianceSourceTypeId);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";

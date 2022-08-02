@@ -14,5 +14,12 @@ namespace Compliance.Infrastructure.Repositories
         public FileResourceTypeRepository(ApplicationDbContext context) : base(context)
         {
         }
+
+        public void Delete(Int32 FileResourceTypeId)
+        {
+            _context.FileResourceType.First(x => x.FileResourceTypeId == FileResourceTypeId).Status = 2;
+
+            _context.SaveChanges();
+        }
     }
 }
