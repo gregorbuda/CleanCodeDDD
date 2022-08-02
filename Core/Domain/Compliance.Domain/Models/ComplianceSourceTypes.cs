@@ -7,24 +7,118 @@ using System.Collections.Generic;
 
 namespace Compliance.Domain.Models
 {
+    /// <summary>
+    /// Compliance Source Types 
+    /// </summary>
     public partial class ComplianceSourceTypes
     {
-        public int ComplianceSourceTypeId { get; set; }
-        public int ComplianceSourceId { get; set; }
-        public int ComplianceFieldTypeId { get; set; }
-        public int DistributorId { get; set; }
-        public bool RequiresCompliance { get; set; }
-        public int? ComplianceFileSizeKb { get; set; }
-        public short? HeightPx { get; set; }
-        public short? WidthPx { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
+        public Int32 ComplianceSourceTypeId { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
+        public Int32 ComplianceSourceId { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
+        public Int32 ComplianceFieldTypeId { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
+        public Int32 DistributorId { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
+        public Boolean RequiresCompliance { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
+        public Int32? ComplianceFileSizeKb { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
+        public Int16? HeightPx { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
+        public Int16? WidthPx { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
         public DateTime? CreatedDate { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
         public int CreatedBy { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
         public DateTime? UpdatedDate { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
         public int? UpdatedBy { get; set; }
+        /// <summary>
+        /// Compliance Source Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Id
+        /// </value>
+        /// <example>1</example>
         public byte Status { get; set; }
 
-        public virtual ComplianceFieldType ComplianceFieldType { get; set; }
-        public virtual ComplianceSource ComplianceSource { get; set; }
+        public virtual ComplianceFieldType? ComplianceFieldType { get; set; }
+        public virtual ComplianceSource? ComplianceSource { get; set; }
         public virtual ICollection<ComplianceSourceTypeMarkets> ComplianceSourceTypeMarkets { get; set; }
         public virtual ICollection<ComplianceDistributorData> ComplianceDistributorData { get; set; }
     }

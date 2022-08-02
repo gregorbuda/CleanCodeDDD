@@ -20,7 +20,7 @@ namespace Compliance.Domain.Models
         /// The Compliance identifier.
         /// </value>
         /// <example>1</example>
-        public int ComplianceSourceId { get; set; }
+        public Int32 ComplianceSourceId { get; set; }
         /// <summary>
         /// The Compliance name.
         /// </summary>
@@ -28,7 +28,7 @@ namespace Compliance.Domain.Models
         /// The Compliance name.
         /// </value>
         /// <example>Compliance Name 1</example>
-        public string ComplianceSourceName { get; set; }
+        public String ComplianceSourceName { get; set; }
         /// <summary>
         /// The Compliance Status.
         /// </summary>

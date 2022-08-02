@@ -24,7 +24,6 @@ namespace Compliance.Application.Mappings
                 .ForMember(dest => dest.ComplianceSourceId, opt => opt.MapFrom(src => src.ComplianceSourceId))
                 .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)(EnumComplianceSourceStatus)src.Status));
 
-            CreateMap<ComplianceSourceTypes, ComplianceSourceTypesResponse>();
 
             CreateMap<UpdateComplianceSourceCommand, ComplianceSource>();
         }

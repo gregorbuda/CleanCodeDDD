@@ -44,9 +44,9 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Queries
 
             var result = await handler.Handle(request, CancellationToken.None);
 
-            result.ShouldBeOfType<ApiResponse<IReadOnlyList<ComplianceFieldTypeResponse>>>();
+            result.ShouldBeOfType<ApiResponse<IReadOnlyList<ComplianceFieldType>>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

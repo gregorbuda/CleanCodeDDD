@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
 {
-    public class GetComplianceFieldTypeByIdList : IRequest<ApiResponse<ComplianceFieldTypeResponse>>
+    public class GetComplianceFieldTypeByIdList : IRequest<ApiResponse<ComplianceFieldType>>
     {
         public Int32 _complianceFieldTypeId { get; set; }
 

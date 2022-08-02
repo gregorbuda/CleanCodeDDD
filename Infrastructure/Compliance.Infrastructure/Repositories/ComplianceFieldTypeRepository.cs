@@ -37,5 +37,10 @@ namespace Compliance.Infrastructure.Repositories
             return result;
         }
 
+        public  List<ComplianceFieldType> GetComplianceFieldTypeByInputBehaviourId(Int32 InputBehaviourId)
+        {
+            return  _context.ComplianceFieldType!.Where(v => v.InputBehaviourId == InputBehaviourId).ToList();
+        }
+
     }
 }

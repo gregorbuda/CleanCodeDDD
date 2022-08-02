@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.FileResourceTypes.Queries
 {
-    public class GetFileResourceTypesByIdListHandler : IRequestHandler<GetFileResourceTypesByIdList, ApiResponse<FileResourceTypeResponse>>
+    public class GetFileResourceTypesByIdListHandler : IRequestHandler<GetFileResourceTypesByIdList, ApiResponse<FileResourceType>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
@@ -23,7 +23,7 @@ namespace Compliance.Application.Features.FileResourceTypes.Queries
             _mapper = mapper;
         }
 
-        public async Task<ApiResponse<FileResourceTypeResponse>> Handle(GetFileResourceTypesByIdList request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<FileResourceType>> Handle(GetFileResourceTypesByIdList request, CancellationToken cancellationToken)
         {
             Boolean success = false;
             String Message = "";
@@ -35,7 +35,7 @@ namespace Compliance.Application.Features.FileResourceTypes.Queries
             {
                 fileResourceType = await _unitOfWork.fileResourceTypeRepository.GetByIdAsync(request._fileResourceTypeId);
 
-                fileResourceTypeResponse = _mapper.Map<FileResourceTypeResponse>(fileResourceType);
+               // fileResourceTypeResponse = _mapper.Map<FileResourceTypeResponse>(fileResourceType);
 
                 if (fileResourceType.FileResourceTypeId > 0)
                 {
@@ -47,7 +47,7 @@ namespace Compliance.Application.Features.FileResourceTypes.Queries
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
                     Message = $"File Resource Type Id {request._fileResourceTypeId} Not Found";
-                    fileResourceTypeResponse = null;
+                    fileResourceType = null;
                     success = false;
                 }
             }
@@ -55,15 +55,15 @@ namespace Compliance.Application.Features.FileResourceTypes.Queries
             {
                 CodeResult = StatusCodes.Status500InternalServerError.ToString();
                 Message = "Internal Server Error";
-                fileResourceTypeResponse = null;
+                fileResourceType = null;
                 success = false;
             }
 
-            ApiResponse<FileResourceTypeResponse> response = new ApiResponse<FileResourceTypeResponse>
+            ApiResponse<FileResourceType> response = new ApiResponse<FileResourceType>
             {
                 CodeResult = CodeResult,
                 Message = Message,
-                Data = fileResourceTypeResponse,
+                Data = fileResourceType,
                 Success = success
             };
 

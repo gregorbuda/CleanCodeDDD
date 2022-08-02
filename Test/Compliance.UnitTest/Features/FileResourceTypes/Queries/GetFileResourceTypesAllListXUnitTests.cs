@@ -46,7 +46,7 @@ namespace Compliance.UnitTest.Features.FileResourceTypes.Queries
 
             result.ShouldBeOfType<ApiResponse<IReadOnlyList<FileResourceTypeResponse>>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

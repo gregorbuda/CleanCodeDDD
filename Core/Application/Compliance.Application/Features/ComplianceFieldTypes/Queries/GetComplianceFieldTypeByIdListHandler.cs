@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
 {
-    public class GetComplianceFieldTypeByIdListHandler : IRequestHandler<GetComplianceFieldTypeByIdList, ApiResponse<ComplianceFieldTypeResponse>>
+    public class GetComplianceFieldTypeByIdListHandler : IRequestHandler<GetComplianceFieldTypeByIdList, ApiResponse<ComplianceFieldType>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
@@ -18,7 +18,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
             _mapper = mapper;
         }
 
-        public async Task<ApiResponse<ComplianceFieldTypeResponse>> Handle(GetComplianceFieldTypeByIdList request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<ComplianceFieldType>> Handle(GetComplianceFieldTypeByIdList request, CancellationToken cancellationToken)
         {
             Boolean success = false;
             String Message = "";
@@ -30,7 +30,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
             {
                 complianceFieldType = await _unitOfWork.complianceFieldTypeRepository.GetByIdAsync(request._complianceFieldTypeId);
 
-                complianceFieldTypeResponse = _mapper.Map<ComplianceFieldTypeResponse>(complianceFieldType);
+                //complianceFieldTypeResponse = _mapper.Map<ComplianceFieldTypeResponse>(complianceFieldType);
 
                 if (complianceFieldType.ComplianceFieldTypeId > 0)
                 {
@@ -42,7 +42,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
                     Message = $"Compliance Field Type Id {request._complianceFieldTypeId} Not Found";
-                    complianceFieldTypeResponse = null;
+                    complianceFieldType = null;
                     success = false;
                 }
             }
@@ -50,15 +50,15 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
             {
                 CodeResult = StatusCodes.Status500InternalServerError.ToString();
                 Message = "Internal Server Error";
-                complianceFieldTypeResponse = null;
+                complianceFieldType = null;
                 success = false;
             }
 
-            ApiResponse<ComplianceFieldTypeResponse> response = new ApiResponse<ComplianceFieldTypeResponse>
+            ApiResponse<ComplianceFieldType> response = new ApiResponse<ComplianceFieldType>
             {
                 CodeResult = CodeResult,
                 Message = Message,
-                Data = complianceFieldTypeResponse,
+                Data = complianceFieldType,
                 Success = success
             };
 

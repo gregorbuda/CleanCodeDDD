@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.FileResourceTypes.Queries
 {
-    public class GetFileResourceTypesByIdList : IRequest<ApiResponse<FileResourceTypeResponse>>
+    public class GetFileResourceTypesByIdList : IRequest<ApiResponse<FileResourceType>>
     {
         public Int32 _fileResourceTypeId { get; set; }
 

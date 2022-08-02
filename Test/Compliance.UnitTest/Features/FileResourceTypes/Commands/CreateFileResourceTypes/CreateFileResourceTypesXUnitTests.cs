@@ -54,7 +54,7 @@ namespace Compliance.UnitTest.Features.FileResourceTypes.Commands.CreateFileReso
 
             result.ShouldBeOfType<ApiResponse<FileResourceTypeCreateResponse>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString()); 
         }
     }
 }

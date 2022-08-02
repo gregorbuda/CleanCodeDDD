@@ -39,11 +39,14 @@ namespace Compliance.UnitTest.Features.ComplianceSourceType.Commands.UpdateCompl
         [Fact]
         public async Task UpdateComplianceSourceType_Return()
         {
+            var Mock = _unitOfWork.Object.applicationDbContext.ComplianceSourceTypes.Where(x => x.ComplianceSourceTypeId == 4).FirstOrDefault();
+
+
             var ComplianceSourcesInput = new UpdateComplianceSourceTypeCommand
             {
                 ComplianceSourceTypeId = 4,
-                ComplianceFieldTypeId = 2,
-                ComplianceSourceId = 1,
+                ComplianceFieldTypeId = Mock.ComplianceFieldTypeId,
+                ComplianceSourceId = Mock.ComplianceSourceId,
                 DistributorId = 20,
                 RequiresCompliance = true,
                 ComplianceFileSizeKb = 0,
@@ -59,7 +62,7 @@ namespace Compliance.UnitTest.Features.ComplianceSourceType.Commands.UpdateCompl
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

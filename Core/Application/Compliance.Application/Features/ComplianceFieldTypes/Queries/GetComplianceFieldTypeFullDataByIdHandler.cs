@@ -23,17 +23,17 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
         {
             Boolean success = false;
             String Message = "";
-            ComplianceFieldType ComplianceSourceFieldType = null;
+            ComplianceFieldType complianceFieldType = null;
             ComplianceFieldTypeFullDataResponse ComplianceSourceResponseFieldType = null;
             String CodeResult = "";
 
             try
             {
-                ComplianceSourceFieldType = await _unitOfWork.complianceFieldTypeRepository.GetFullDataById(request._complianceFieldTypeId);
+                complianceFieldType = await _unitOfWork.complianceFieldTypeRepository.GetFullDataById(request._complianceFieldTypeId);
 
-                if (ComplianceSourceFieldType != null)
+                if (complianceFieldType != null)
                 {
-                    ComplianceSourceResponseFieldType = _mapper.Map<ComplianceFieldTypeFullDataResponse>(ComplianceSourceFieldType);
+                    ComplianceSourceResponseFieldType = _mapper.Map<ComplianceFieldTypeFullDataResponse>(complianceFieldType);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";

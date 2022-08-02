@@ -123,8 +123,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("ComplianceFieldTypeById")]
-        [ProducesResponseType(typeof(ApiResponse<ComplianceFieldTypeResponse>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<ComplianceFieldTypeResponse>>> GetComplianceFieldTypeById(Int32 ComplianceFieldTypeId)
+        [ProducesResponseType(typeof(ApiResponse<ComplianceFieldType>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<ComplianceFieldType>>> GetComplianceFieldTypeById(Int32 ComplianceFieldTypeId)
         {
             var query = new GetComplianceFieldTypeByIdList(ComplianceFieldTypeId);
             var test = await _mediator.Send(query);
@@ -143,8 +143,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("ComplianceFieldTypeFullDataList")]
-        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>>> GetComplianceFieldTypeFullDataList()
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceFieldType>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceFieldType>>>> GetComplianceFieldTypeFullDataList()
         {
             var query = new GetComplianceFieldTypeFullDataList();
             var test = await _mediator.Send(query);
@@ -163,8 +163,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("ComplianceFieldTypeFullDataById")]
-        [ProducesResponseType(typeof(ApiResponse<ComplianceFieldTypeFullDataResponse>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<ComplianceFieldTypeFullDataResponse>>> GetComplianceFieldTypeFullDataById(Int32 ComplianceFieldTypeId)
+        [ProducesResponseType(typeof(ApiResponse<ComplianceFieldType>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<ComplianceFieldType>>> GetComplianceFieldTypeFullDataById(Int32 ComplianceFieldTypeId)
         {
             var query = new GetComplianceFieldTypeFullDataById(ComplianceFieldTypeId);
             var test = await _mediator.Send(query);

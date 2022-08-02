@@ -43,6 +43,8 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Commands.UpdateBatch
             UpdateBatchComplianceFieldTypeListCommand listComplainceFieldType = new UpdateBatchComplianceFieldTypeListCommand();
             UpdateBatchComplianceFieldTypeCommand? updateBatchComplainceFieldTypeCommand = new UpdateBatchComplianceFieldTypeCommand();
 
+            var Mock = _unitOfWork.Object.applicationDbContext.ComplianceFieldType.Where(x => x.ComplianceFieldTypeId == 2).FirstOrDefault();
+
             updateBatchComplainceFieldTypeCommand.ComplianceFieldTypeId = 2;
             updateBatchComplainceFieldTypeCommand.ComplianceFieldTypeName = "Test1";
             updateBatchComplainceFieldTypeCommand.TranslationKey = "test";
@@ -50,8 +52,8 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Commands.UpdateBatch
             updateBatchComplainceFieldTypeCommand.ComplianceFileSizeKb = 1;
             updateBatchComplainceFieldTypeCommand.HeightPx = 1;
             updateBatchComplainceFieldTypeCommand.WidthPx = 1;
-            updateBatchComplainceFieldTypeCommand.InputBehaviourId = 2;
-            updateBatchComplainceFieldTypeCommand.FileResourceTypeId =2;
+            updateBatchComplainceFieldTypeCommand.InputBehaviourId = Mock.InputBehaviourId;
+            updateBatchComplainceFieldTypeCommand.FileResourceTypeId =Mock.FileResourceTypeId;
             updateBatchComplainceFieldTypeCommand.Status = 1;
             updateBatchComplainceFieldTypeCommand.CreatedBy = 1;
             updateBatchComplainceFieldTypeCommand.CreatedDate = DateTime.Today;
@@ -70,7 +72,7 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Commands.UpdateBatch
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

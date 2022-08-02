@@ -1,6 +1,7 @@
 ﻿using Compliance.Application.Contracts.Persistence;
 using Compliance.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace Compliance.Infrastructure.Repositories
@@ -20,6 +21,11 @@ namespace Compliance.Infrastructure.Repositories
         }
 
         public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().Where(predicate).ToListAsync();
+        }
+
+        public async Task<IReadOnlyList<T>> GetAsyncById(Expression<Func<T, bool>> predicate)
         {
             return await _context.Set<T>().Where(predicate).ToListAsync();
         }
@@ -113,6 +119,15 @@ namespace Compliance.Infrastructure.Repositories
             _context.AddRange(itemList);
 
             _context.SaveChanges();
+        }
+
+        public void DeleteBatch(IEnumerable<T> itemList)
+        {
+
+            _context.RemoveRange(itemList);
+
+            _context.SaveChanges();
+
         }
 
         public  void UpdateBatch(IEnumerable<T> itemList)

@@ -67,7 +67,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Commands.UpdateCo
                     else
                     {
                         CodeResult = StatusCodes.Status404NotFound.ToString();
-                        Message = $"Compliance Source Type Id {request.ComplianceFieldTypeId} Not Found";
+                        Message = $"Compliance File Type Id {request.ComplianceFieldTypeId} Not Found";
                         Result = false;
                         success = false;
                     }

@@ -42,6 +42,9 @@ namespace Compliance.UnitTest.Features.ComplianceSourceTypeMarket.Commands.Creat
             CreateBatchComplianceSourceTypeMarketListCommand listComplianceSourceTypeMarket = new CreateBatchComplianceSourceTypeMarketListCommand();
             CreateBatchComplianceSourceTypeMarketCommand? createBatchComplianceSourceTypeMarketCommand = new CreateBatchComplianceSourceTypeMarketCommand();
 
+            var Mock = _unitOfWork.Object.applicationDbContext.ComplianceSourceTypeMarkets.Where(x => x.ComplianceSourceTypeMarketId == 7).FirstOrDefault();
+
+            createBatchComplianceSourceTypeMarketCommand.ComplianceSourceTypeId = Mock.ComplianceSourceTypeId;
             createBatchComplianceSourceTypeMarketCommand.MarketId = 13;
             createBatchComplianceSourceTypeMarketCommand.Status = 1;
             createBatchComplianceSourceTypeMarketCommand.CreatedBy = 1;
@@ -61,7 +64,7 @@ namespace Compliance.UnitTest.Features.ComplianceSourceTypeMarket.Commands.Creat
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

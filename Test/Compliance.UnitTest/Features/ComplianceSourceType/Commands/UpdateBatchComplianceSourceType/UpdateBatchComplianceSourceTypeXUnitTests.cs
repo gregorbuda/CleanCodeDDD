@@ -33,7 +33,7 @@ namespace Compliance.UnitTest.Features.ComplianceSourceType.Commands.UpdateBatch
 
             _mapper = mapperConfig.CreateMapper();
 
-            MockComplianceSourceTypeMarketRepository.AddDataComplianceSourceTypeMarket(_unitOfWork.Object.applicationDbContext);
+            MockComplianceSourceTypeRepository.AddDataInputComplianceSourceType(_unitOfWork.Object.applicationDbContext);
         }
 
         [Fact]
@@ -42,9 +42,11 @@ namespace Compliance.UnitTest.Features.ComplianceSourceType.Commands.UpdateBatch
             UpdateBatchComplianceSourceTypeListCommand listComplianceSourceType = new UpdateBatchComplianceSourceTypeListCommand();
             UpdateBatchComplianceSourceTypeCommand? updateBatchComplianceSourceTypeCommand = new UpdateBatchComplianceSourceTypeCommand();
 
+            var Mock = _unitOfWork.Object.applicationDbContext.ComplianceSourceTypes.Where(x => x.ComplianceSourceTypeId == 4).FirstOrDefault();
+
             updateBatchComplianceSourceTypeCommand.ComplianceSourceTypeId = 4;
-            updateBatchComplianceSourceTypeCommand.ComplianceSourceId = 5;
-            updateBatchComplianceSourceTypeCommand.ComplianceFieldTypeId = 2;
+            updateBatchComplianceSourceTypeCommand.ComplianceSourceId = Mock.ComplianceSourceId;
+            updateBatchComplianceSourceTypeCommand.ComplianceFieldTypeId = Mock.ComplianceFieldTypeId;
             updateBatchComplianceSourceTypeCommand.DistributorId = 20;
             updateBatchComplianceSourceTypeCommand.RequiresCompliance = true;
             updateBatchComplianceSourceTypeCommand.ComplianceFileSizeKb = 13;
@@ -68,7 +70,7 @@ namespace Compliance.UnitTest.Features.ComplianceSourceType.Commands.UpdateBatch
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

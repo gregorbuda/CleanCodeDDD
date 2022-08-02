@@ -20,7 +20,7 @@ namespace Compliance.UnitTest.Mock
             var complianceFieldType = fixture.CreateMany<ComplianceFieldType>().ToList();
 
             complianceFieldType.Add(fixture.Build<ComplianceFieldType>()
-                .With(tr => tr.ComplianceFieldTypeId, 1)
+                .With(tr => tr.ComplianceFieldTypeId, 2)
                 .Create()
                 );
 

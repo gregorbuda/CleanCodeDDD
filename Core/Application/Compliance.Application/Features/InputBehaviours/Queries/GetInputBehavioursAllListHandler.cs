@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.InputBehaviours.Queries
 {
-    public class GetInputBehavioursAllListHandler : IRequestHandler<GetInputBehavioursAllList, ApiResponse<IReadOnlyList<InputBehaviourResponse>>>
+    public class GetInputBehavioursAllListHandler : IRequestHandler<GetInputBehavioursAllList, ApiResponse<IReadOnlyList<InputBehaviour>>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
@@ -23,19 +23,19 @@ namespace Compliance.Application.Features.InputBehaviours.Queries
             _mapper = mapper;
         }
 
-        public async Task<ApiResponse<IReadOnlyList<InputBehaviourResponse>>> Handle(GetInputBehavioursAllList request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<IReadOnlyList<InputBehaviour>>> Handle(GetInputBehavioursAllList request, CancellationToken cancellationToken)
         {
             Boolean success = false;
             String Message = "";
             IReadOnlyList<InputBehaviour> inputBehaviour = null;
-            IReadOnlyList<InputBehaviourResponse> inputBehaviourResponse = null;
+            //IReadOnlyList<InputBehaviourResponse> inputBehaviourResponse = null;
             String CodeResult = "";
 
             try
             {
                 inputBehaviour = await _unitOfWork.inputBehaviourRepository.GetAllAsync();
 
-                inputBehaviourResponse = _mapper.Map<IReadOnlyList<InputBehaviourResponse>>(inputBehaviour);
+               // inputBehaviourResponse = _mapper.Map<IReadOnlyList<InputBehaviour>>(inputBehaviour);
 
                 if (inputBehaviour.Count > 0)
                 {
@@ -47,7 +47,7 @@ namespace Compliance.Application.Features.InputBehaviours.Queries
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
                     Message = "Input Behaviour Not Found";
-                    inputBehaviourResponse = null;
+                    inputBehaviour = null;
                     success = false;
                 }
             }
@@ -55,15 +55,15 @@ namespace Compliance.Application.Features.InputBehaviours.Queries
             {
                 CodeResult = StatusCodes.Status500InternalServerError.ToString();
                 Message = "Internal Server Error";
-                inputBehaviourResponse = null;
+                inputBehaviour = null;
                 success = false;
             }
 
-            ApiResponse<IReadOnlyList<InputBehaviourResponse>> response = new ApiResponse<IReadOnlyList<InputBehaviourResponse>>
+            ApiResponse<IReadOnlyList<InputBehaviour>> response = new ApiResponse<IReadOnlyList<InputBehaviour>>
             {
                 CodeResult = CodeResult,
                 Message = Message,
-                Data = inputBehaviourResponse,
+                Data = inputBehaviour,
                 Success = success
             };
 

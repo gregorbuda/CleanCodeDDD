@@ -100,8 +100,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("FileResourceTypeAll")]
-        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<FileResourceTypeResponse>>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<IReadOnlyList<FileResourceTypeResponse>>>> GetFileResourceTypeAll()
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<FileResourceType>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<FileResourceType>>>> GetFileResourceTypeAll()
         {
             var query = new GetFileResourceTypesAllList();
             var test = await _mediator.Send(query);
@@ -121,8 +121,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("FileResourceTypeById")]
-        [ProducesResponseType(typeof(ApiResponse<FileResourceTypeResponse>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<FileResourceTypeResponse>>> GetFileResourceTypeById(Int32 FileResourceTypeId)
+        [ProducesResponseType(typeof(ApiResponse<FileResourceType>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<FileResourceType>>> GetFileResourceTypeById(Int32 FileResourceTypeId)
         {
             var query = new GetFileResourceTypesByIdList(FileResourceTypeId);
             var test = await _mediator.Send(query);

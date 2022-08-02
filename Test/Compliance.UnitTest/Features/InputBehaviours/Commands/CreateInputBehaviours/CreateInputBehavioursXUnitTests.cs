@@ -52,7 +52,7 @@ namespace Compliance.UnitTest.Features.InputBehaviours.CreateInputBehaviours
 
             result.ShouldBeOfType<ApiResponse<InputBehaviourCreateResponse>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

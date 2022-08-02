@@ -26,8 +26,8 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.Up
         public async Task<ApiResponse<Boolean>> Handle(UpdateBatchComplianceSourceTypeMarketListCommand request, CancellationToken cancellationToken)
         {
             Boolean success = false;
-            String Message = "";
-            String CodeResult = "";
+            String Message = Message = "Success, and there is a response body.";
+            String CodeResult = StatusCodes.Status200OK.ToString();
             Boolean Result = false;
             try
             {
@@ -35,7 +35,6 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.Up
 
                 if (ListcomplianceSourceTypeMarket.Data.Count > 0)
                 {
-
                     _unitOfWork.complianceSourceTypeMarketsRepository.UpdateBatch(ListcomplianceSourceTypeMarket.Data);
 
                     CodeResult = StatusCodes.Status200OK.ToString();

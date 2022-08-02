@@ -44,5 +44,13 @@ namespace Compliance.Infrastructure.Repositories
 
             return result;
         }
+
+        public  ComplianceSourceTypes GetComplianceSourceTypeByComplianceFileTypeId(Int32 ComplianceFieldTypeId)
+        {
+            return  _context.ComplianceSourceTypes!.Where(v => v.ComplianceFieldTypeId == ComplianceFieldTypeId).FirstOrDefault();
+        }
+
+
+
     }
 }

@@ -44,9 +44,9 @@ namespace Compliance.UnitTest.Features.FileResourceTypes.Queries
 
             var result = await handler.Handle(request, CancellationToken.None);
 
-            result.ShouldBeOfType<ApiResponse<FileResourceTypeResponse>>();
+            result.ShouldBeOfType<ApiResponse<FileResourceType>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

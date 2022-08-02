@@ -41,6 +41,10 @@ namespace Compliance.UnitTest.Features.ComplianceSources.Commands.CreateComplian
         [Fact]
         public async Task CreateComplianceSource_Return()
         {
+
+            var Mock = _unitOfWork.Object.applicationDbContext.ComplianceSourceTypeMarkets.Where(x => x.ComplianceSourceTypeMarketId == 7).FirstOrDefault();
+
+
             var ComplianceSourcesInput = new CreateComplianceSourceCommand
             {
                 ComplianceSourceName = "Test",
@@ -53,7 +57,7 @@ namespace Compliance.UnitTest.Features.ComplianceSources.Commands.CreateComplian
 
             result.ShouldBeOfType<ApiResponse<ComplianceSourceCreateResponse>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

@@ -73,8 +73,8 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.Up
         public async Task<ApiResponse<IReadOnlyList<ComplianceDistributorData>>> Validate(UpdateBatchComplianceDistributorsDataListCommand request)
         {
             Boolean success = false;
-            String Message = "";
-            String CodeResult = "";
+            String Message = Message = "Success, and there is a response body.";
+            String CodeResult = StatusCodes.Status200OK.ToString();
             Boolean Result = false;
             ComplianceSourceTypes ComplianceSourceTypes = null;
             //ComplianceDistributorData complianceDistributorData = new ComplianceDistributorData();
@@ -83,7 +83,7 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.Up
             {
                 foreach (var complianceDistributorDataList in request.ComplianceDistributorData)
                 {
-                    var complianceDistributorDataById = await _unitOfWork.complianceSourceTypesRepository.GetByIdAsync(complianceDistributorDataList.ComplianceDistributorDataId);
+                    var complianceDistributorDataById = await _unitOfWork.complianceDistributorDataRepository.GetByIdAsync(complianceDistributorDataList.ComplianceDistributorDataId);
 
                     if (complianceDistributorDataById != null)
                     {

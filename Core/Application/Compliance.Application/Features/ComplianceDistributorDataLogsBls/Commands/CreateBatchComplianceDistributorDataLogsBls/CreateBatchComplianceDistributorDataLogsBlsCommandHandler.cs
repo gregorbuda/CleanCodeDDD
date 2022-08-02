@@ -73,8 +73,8 @@ namespace Compliance.Application.Features.ComplianceDistributorDataLogsBls.Comma
         public async Task<ApiResponse<IReadOnlyList<ComplianceDistributorDataLogs>>> Validate(CreateBatchComplianceDistributorDataLogsBlsListCommand request)
         {
             Boolean success = false;
-            String Message = "";
-            String CodeResult = "";
+            String Message = Message = "Success, and there is a response body.";
+            String CodeResult = StatusCodes.Status200OK.ToString();
             Boolean Result = false;
             ComplianceDistributorData complianceDistributorData = null;
 

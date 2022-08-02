@@ -7,6 +7,9 @@ using System.Collections.Generic;
 
 namespace Compliance.Domain.Models
 {
+    /// <summary>
+    /// Input Behaviour
+    /// </summary>
     public partial class InputBehaviour
     {
         public InputBehaviour()
@@ -14,8 +17,8 @@ namespace Compliance.Domain.Models
             ComplianceFieldType = new HashSet<ComplianceFieldType>();
         }
 
-        public int InputBehaviourId { get; set; }
-        public string InputBehaviourName { get; set; }
+        public Int32 InputBehaviourId { get; set; }
+        public String InputBehaviourName { get; set; }
         public byte Status { get; set; }
         public DateTime? CreatedDate { get; set; }
         public int CreatedBy { get; set; }

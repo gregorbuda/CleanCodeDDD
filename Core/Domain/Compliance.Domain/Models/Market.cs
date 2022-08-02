@@ -7,6 +7,9 @@ using System.Collections.Generic;
 
 namespace Compliance.Domain.Models
 {
+    /// <summary>
+    /// Market
+    /// </summary>
     public partial class Market
     {
         public int Id { get; set; }

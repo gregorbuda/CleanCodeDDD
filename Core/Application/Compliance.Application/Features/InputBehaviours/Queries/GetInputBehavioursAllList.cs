@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.InputBehaviours.Queries
 {
-    public class GetInputBehavioursAllList : IRequest<ApiResponse<IReadOnlyList<InputBehaviourResponse>>>
+    public class GetInputBehavioursAllList : IRequest<ApiResponse<IReadOnlyList<InputBehaviour>>>
     {
     }
 }

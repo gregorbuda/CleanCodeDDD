@@ -40,6 +40,8 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Commands.CreateCompl
         [Fact]
         public async Task CreateComplianceFieldType_Return()
         {
+            var Mock = _unitOfWork.Object.applicationDbContext.ComplianceFieldType.Where(x => x.ComplianceFieldTypeId == 2).FirstOrDefault();
+
             var ComplianceFieldTypeInput = new CreateComplianceFieldTypeCommand
             {
                 ComplianceFieldTypeName = "Test",
@@ -48,7 +50,9 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Commands.CreateCompl
                 ComplianceFileSizeKb = 1,
                 HeightPx = 1,
                 WidthPx = 1,
-                Status = 1
+                Status = 1,
+                InputBehaviourId = Mock.InputBehaviourId,
+                FileResourceTypeId = Mock.FileResourceTypeId
             };
 
             var ComplianceFieldTypeOutput = new CreateComplianceFieldTypeCommandHandler(_unitOfWork.Object, _mapper);
@@ -57,7 +61,7 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Commands.CreateCompl
 
             result.ShouldBeOfType<ApiResponse<ComplianceFieldTypeCreateResponse>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

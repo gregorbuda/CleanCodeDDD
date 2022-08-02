@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceSourceType.Queries
 {
-    public class GetComplianceSourceTypeByIdList : IRequest<ApiResponse<ComplianceSourceTypesResponse>>
+    public class GetComplianceSourceTypeByIdList : IRequest<ApiResponse<ComplianceSourceTypes>>
     {
         public Int32 _complianceSourceTypeId { get; set; }
 

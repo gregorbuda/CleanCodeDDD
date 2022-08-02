@@ -20,7 +20,7 @@ namespace Compliance.UnitTest.Mock
             var complianceSourcesTypeMarkets = fixture.CreateMany<ComplianceSourceTypeMarkets>().ToList();
 
             complianceSourcesTypeMarkets.Add(fixture.Build<ComplianceSourceTypeMarkets>()
-                .With(tr => tr.ComplianceSourceTypeMarketId, 1)
+                .With(tr => tr.ComplianceSourceTypeMarketId, 7)
                 .Create()
                 );
 

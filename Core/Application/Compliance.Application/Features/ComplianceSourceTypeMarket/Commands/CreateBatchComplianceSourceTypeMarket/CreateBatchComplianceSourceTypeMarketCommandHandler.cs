@@ -73,8 +73,8 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.Cr
         public async Task<ApiResponse<IReadOnlyList<ComplianceSourceTypeMarkets>>> Validate(CreateBatchComplianceSourceTypeMarketListCommand request)
         {
             Boolean success = false;
-            String Message = "";
-            String CodeResult = "";
+            String Message = Message = "Success, and there is a response body.";
+            String CodeResult = StatusCodes.Status200OK.ToString();
             Boolean Result = false;
             ComplianceSourceTypes ComplianceSourceTypes = null;
           

@@ -7,6 +7,9 @@ using System.Collections.Generic;
 
 namespace Compliance.Domain.Models
 {
+    /// <summary>
+    /// File Resource Extension
+    /// </summary>
     public partial class FileResourceExtension
     {
         public int FileResourceExtensionId { get; set; }

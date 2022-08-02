@@ -46,7 +46,7 @@ namespace Compliance.UnitTest.Features.ComplianceSources.Queries
 
             result.ShouldBeOfType<ApiResponse<ComplianceSourceResponse>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

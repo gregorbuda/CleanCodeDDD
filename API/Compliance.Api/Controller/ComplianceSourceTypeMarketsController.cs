@@ -61,8 +61,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("ComplianceSourceTypeById")]
-        [ProducesResponseType(typeof(ApiResponse<IEnumerable<ComplianceSourceTypeMarketsResponse>>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<IEnumerable<ComplianceSourceTypeMarketsResponse>>>> GetComplianceSourceTypeById(Int32 ComplianceSourceTypeId)
+        [ProducesResponseType(typeof(ApiResponse<IEnumerable<ComplianceSourceTypeMarkets>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IEnumerable<ComplianceSourceTypeMarkets>>>> GetComplianceSourceTypeById(Int32 ComplianceSourceTypeId)
         {
             var query = new GetByComplianceSourceTypeMarketById(ComplianceSourceTypeId);
             var test = await _mediator.Send(query);
@@ -105,6 +105,26 @@ namespace Compliance.Api.Controller
         {
             var result = await _mediator.Send(command);
             return Ok(result);
+        }
+
+        /// <summary>
+        /// Get Compliance Source Type Market By Id
+        /// </summary>
+        /// <param name="ComplianceSourceTypeMarketId">Compliance Source Type Market Id.</param>
+        /// <returns>
+        /// A Compliance Source Type Market By Id
+        /// </returns>
+        /// <remarks>
+        /// Get Compliance Source Type Market By Id
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpGet("ComplianceSourceTypeMarketById")]
+        [ProducesResponseType(typeof(ApiResponse<ComplianceSourceTypeMarkets>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<ComplianceSourceTypeMarkets>>> GetComplianceSourceTypeMarketById(Int32 ComplianceSourceTypeMarketId)
+        {
+            var query = new GetComplianceSourceTypeMarketById(ComplianceSourceTypeMarketId);
+            var test = await _mediator.Send(query);
+            return Ok(test);
         }
 
     }

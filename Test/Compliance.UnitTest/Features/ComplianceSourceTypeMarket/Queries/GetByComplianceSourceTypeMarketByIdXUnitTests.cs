@@ -46,7 +46,7 @@ namespace Compliance.UnitTest.Features.ComplianceSourceTypeMarket.Queries
 
             result.ShouldBeOfType<ApiResponse<IReadOnlyList<ComplianceSourceTypeMarketsResponse>>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

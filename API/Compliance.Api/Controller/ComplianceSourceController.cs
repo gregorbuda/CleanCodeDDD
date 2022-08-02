@@ -62,8 +62,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("ComplianceSourceById")]
-        [ProducesResponseType(typeof(ApiResponse<ComplianceSourceResponse>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<ComplianceSourceResponse>>> GetComplianceSourceById(Int32 ComplianceSourceId)
+        [ProducesResponseType(typeof(ApiResponse<ComplianceSource>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<ComplianceSource>>> GetComplianceSourceById(Int32 ComplianceSourceId)
         {
             var query = new GetComplianceSourceByIdList(ComplianceSourceId);
             var test = await _mediator.Send(query);
@@ -82,8 +82,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("ComplianceSourceAll")]
-        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceSourceResponse>>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceSourceResponse>>>> GetComplianceSourceAll()
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceSource>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceSource>>>> GetComplianceSourceAll()
         {
             var query = new GetComplianceSourceAllList();
             var test = await _mediator.Send(query);

@@ -62,8 +62,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("InputBehaviourAll")]
-        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<InputBehaviourResponse>>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<IReadOnlyList<InputBehaviourResponse>>>> GetInputBehaviourAll()
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<InputBehaviour>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<InputBehaviour>>>> GetInputBehaviourAll()
         {
             var query = new GetInputBehavioursAllList();
             var test = await _mediator.Send(query);
@@ -121,8 +121,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("InputBehaviourById")]
-        [ProducesResponseType(typeof(ApiResponse<InputBehaviourResponse>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<InputBehaviourResponse>>> GetInputBehaviourById(Int32 InputBehaviourId)
+        [ProducesResponseType(typeof(ApiResponse<InputBehaviour>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<InputBehaviour>>> GetInputBehaviourById(Int32 InputBehaviourId)
         {
             var query = new GetInputBehavioursByIdList(InputBehaviourId);
             var test = await _mediator.Send(query);

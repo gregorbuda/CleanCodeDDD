@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceSources.Queries
 {
-    public class GetComplianceSourceAllList : IRequest<ApiResponse<IReadOnlyList<ComplianceSourceResponse>>>
+    public class GetComplianceSourceAllList : IRequest<ApiResponse<IReadOnlyList<ComplianceSource>>>
     {
 
     }

@@ -73,8 +73,8 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.Cr
         public async Task<ApiResponse<IReadOnlyList<ComplianceDistributorData>>> Validate(CreateBatchComplianceDistributorDataListCommand request)
         {
             Boolean success = false;
-            String Message = "";
-            String CodeResult = "";
+            String Message = Message = "Success, and there is a response body.";
+            String CodeResult = StatusCodes.Status200OK.ToString();
             Boolean Result = false;
             ComplianceSourceTypes ComplianceSourceTypes = null;
            

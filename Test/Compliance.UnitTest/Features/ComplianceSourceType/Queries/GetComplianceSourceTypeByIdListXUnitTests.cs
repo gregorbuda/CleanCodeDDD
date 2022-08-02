@@ -44,7 +44,7 @@ namespace Compliance.UnitTest.Features.ComplianceSourceType.Queries
 
             var result = await handler.Handle(request, CancellationToken.None);
 
-            result.ShouldBeOfType<ApiResponse<ComplianceSourceTypesResponse>>();
+            result.ShouldBeOfType<ApiResponse<ComplianceSourceTypes>>();
 
             result.CodeResult = StatusCodes.Status200OK.ToString();
         }

@@ -35,7 +35,7 @@ namespace Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBe
 
                 if (InputBehaviourToUpdate != null)
                 {
-                    _mapper.Map(request, InputBehaviourToUpdate, typeof(UpdateInputBehavioursCommand), typeof(InputBehaviour));
+                    //_mapper.Map(request, InputBehaviourToUpdate, typeof(UpdateInputBehavioursCommand), typeof(InputBehaviour));
 
                     _unitOfWork.inputBehaviourRepository.UpdateEntity(InputBehaviourToUpdate);
 

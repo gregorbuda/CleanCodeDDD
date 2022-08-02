@@ -331,14 +331,14 @@
         </member>
         <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.GetComplianceSourceTypeMarketById(System.Int32)">
             <summary>
-            Get Compliance Source Type Market By Id
+            Get Compliance Source Type  By Id
             </summary>
             <param name="ComplianceSourceTypeId">The Compliance Source Type Id.</param>
             <returns>
-            A Compliance Source Type Market By Id
+            A Compliance Source Type  By Id
             </returns>
             <remarks>
-            Get Compliance Source Type Market By Id
+            Get Compliance Source Type  By Id
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>
@@ -430,6 +430,19 @@
             </returns>
             <remarks>
             Create Batch Compliance Source Type Markets
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.GetComplianceSourceTypeMarketById(System.Int32)">
+            <summary>
+            Get Compliance Source Type Market By Id
+            </summary>
+            <param name="ComplianceSourceTypeMarketId">Compliance Source Type Market Id.</param>
+            <returns>
+            A Compliance Source Type Market By Id
+            </returns>
+            <remarks>
+            Get Compliance Source Type Market By Id
             `Note: This endpoint requires authentication.` [more info](#section/Authentication)
             </remarks>
         </member>

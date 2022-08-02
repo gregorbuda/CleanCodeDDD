@@ -52,7 +52,7 @@ namespace Compliance.UnitTest.Features.ComplianceSources.Commands.UpdateComplian
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

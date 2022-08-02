@@ -42,8 +42,12 @@ namespace Compliance.UnitTest.Features.InputBehaviours.UpdateInputBehaviours
             var InputBehaviourInput = new UpdateInputBehavioursCommand
             {
                 InputBehaviourId = 1,
-                InputBehaviourName = "Test",
-                Status = 1
+                InputBehaviourName = "Test GD",
+                Status = 1,
+                CreatedBy = 1,
+                CreatedDate = DateTime.Today,
+                UpdatedBy = 1,
+                UpdatedDate = DateTime.Today
             };
 
             var InputBehaviourOutput = new UpdateInputBehavioursCommandHandler(_unitOfWork.Object, _mapper);
@@ -52,7 +56,7 @@ namespace Compliance.UnitTest.Features.InputBehaviours.UpdateInputBehaviours
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

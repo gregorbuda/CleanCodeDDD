@@ -40,13 +40,13 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Queries
         {
             var handler = new GetComplianceFieldTypeByIdListHandler(_unitOfWork.Object, _mapper);
 
-            var request = new GetComplianceFieldTypeByIdList(1);
+            var request = new GetComplianceFieldTypeByIdList(2);
 
             var result = await handler.Handle(request, CancellationToken.None);
 
-            result.ShouldBeOfType<ApiResponse<ComplianceFieldTypeResponse>>();
+            result.ShouldBeOfType<ApiResponse<ComplianceFieldType>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

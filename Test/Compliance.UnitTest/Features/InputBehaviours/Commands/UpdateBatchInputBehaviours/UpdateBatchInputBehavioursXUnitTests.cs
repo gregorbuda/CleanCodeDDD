@@ -65,7 +65,7 @@ namespace Compliance.UnitTest.Features.InputBehaviours.Commands.UpdateBatchInput
             
             result.ShouldBeOfType<ApiResponse<Boolean>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

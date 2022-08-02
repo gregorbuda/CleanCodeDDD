@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
 {
-    public class GetComplianceFieldTypeAllListHandler : IRequestHandler<GetComplianceFieldTypeAllList, ApiResponse<IReadOnlyList<ComplianceFieldTypeResponse>>>
+    public class GetComplianceFieldTypeAllListHandler : IRequestHandler<GetComplianceFieldTypeAllList, ApiResponse<IReadOnlyList<ComplianceFieldType>>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
@@ -23,7 +23,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
             _mapper = mapper;
         }
 
-        public async Task<ApiResponse<IReadOnlyList<ComplianceFieldTypeResponse>>> Handle(GetComplianceFieldTypeAllList request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<IReadOnlyList<ComplianceFieldType>>> Handle(GetComplianceFieldTypeAllList request, CancellationToken cancellationToken)
         {
             Boolean success = false;
             String Message = "";
@@ -35,7 +35,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
             {
                 ComplianceSourceFieldType = await _unitOfWork.complianceFieldTypeRepository.GetAllAsync();
 
-                ComplianceSourceResponseFieldType = _mapper.Map<IReadOnlyList<ComplianceFieldTypeResponse>>(ComplianceSourceFieldType);
+              // ComplianceSourceResponseFieldType = _mapper.Map<IReadOnlyList<ComplianceFieldTypeResponse>>(ComplianceSourceFieldType);
 
                 if (ComplianceSourceFieldType.Count > 0)
                 {
@@ -47,7 +47,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
                     Message = "Compliance Field Type Not Found";
-                    ComplianceSourceResponseFieldType = null;
+                    ComplianceSourceFieldType = null;
                     success = false;
                 }
             }
@@ -55,15 +55,15 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
             {
                 CodeResult = StatusCodes.Status500InternalServerError.ToString();
                 Message = "Internal Server Error";
-                ComplianceSourceResponseFieldType = null;
+                ComplianceSourceFieldType = null;
                 success = false;
             }
 
-            ApiResponse<IReadOnlyList<ComplianceFieldTypeResponse>> response = new ApiResponse<IReadOnlyList<ComplianceFieldTypeResponse>>
+            ApiResponse<IReadOnlyList<ComplianceFieldType>> response = new ApiResponse<IReadOnlyList<ComplianceFieldType>>
             {
                 CodeResult = CodeResult,
                 Message = Message,
-                Data = ComplianceSourceResponseFieldType,
+                Data = ComplianceSourceFieldType,
                 Success = success
             };
 

@@ -14,7 +14,7 @@ namespace Compliance.UnitTest.Mock
             Guid dbContextId = Guid.NewGuid();
 
             var optiones = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase(databaseName: $"ApplicationDbContext-{dbContextId}")
+                .UseInMemoryDatabase(databaseName: "ApplicationDbContext")
                 .Options;
 
             var applicationDbContextFake = new ApplicationDbContext(optiones);

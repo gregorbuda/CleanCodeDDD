@@ -39,16 +39,20 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Commands.UpdateCompl
         [Fact]
         public async Task UpdateComplianceFieldType_Return()
         {
+            var Mock = _unitOfWork.Object.applicationDbContext.ComplianceFieldType.Where(x => x.ComplianceFieldTypeId == 2).FirstOrDefault();
+
             var ComplianceFieldTypeInput = new UpdateComplianceFieldTypeCommand
             {
-                ComplianceFieldTypeId = 1,
+                ComplianceFieldTypeId = 2,
                 ComplianceFieldTypeName = "Test",
                 TranslationKey = "Test",
                 FieldPath = "Test",
                 ComplianceFileSizeKb = 1,
                 HeightPx = 1,
                 WidthPx = 1,
-                Status = 1
+                Status = 1,
+                InputBehaviourId = Mock.InputBehaviourId,
+                FileResourceTypeId = Mock.FileResourceTypeId
             };
 
             var ComplianceFieldTypeOutput = new UpdateComplianceFieldTypeCommandHandler(_unitOfWork.Object, _mapper);
@@ -57,7 +61,7 @@ namespace Compliance.UnitTest.Features.ComplianceFieldTypes.Commands.UpdateCompl
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

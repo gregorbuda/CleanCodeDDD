@@ -40,11 +40,11 @@ namespace Compliance.UnitTest.Features.ComplianceSourceType.Queries
         {
             var handler = new GetComplianceSourceTypeFullDataByIdHandler(_unitOfWork.Object, _mapper);
 
-            var request = new GetComplianceSourceTypeFullDataById(5);
+            var request = new GetComplianceSourceTypeFullDataById(4);
 
             var result = await handler.Handle(request, CancellationToken.None);
 
-            result.ShouldBeOfType<ApiResponse<ComplianceSourceTypesResponse>>();
+            result.ShouldBeOfType<ApiResponse<ComplianceSourceTypesFullDataResponse>>();
 
             result.CodeResult = StatusCodes.Status200OK.ToString();
         }

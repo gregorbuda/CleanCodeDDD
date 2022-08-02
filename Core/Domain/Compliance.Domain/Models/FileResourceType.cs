@@ -14,11 +14,11 @@ namespace Compliance.Domain.Models
             FileResourceExtension = new HashSet<FileResourceExtension>();
         }
 
-        public int FileResourceTypeId { get; set; }
-        public string Name { get; set; }
-        public string TranslationKey { get; set; }
-        public string Description { get; set; }
-        public int MaxSize { get; set; }
+        public Int32 FileResourceTypeId { get; set; }
+        public String Name { get; set; }
+        public String TranslationKey { get; set; }
+        public String Description { get; set; }
+        public Int32 MaxSize { get; set; }
         public DateTime CreatedDate { get; set; }
         public int CreatedBy { get; set; }
         public DateTime? UpdatedDate { get; set; }

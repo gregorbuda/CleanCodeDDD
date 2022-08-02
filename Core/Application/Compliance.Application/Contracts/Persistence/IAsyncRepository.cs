@@ -7,6 +7,8 @@ namespace Compliance.Application.Contracts.Persistence
     {
         Task<IReadOnlyList<T>> GetAllAsync();
 
+        Task<IReadOnlyList<T>> GetAsyncById(Expression<Func<T, bool>> predicate);
+
         Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate);
 
         Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null,
@@ -31,6 +33,8 @@ namespace Compliance.Application.Contracts.Persistence
         void UpdateEntity(T entity);
 
         void DeleteEntity(T entity);
+
+        void DeleteBatch(IEnumerable<T> itemList);
 
         void UpdateBatch(IEnumerable<T> itemList);
         

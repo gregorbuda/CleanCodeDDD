@@ -81,8 +81,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("ComplianceDistributorDataFullData")]
-        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>> GetComplianceDistributorDataFullData()
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorData>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorData>>>> GetComplianceDistributorDataFullData()
         {
             var query = new GetComplianceDistributorDataFullDataList();
             var test = await _mediator.Send(query);
@@ -101,8 +101,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpGet("ComplianceDistributorDataFullDataListByDistributor")]
-        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>> GetComplianceDistributorDataFullDataListByDistributor(Int32 complianceDistributorId)
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorData>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorData>>>> GetComplianceDistributorDataFullDataListByDistributor(Int32 complianceDistributorId)
         {
             var query = new GetComplianceDistributorDataFullDataByDistributorId(complianceDistributorId);
             var test = await _mediator.Send(query);
@@ -121,8 +121,8 @@ namespace Compliance.Api.Controller
         /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
         /// </remarks>
         [HttpPut("UpdateBatchReturnList")]
-        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>> UpdateBatchReturnListComplianceDistributorData([FromBody] UpdateBatchAnReturnComplianceDistributorDataListCommand command)
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ComplianceDistributorData>>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<ComplianceDistributorData>>>> UpdateBatchReturnListComplianceDistributorData([FromBody] UpdateBatchAnReturnComplianceDistributorDataListCommand command)
         {
             var result = await _mediator.Send(command);
             return Ok(result);

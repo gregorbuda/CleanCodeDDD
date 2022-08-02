@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceSources.Queries
 {
-    public class GetComplianceSourceAllListHanlder : IRequestHandler<GetComplianceSourceAllList, ApiResponse<IReadOnlyList<ComplianceSourceResponse>>>
+    public class GetComplianceSourceAllListHanlder : IRequestHandler<GetComplianceSourceAllList, ApiResponse<IReadOnlyList<ComplianceSource>>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
@@ -23,7 +23,7 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
             _mapper = mapper;
         }
 
-        public async Task<ApiResponse<IReadOnlyList<ComplianceSourceResponse>>> Handle(GetComplianceSourceAllList request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<IReadOnlyList<ComplianceSource>>> Handle(GetComplianceSourceAllList request, CancellationToken cancellationToken)
         {
             Boolean success = false;
             String Message = "";
@@ -38,7 +38,7 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
 
                 if (ComplianceSource.Count > 0)
                 {
-                    ComplianceSourceResponseList = _mapper.Map<IReadOnlyList<ComplianceSourceResponse>>(ComplianceSource);
+                    //ComplianceSourceResponseList = _mapper.Map<IReadOnlyList<ComplianceSourceResponse>>(ComplianceSource);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -48,7 +48,7 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
                     Message = "Compliance Source Not Found";
-                    ComplianceSourceResponseList = null;
+                    ComplianceSource = null;
                     success = false;
                 }
             }
@@ -56,15 +56,15 @@ namespace Compliance.Application.Features.ComplianceSources.Queries
             {
                 CodeResult = StatusCodes.Status500InternalServerError.ToString();
                 Message = "Internal Server Error";
-                ComplianceSourceResponseList = null;
+                ComplianceSource = null;
                 success = false;
             }
 
-            ApiResponse<IReadOnlyList<ComplianceSourceResponse>> response = new ApiResponse<IReadOnlyList<ComplianceSourceResponse>>
+            ApiResponse<IReadOnlyList<ComplianceSource>> response = new ApiResponse<IReadOnlyList<ComplianceSource>>
             {
                 CodeResult = CodeResult,
                 Message = Message,
-                Data = ComplianceSourceResponseList,
+                Data = ComplianceSource,
                 Success = success
             };
 

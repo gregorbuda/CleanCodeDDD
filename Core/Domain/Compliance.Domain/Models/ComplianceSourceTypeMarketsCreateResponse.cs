@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace Compliance.Domain.Models
 {
+    /// <summary>
+    /// Compliance Source Type Markets Create Response
+    /// </summary>
     public class ComplianceSourceTypeMarketsCreateResponse
     {
-        public int ComplianceSourceTypeMarketId { get; set; }
+        /// <summary>
+        /// Compliance Source Type Market Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Type Marke tId
+        /// </value>
+        /// <example>1</example>
+        public Int32 ComplianceSourceTypeMarketId { get; set; }
     }
 }

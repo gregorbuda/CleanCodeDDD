@@ -44,7 +44,7 @@ namespace Compliance.UnitTest.Features.InputBehaviours.Queries
 
             var result = await handler.Handle(request, CancellationToken.None);
 
-            result.ShouldBeOfType<ApiResponse<IReadOnlyList<InputBehaviourResponse>>>();
+            result.ShouldBeOfType<ApiResponse<IReadOnlyList<InputBehaviour>>>();
 
             result.CodeResult = StatusCodes.Status200OK.ToString();
         } 

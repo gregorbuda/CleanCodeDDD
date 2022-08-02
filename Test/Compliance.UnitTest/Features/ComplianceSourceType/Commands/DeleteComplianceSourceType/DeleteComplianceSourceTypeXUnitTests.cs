@@ -51,7 +51,7 @@ namespace Compliance.UnitTest.Features.ComplianceSourceType.Commands.DeleteCompl
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }

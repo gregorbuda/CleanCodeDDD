@@ -68,8 +68,8 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBa
         public async Task<ApiResponse<IReadOnlyList<ComplianceFieldType>>> Validate(UpdateBatchComplianceFieldTypeListCommand request)
         {
             Boolean success = false;
-            String Message = "";
-            String CodeResult = "";
+            String Message = Message = "Success, and there is a response body.";
+            String CodeResult = StatusCodes.Status200OK.ToString();
             Boolean Result = false;
             FileResourceType fileResourceType = null;
             InputBehaviour inputBehaviour = null;

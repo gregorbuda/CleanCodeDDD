@@ -22,17 +22,17 @@ namespace Compliance.Application.Features.ComplianceSourceType.Queries
         {
             Boolean success = false;
             String Message = "";
-            ComplianceSourceTypes ComplianceSourceFieldType = null;
-            ComplianceSourceTypesFullDataResponse ComplianceSourceResponseFieldType = null;
+            ComplianceSourceTypes complianceSourceTypes = null;
+            ComplianceSourceTypesFullDataResponse complianceSourceTypesFullDataResponse = null;
             String CodeResult = "";
 
             try
             {
-                ComplianceSourceFieldType = await _unitOfWork.complianceSourceTypesRepository.GetFullDataById(request._complianceSourceTypeId);
+                complianceSourceTypes = await _unitOfWork.complianceSourceTypesRepository.GetFullDataById(request._complianceSourceTypeId);
 
-                if (ComplianceSourceFieldType != null)
+                if (complianceSourceTypes != null)
                 {
-                    ComplianceSourceResponseFieldType = _mapper.Map<ComplianceSourceTypesFullDataResponse>(ComplianceSourceFieldType);
+                    complianceSourceTypesFullDataResponse = _mapper.Map<ComplianceSourceTypesFullDataResponse>(complianceSourceTypes);
 
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";
@@ -42,7 +42,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Queries
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
                     Message = "Compliance Field Type Not Found";
-                    ComplianceSourceResponseFieldType = null;
+                    complianceSourceTypesFullDataResponse = null;
                     success = false;
                 }
             }
@@ -50,7 +50,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Queries
             {
                 CodeResult = StatusCodes.Status500InternalServerError.ToString();
                 Message = "Internal Server Error";
-                ComplianceSourceResponseFieldType = null;
+                complianceSourceTypesFullDataResponse = null;
                 success = false;
             }
 
@@ -58,7 +58,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Queries
             {
                 CodeResult = CodeResult,
                 Message = Message,
-                Data = ComplianceSourceResponseFieldType,
+                Data = complianceSourceTypesFullDataResponse,
                 Success = success
             };
 

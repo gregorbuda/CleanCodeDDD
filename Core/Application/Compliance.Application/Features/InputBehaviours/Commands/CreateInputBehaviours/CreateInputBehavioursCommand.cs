@@ -13,7 +13,7 @@ namespace Compliance.Application.Features.InputBehaviours.Commands.CreateInputBe
     public class CreateInputBehavioursCommand : IRequest<ApiResponse<InputBehaviourCreateResponse>>
     {
         [Required]
-        public string InputBehaviourName { get; set; }
+        public String InputBehaviourName { get; set; }
         [Required]
         public byte Status { get; set; }
         public DateTime? CreatedDate { get; set; }

@@ -1,7 +1,12 @@
-﻿using AutoMapper;
+﻿using AutoFixture;
+using AutoMapper;
+using Compliance.Application.Contracts.Persistence;
+using Compliance.Application.Features.ComplianceSourceType.Queries;
 using Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket;
+using Compliance.Application.Features.ComplianceSourceTypeMarket.Queries;
 using Compliance.Application.Mappings;
 using Compliance.Application.Responses;
+using Compliance.Domain.Models;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
 using Microsoft.AspNetCore.Http;
@@ -42,7 +47,11 @@ namespace Compliance.UnitTest.Features.ComplianceSourceTypeMarket.Commands.Updat
             UpdateBatchComplianceSourceTypeMarketListCommand listComplianceSourceTypeMarket = new UpdateBatchComplianceSourceTypeMarketListCommand();
             UpdateBatchComplianceSourceTypeMarketCommand? updateBatchComplianceSourceTypeMarketCommand = new UpdateBatchComplianceSourceTypeMarketCommand();
 
-            updateBatchComplianceSourceTypeMarketCommand.ComplianceSourceTypeMarketId = 7;
+
+            var Mock = _unitOfWork.Object.applicationDbContext.ComplianceSourceTypeMarkets.Where(x => x.ComplianceSourceTypeMarketId == 7).FirstOrDefault();
+
+            updateBatchComplianceSourceTypeMarketCommand.ComplianceSourceTypeMarketId = Mock.ComplianceSourceTypeMarketId;
+            updateBatchComplianceSourceTypeMarketCommand.ComplianceSourceTypeId = Mock.ComplianceSourceTypeId;
             updateBatchComplianceSourceTypeMarketCommand.MarketId = 13;
             updateBatchComplianceSourceTypeMarketCommand.Status = 1;
             updateBatchComplianceSourceTypeMarketCommand.CreatedBy = 1;
@@ -62,7 +71,7 @@ namespace Compliance.UnitTest.Features.ComplianceSourceTypeMarket.Commands.Updat
 
             result.ShouldBeOfType<ApiResponse<Boolean>>();
 
-            result.CodeResult = StatusCodes.Status200OK.ToString();
+            Assert.True(result.CodeResult == StatusCodes.Status200OK.ToString());
         }
     }
 }
