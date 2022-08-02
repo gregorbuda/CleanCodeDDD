@@ -13,8 +13,15 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Mappings
 {
+    /// <summary>
+    /// File Resource Type Profile AutoMapper
+    /// </summary>
+    /// <seealso cref="AutoMapper.Profile" />
     public class FileResourceTypeProfile : Profile
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FileResourceTypeProfile"/> class.
+        /// </summary>
         public FileResourceTypeProfile()
         {
             CreateMap<CreateFileResourceTypesCommand, FileResourceType>();

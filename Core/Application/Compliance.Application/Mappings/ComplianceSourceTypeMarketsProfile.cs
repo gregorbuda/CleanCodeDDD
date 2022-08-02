@@ -9,8 +9,15 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Mappings
 {
+    /// <summary>
+    /// Compliance Source Type Markets Profile AutoMapper
+    /// </summary>
+    /// <seealso cref="AutoMapper.Profile" />
     public class ComplianceSourceTypeMarketsProfile : Profile
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ComplianceSourceTypeMarketsProfile"/> class.
+        /// </summary>
         public ComplianceSourceTypeMarketsProfile()
         {
             CreateMap<CreateComplianceSourceTypeMarketCommand, ComplianceSourceTypeMarkets>();

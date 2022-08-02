@@ -10,8 +10,15 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Mappings
 {
+    /// <summary>
+    /// Compliance Source Types Profile AutoMapper
+    /// </summary>
+    /// <seealso cref="AutoMapper.Profile" />
     public class ComplianceSourceTypesProfile : Profile
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ComplianceSourceTypesProfile"/> class.
+        /// </summary>
         public ComplianceSourceTypesProfile()
         {
             CreateMap<CreateComplianceSourceTypeCommand, ComplianceSourceTypes>();

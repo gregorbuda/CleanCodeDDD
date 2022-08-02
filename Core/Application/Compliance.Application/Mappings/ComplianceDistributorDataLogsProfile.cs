@@ -4,8 +4,15 @@ using Compliance.Domain.Models;
 
 namespace Compliance.Application.Mappings
 {
+    /// <summary>
+    /// Compliance Distributor Data Logs Profile AutoMapper
+    /// </summary>
+    /// <seealso cref="AutoMapper.Profile" />
     public class ComplianceDistributorDataLogsProfile : Profile
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ComplianceDistributorDataLogsProfile"/> class.
+        /// </summary>
         public ComplianceDistributorDataLogsProfile()
         {
             CreateMap<ComplianceDistributorDataLogs, ComplianceDistributorDataLogsResponse>()

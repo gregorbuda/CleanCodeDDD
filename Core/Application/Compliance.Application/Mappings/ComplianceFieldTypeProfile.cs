@@ -10,8 +10,15 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Mappings
 {
+    /// <summary>
+    /// Compliance Field Type Profile AutoMapper
+    /// </summary>
+    /// <seealso cref="AutoMapper.Profile" />
     public class ComplianceFieldTypeProfile : Profile
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ComplianceFieldTypeProfile"/> class.
+        /// </summary>
         public ComplianceFieldTypeProfile()
         {
             CreateMap<CreateComplianceFieldTypeCommand, ComplianceFieldType>();

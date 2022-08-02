@@ -11,8 +11,15 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Mappings
 {
+    /// <summary>
+    /// Compliance Source Profile AutoMapper
+    /// </summary>
+    /// <seealso cref="AutoMapper.Profile" />
     public class ComplianceSourceProfile : Profile
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ComplianceSourceProfile"/> class.
+        /// </summary>
         public ComplianceSourceProfile()
         {
             CreateMap<CreateComplianceSourceCommand, ComplianceSource>();
