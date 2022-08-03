@@ -1,16 +1,24 @@
-﻿using Compliance.Application.Responses;
+﻿using Compliance.Domain.Models;
 using MediatR;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Compliance.Application.Features.ComplianceSources.Commands.DeleteComplianceSources
 {
+    /// <summary>
+    /// Delete Compliance Source Command
+    /// </summary>
     public class DeleteComplianceSourceCommand : IRequest<ApiResponse<Boolean>>
     {
+        /// <summary>
+        /// Compliance Source Id
+        /// </summary>
+        /// <value>
+        /// Compliance Source Id
+        /// </value>
+        /// <example>1</example>
         [Required]
         public Int32 ComplianceSourceId { get; set; }
     }

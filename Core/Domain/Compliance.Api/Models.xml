@@ -1,0 +1,1521 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Compliance.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Compliance.Domain.Models.ComplianceDistributorData">
+            <summary>
+            Compliance Distributor Data
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.ComplianceDistributorDataId">
+            <summary>
+            Compliance Distributor DataI Id
+            </summary>
+            <value>
+            Compliance Distributor DataI Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.DistributorId">
+            <summary>
+            Distributor Id
+            </summary>
+            <value>
+            Distributor Id
+            </value>
+            <example>20</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.FieldData">
+            <summary>
+            Field Data
+            </summary>
+            <value>
+            Field Data
+            </value>
+            <example>Test</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.CreatedBy">
+            <summary>
+            Created By
+            </summary>
+            <value>
+            Created By
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.UpdatedDate">
+            <summary>
+            Updated Date
+            </summary>
+            <value>
+            Updated Date
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.UpdatedBy">
+            <summary>
+            Updated By
+            </summary>
+            <value>
+            Updated By
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.ComplianceSourceType">
+            <summary>
+            ComplianceSource Type
+            </summary>
+            <value>
+            ComplianceSource Type
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.ComplianceDistributorDataLogs">
+            <summary>
+            List Compliance Distributor Data Logs
+            </summary>
+            <value>
+            List Compliance Distributor Data Logs
+            </value>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceDistributorDataLogs">
+            <summary>
+            Compliance Distributor Data Logs
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogs.ComplianceDistributorLogId">
+            <summary>
+            Compliance Distributor Data Log Id
+            </summary>
+            <value>
+            Compliance Distributor Data Log Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogs.ComplianceDistributorLogMessage">
+            <summary>
+            Compliance Distributor Data Log Message
+            </summary>
+            <value>
+            Compliance Distributor Data Log Message
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogs.ComplianceDistributorLogData">
+            <summary>
+            Compliance Distributor Data Log Id
+            </summary>
+            <value>
+            Compliance Distributor Data Log Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogs.ComplianceDistributorDataId">
+            <summary>
+            Compliance Distributor Data  Id
+            </summary>
+            <value>
+            Compliance Distributor Data  Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogs.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogs.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogs.CreatedBy">
+            <summary>
+            Created By
+            </summary>
+            <value>
+            Created By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogs.UpdatedDate">
+            <summary>
+            Update Date
+            </summary>
+            <value>
+            Update Date
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogs.UpdatedBy">
+            <summary>
+            Updated By
+            </summary>
+            <value>
+            Updated By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogs.ComplianceDistributorData">
+            <summary>
+            Compliance Distributor Data
+            </summary>
+            <value>
+            Compliance Distributor Data
+            </value>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceDistributorDataLogsResponse">
+            <summary>
+            Compliance Distributor Data Logs Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogsResponse.ComplianceDistributorLogId">
+            <summary>
+            Compliance Distributor Data Log Id
+            </summary>
+            <value>
+            Compliance Distributor Data Log Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogsResponse.ComplianceDistributorLogMessage">
+            <summary>
+            Compliance Distributor Data Log Message
+            </summary>
+            <value>
+            Compliance Distributor Data Log Message
+            </value>
+            <example>Test</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogsResponse.ComplianceDistributorLogData">
+            <summary>
+            Compliance Distributor Data 
+            </summary>
+            <value>
+            Compliance Distributor Data 
+            </value>
+            <example>Test Data</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogsResponse.ComplianceDistributorDataId">
+            <summary>
+            Compliance Distributor Data Id
+            </summary>
+            <value>
+            Compliance Distributor Data Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataLogsResponse.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceDistributorDataResponse">
+            <summary>
+            Compliance Distributor Data  Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataResponse.ComplianceDistributorDataId">
+            <summary>
+            Compliance Distributor Data  Id
+            </summary>
+            <value>
+            Compliance Distributor Data  Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataResponse.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataResponse.DistributorId">
+            <summary>
+            Distributor Id
+            </summary>
+            <value>
+            Distributor Id
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataResponse.FieldData">
+            <summary>
+            Field Data
+            </summary>
+            <value>
+            Field Data
+            </value>
+            <example>Test Data</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorDataResponse.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceFieldType">
+            <summary>
+            Compliance Field Type
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.ComplianceFieldTypeName">
+            <summary>
+            Compliance Field Type Name
+            </summary>
+            <value>
+            Compliance Field Type Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.TranslationKey">
+            <summary>
+            Translation Key
+            </summary>
+            <value>
+            Translation Key
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.FieldPath">
+            <summary>
+            Field Path
+            </summary>
+            <value>
+            Field Path
+            </value>
+            <example>Test Path</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.ComplianceFileSizeKb">
+            <summary>
+            Compliance File Size Kb
+            </summary>
+            <value>
+            Compliance File Size Kb
+            </value>
+            <example>750</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.HeightPx">
+            <summary>
+            HeightPx
+            </summary>
+            <value>
+            HeightPx
+            </value>
+            <example>3</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.WidthPx">
+            <summary>
+            WidthPx
+            </summary>
+            <value>
+            WidthPx
+            </value>
+            <example>5</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.CreatedBy">
+            <summary>
+            Created By
+            </summary>
+            <value>
+            Created By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.UpdatedDate">
+            <summary>
+            Update Date
+            </summary>
+            <value>
+            Update Date
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.UpdatedBy">
+            <summary>
+            Updated By
+            </summary>
+            <value>
+            Updated By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>Id</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.InputBehaviour">
+            <summary>
+            Input Behaviour
+            </summary>
+            <value>
+            Input Behaviour
+            </value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Compliance.Domain.Models.ComplianceFieldType.FileResourceTypeId" -->
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.FileResourceType">
+            <summary>
+            File Resource Type
+            </summary>
+            <value>
+            File Resource Type
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldType.ComplianceSourceTypes">
+            <summary>
+            Compliance Source Types
+            </summary>
+            <value>
+            Compliance Source Types
+            </value>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceFieldTypeCreateResponse">
+            <summary>
+            Compliance Field Type Create Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeCreateResponse.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse">
+            <summary>
+            Compliance Field Type Full Data Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.ComplianceFieldTypeName">
+            <summary>
+            Compliance Field Type Name
+            </summary>
+            <value>
+            Compliance Field Type Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.TranslationKey">
+            <summary>
+            Translation Key
+            </summary>
+            <value>
+            Translation Key
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.FieldPath">
+            <summary>
+            Field Path
+            </summary>
+            <value>
+            Field Path
+            </value>
+            <example>Test Data</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.ComplianceFileSizeKb">
+            <summary>
+            Compliance Field Size Kb
+            </summary>
+            <value>
+            Compliance Field Size Kb
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.HeightPx">
+            <summary>
+            HeightPx
+            </summary>
+            <value>
+            HeightPx
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.WidthPx">
+            <summary>
+            WidthPx
+            </summary>
+            <value>
+            WidthPx
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.InputBehaviour">
+            <summary>
+            Input Behaviour
+            </summary>
+            <value>
+            Input Behaviour
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.FileResourceType">
+            <summary>
+            File Resource Type
+            </summary>
+            <value>
+            File Resource Type
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeFullDataResponse.ComplianceSourceTypes">
+            <summary>
+            Compliance Field Types
+            </summary>
+            <value>
+            Compliance Field Types
+            </value>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceFieldTypeResponse">
+            <summary>
+            Compliance Field Type Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.ComplianceFieldTypeName">
+            <summary>
+            Compliance Field Type Name
+            </summary>
+            <value>
+            Compliance Field Type Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.TranslationKey">
+            <summary>
+            Translation Key
+            </summary>
+            <value>
+            Translation Key
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.FieldPath">
+            <summary>
+            Field Path
+            </summary>
+            <value>
+            Field Path
+            </value>
+            <example>Test Data</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.ComplianceFileSizeKb">
+            <summary>
+            Compliance File Size Kb
+            </summary>
+            <value>
+            Compliance File Size Kb
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.HeightPx">
+            <summary>
+            HeightPx
+            </summary>
+            <value>
+            HeightPx
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.WidthPx">
+            <summary>
+            WidthPx
+            </summary>
+            <value>
+            WidthPx
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.InputBehaviour">
+            <summary>
+            Input Behaviour
+            </summary>
+            <value>
+            Input Behaviour
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.FileResourceTypeId">
+            <summary>
+            File Resource Type Id
+            </summary>
+            <value>
+            File Resource Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.FileResourceType">
+            <summary>
+            File Resource Type
+            </summary>
+            <value>
+            File Resource Type
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceFieldTypeResponse.ComplianceSourceTypes">
+            <summary>
+            Compliance Source Types
+            </summary>
+            <value>
+            Compliance Source Types
+            </value>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceSource">
+            <summary>
+            Compliance Source
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSource.ComplianceSourceId">
+            <summary>
+            Compliance Source  Id
+            </summary>
+            <value>
+            Compliance Source  Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSource.ComplianceSourceName">
+            <summary>
+            Compliance Source Name
+            </summary>
+            <value>
+            Compliance Source Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSource.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSource.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSource.CreatedBy">
+            <summary>
+            Created By
+            </summary>
+            <value>
+            Created By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSource.UpdatedDate">
+            <summary>
+            Updated Date
+            </summary>
+            <value>
+            Updated Date
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSource.UpdatedBy">
+            <summary>
+            Updated By
+            </summary>
+            <value>
+            Updated By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSource.ComplianceSourceTypes">
+            <summary>
+            Compliance Source Types
+            </summary>
+            <value>
+            Compliance Source Types
+            </value>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceSourceCreateResponse">
+            <summary>
+            Compliance Source Create Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceCreateResponse.ComplianceSourceId">
+            <summary>
+            Compliance Source Id
+            </summary>
+            <value>
+            Compliance Source Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceSourceResponse">
+            <summary>
+            Compliance Source Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceResponse.ComplianceSourceId">
+            <summary>
+            The Compliance identifier.
+            </summary>
+            <value>
+            The Compliance identifier.
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceResponse.ComplianceSourceName">
+            <summary>
+            The Compliance name.
+            </summary>
+            <value>
+            The Compliance name.
+            </value>
+            <example>Compliance Name 1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceResponse.Status">
+            <summary>
+            The Compliance Status.
+            </summary>
+            <value>
+            The Compliance Status.
+            </value>
+            <example>Active</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceSourceTypeCreateResponse">
+            <summary>
+            Compliance Source Type Create Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeCreateResponse.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceSourceTypeMarkets">
+            <summary>
+            Compliance Source Type Markets
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.ComplianceSourceTypeMarketId">
+            <summary>
+            Compliance Source Type Market Id
+            </summary>
+            <value>
+            Compliance Source Type Market Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.CreatedBy">
+            <summary>
+            Created By
+            </summary>
+            <value>
+            Created By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.UpdatedDate">
+            <summary>
+            Compliance Distributor DataI Id
+            </summary>
+            <value>
+            Compliance Distributor DataI Id
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.UpdatedBy">
+            <summary>
+            Updated By
+            </summary>
+            <value>
+            Updated By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.ComplianceSourceType">
+            <summary>
+            Compliance Source Type
+            </summary>
+            <value>
+            Compliance Source Type
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.MarketId">
+            <summary>
+            Market Id
+            </summary>
+            <value>
+            Market Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.Markets">
+            <summary>
+            Markets
+            </summary>
+            <value>
+            Markets
+            </value>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceSourceTypeMarketsCreateResponse">
+            <summary>
+            Compliance Source Type Markets Create Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarketsCreateResponse.ComplianceSourceTypeMarketId">
+            <summary>
+            Compliance Source Type Market Id
+            </summary>
+            <value>
+            Compliance Source Type Marke tId
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceSourceTypeMarketsResponse">
+            <summary>
+            Compliance Source Type Markets Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarketsResponse.ComplianceSourceTypeMarketId">
+            <summary>
+            Compliance Source Type Market Id
+            </summary>
+            <value>
+            Compliance Source Type Market Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarketsResponse.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarketsResponse.Markets">
+            <summary>
+            Markets
+            </summary>
+            <value>
+            Markets
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarketsResponse.ComplianceSourceType">
+            <summary>
+            Compliance Source Type
+            </summary>
+            <value>
+            Compliance Source Type
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarketsResponse.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceSourceTypes">
+            <summary>
+            Compliance Source Types 
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.ComplianceSourceId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.ComplianceFieldTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.DistributorId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.RequiresCompliance">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.ComplianceFileSizeKb">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.HeightPx">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.WidthPx">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.CreatedDate">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.CreatedBy">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.UpdatedDate">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.UpdatedBy">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypes.Status">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse">
+            <summary>
+            Compliance Source Types Full Data Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.ComplianceSourceId">
+            <summary>
+            Compliance Source  Id
+            </summary>
+            <value>
+            Compliance Source  Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.DistributorId">
+            <summary>
+            Distributor Id
+            </summary>
+            <value>
+            Distributor Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.RequiresCompliance">
+            <summary>
+            Requires Compliance
+            </summary>
+            <value>
+            Requires Compliance
+            </value>
+            <example>True</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.ComplianceFileSizeKb">
+            <summary>
+            Compliance File Size Kb
+            </summary>
+            <value>
+            Compliance File Size Kb
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.HeightPx">
+            <summary>
+            Height Px
+            </summary>
+            <value>
+            Height Px
+            </value>
+            <example>19</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.WidthPx">
+            <summary>
+            Width Px
+            </summary>
+            <value>
+            Width Px
+            </value>
+            <example>19</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.ComplianceFieldType">
+            <summary>
+            Compliance Field Type
+            </summary>
+            <value>
+            Compliance Field Type
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.ComplianceSource">
+            <summary>
+            Compliance Source
+            </summary>
+            <value>
+            Compliance Source
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.ComplianceSourceTypeMarkets">
+            <summary>
+            List Compliance Source Type Markets
+            </summary>
+            <value>
+            List Compliance Source Type Markets
+            </value>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesFullDataResponse.ComplianceDistributorData">
+            <summary>
+            List Compliance Distributor Data
+            </summary>
+            <value>
+            List Compliance Distributor Data
+            </value>
+        </member>
+        <member name="T:Compliance.Domain.Models.ComplianceSourceTypesResponse">
+            <summary>
+            Compliance Source Types Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesResponse.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesResponse.ComplianceSourceId">
+            <summary>
+            Compliance Source  Id
+            </summary>
+            <value>
+            Compliance Source  Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesResponse.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesResponse.DistributorId">
+            <summary>
+            Distributor Id
+            </summary>
+            <value>
+            Distributor Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesResponse.RequiresCompliance">
+            <summary>
+            Requires Compliance
+            </summary>
+            <value>
+            Requires Compliance
+            </value>
+            <example>True</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesResponse.ComplianceFileSizeKb">
+            <summary>
+            Compliance File Size Kb
+            </summary>
+            <value>
+            Compliance File Size Kb
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesResponse.HeightPx">
+            <summary>
+            Height Px
+            </summary>
+            <value>
+            Height Px
+            </value>
+            <example>19</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesResponse.WidthPx">
+            <summary>
+            Width Px
+            </summary>
+            <value>
+            Width Px
+            </value>
+            <example>19</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypesResponse.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.EnumComplianceSourceStatus">
+            <summary>
+            Enum Status Compliance
+            </summary>
+        </member>
+        <member name="F:Compliance.Domain.Models.EnumComplianceSourceStatus.Disabled">
+            <summary>
+            The disabled
+            </summary>
+        </member>
+        <member name="F:Compliance.Domain.Models.EnumComplianceSourceStatus.Active">
+            <summary>
+            The active
+            </summary>
+        </member>
+        <member name="F:Compliance.Domain.Models.EnumComplianceSourceStatus.Inactive">
+            <summary>
+            The inactive
+            </summary>
+        </member>
+        <member name="T:Compliance.Domain.Models.FileResourceExtension">
+            <summary>
+            File Resource Extension
+            </summary>
+        </member>
+        <member name="T:Compliance.Domain.Models.FileResourceTypeCreateResponse">
+            <summary>
+            File Resource Type Create Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.FileResourceTypeCreateResponse.FileResourceTypeId">
+            <summary>
+            File Resource Type Id
+            </summary>
+            <value>
+            File Resource Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.FileResourceTypeResponse.Status">
+            <example>Active</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.InputBehaviour">
+            <summary>
+            Input Behaviour
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviour.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>1</example>      
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviour.InputBehaviourName">
+            <summary>
+            Input Behaviour Name
+            </summary>
+            <value>
+            Input Behaviour Name
+            </value>
+            <example>Test Input Behaviour</example>   
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviour.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>  
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviour.CreatedDate">
+            <summary>
+            Created By
+            </summary>
+            <value>
+            Created By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviour.CreatedBy">
+            <summary>
+            Created By
+            </summary>
+            <value>
+            Created By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviour.UpdatedDate">
+            <summary>
+            Update Date
+            </summary>
+            <value>
+            Update Date
+            </value>
+            <example>2022-10-10</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviour.UpdatedBy">
+            <summary>
+            Updated By
+            </summary>
+            <value>
+            Updated By
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviour.ComplianceFieldType">
+            <summary>
+            Compliance Field Type
+            </summary>
+            <value>
+            Compliance Field Type
+            </value>
+        </member>
+        <member name="T:Compliance.Domain.Models.InputBehaviourCreateResponse">
+            <summary>
+            Input Behaviour Create Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviourCreateResponse.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Domain.Models.InputBehaviourResponse">
+            <summary>
+            Input Behaviour Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviourResponse.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>1</example>        
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviourResponse.InputBehaviourName">
+            <summary>
+            Input Behaviour Name
+            </summary>
+            <value>
+            Input Behaviour Name
+            </value>
+            <example>Test Input Behaviour</example>   
+        </member>
+        <member name="P:Compliance.Domain.Models.InputBehaviourResponse.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>   
+        </member>
+        <member name="T:Compliance.Domain.Models.Market">
+            <summary>
+            Market
+            </summary>
+        </member>
+        <member name="T:Compliance.Domain.Models.MarketResponse">
+            <summary>
+            Market Response
+            </summary>
+        </member>
+        <member name="P:Compliance.Domain.Models.MarketResponse.MarketId">
+            <summary>
+            Market Id
+            </summary>
+            <value>
+            Market Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.MarketResponse.MarketName">
+            <summary>
+            Market Name
+            </summary>
+            <value>
+            MarketName
+            </value>
+            <example>Martket Test</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.MarketResponse.MarketDescription">
+            <summary>
+            Market Description
+            </summary>
+            <value>
+            Market Description
+            </value>
+            <example>Test Description</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.MarketResponse.MarketCurrency">
+            <summary>
+            Market Currency
+            </summary>
+            <value>
+            Market Currency
+            </value>
+            <example>Dollar</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.MarketResponse.CurrencySymbol">
+            <summary>
+            Currency Symbol
+            </summary>
+            <value>
+            Currency Symbol
+            </value>
+            <example>$</example>
+        </member>
+    </members>
+</doc>

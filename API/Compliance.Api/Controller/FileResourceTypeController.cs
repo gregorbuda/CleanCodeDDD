@@ -3,7 +3,6 @@ using Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResou
 using Compliance.Application.Features.FileResourceTypes.Commands.DeleteFileResourceTypes;
 using Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes;
 using Compliance.Application.Features.FileResourceTypes.Queries;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

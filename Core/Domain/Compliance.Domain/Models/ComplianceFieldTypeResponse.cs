@@ -104,13 +104,13 @@ namespace Compliance.Domain.Models
         /// <value>
         /// File Resource Type
         /// </value>
-        public virtual FileResourceTypeResponse? FileResourceType { get; set; }
+        public virtual FileResourceTypeResponse FileResourceType { get; set; }
         /// <summary>
         /// Compliance Source Types
         /// </summary>
         /// <value>
         /// Compliance Source Types
         /// </value>
-        public virtual ICollection<ComplianceSourceTypesResponse>? ComplianceSourceTypes { get; set; }
+        public virtual ICollection<ComplianceSourceTypesResponse> ComplianceSourceTypes { get; set; }
     }
 }

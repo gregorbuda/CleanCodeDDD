@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours
 {
+    /// <summary>
+    /// Create Input Behaviours Command Handler
+    /// </summary>
     public class CreateInputBehavioursCommandHandler : IRequestHandler<CreateInputBehavioursCommand, ApiResponse<InputBehaviourCreateResponse>>
     {
         private readonly IUnitOfWork _unitOfWork;

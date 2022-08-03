@@ -1,5 +1,4 @@
-﻿using Compliance.Application.Responses;
-using Compliance.Domain.Models;
+﻿using Compliance.Domain.Models;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -9,8 +8,18 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData
 {
-    public  class UpdateBatchAnReturnComplianceDistributorDataListCommand : IRequest<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>
+    /// <summary>
+    /// Update Batch An Return Compliance Distributor Data List Command 
+    /// </summary>
+    public class UpdateBatchAnReturnComplianceDistributorDataListCommand : IRequest<ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>
     {
-        public List<UpdateBatchAnReturnComplianceDistributorDataCommand> ComplianceDistributorData { get; set; }
+           
+        /// <summary>
+        /// List Compliance Distributor Data 
+        /// </summary>
+        /// <value>
+        /// List Compliance Distributor Data
+        /// </value>
+        public List<UpdateBatchAnReturnComplianceDistributorDataCommand>? ComplianceDistributorData { get; set; }
     }
 }

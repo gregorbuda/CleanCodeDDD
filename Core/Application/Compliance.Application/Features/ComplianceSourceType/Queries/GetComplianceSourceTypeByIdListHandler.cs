@@ -1,17 +1,15 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Compliance.Application.Features.ComplianceSourceType.Queries
 {
+    /// <summary>
+    /// Get Compliance Source Type By Id List Hanlder
+    /// </summary>
     public class GetComplianceSourceTypeByIdListHandler : IRequestHandler<GetComplianceSourceTypeByIdList, ApiResponse<ComplianceSourceTypes>>
     {
         private readonly IUnitOfWork _unitOfWork;

@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls;
 using Compliance.Application.Mappings;
-using Compliance.Application.Responses;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
 using Microsoft.AspNetCore.Http;

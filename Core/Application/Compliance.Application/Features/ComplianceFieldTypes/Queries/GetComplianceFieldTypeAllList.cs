@@ -1,14 +1,12 @@
-﻿using Compliance.Application.Responses;
-using Compliance.Domain.Models;
+﻿using Compliance.Domain.Models;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
 {
+    /// <summary>
+    /// Get Compliance Field Type All List
+    /// </summary>
     public class GetComplianceFieldTypeAllList : IRequest<ApiResponse<IReadOnlyList<ComplianceFieldType>>>
     {
     }

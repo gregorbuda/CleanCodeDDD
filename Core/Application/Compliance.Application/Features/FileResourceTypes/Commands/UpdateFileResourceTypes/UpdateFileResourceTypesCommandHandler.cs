@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes
 {
+    /// <summary>
+    /// Update File Resource Types Command Hanlder
+    /// </summary>
     public class UpdateFileResourceTypesCommandHandler : IRequestHandler<UpdateFileResourceTypesCommand, ApiResponse<Boolean>>
     {
         private readonly IUnitOfWork _unitOfWork;

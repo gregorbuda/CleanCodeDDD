@@ -1,16 +1,23 @@
-﻿using Compliance.Application.Responses;
+﻿
 using Compliance.Domain.Models;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
 {
+    /// <summary>
+    /// Get Compliance Field Type By Id List
+    /// </summary>
     public class GetComplianceFieldTypeByIdList : IRequest<ApiResponse<ComplianceFieldType>>
     {
+
+        /// <summary>
+        /// Compliance Field Type Id
+        /// </summary>
+        /// <value>
+        /// Compliance Field Type Id
+        /// </value>
+        /// <example>1</example>
         public Int32 _complianceFieldTypeId { get; set; }
 
         public GetComplianceFieldTypeByIdList(Int32 ComplianceFieldTypeId)

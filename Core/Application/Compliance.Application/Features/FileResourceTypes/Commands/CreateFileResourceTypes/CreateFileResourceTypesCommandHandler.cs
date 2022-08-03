@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes
 {
+    /// <summary>
+    /// Create File Resource Types Command Hanlder
+    /// </summary>
     public class CreateFileResourceTypesCommandHandler : IRequestHandler<CreateFileResourceTypesCommand, ApiResponse<FileResourceTypeCreateResponse>>
     {
         private readonly IUnitOfWork _unitOfWork;

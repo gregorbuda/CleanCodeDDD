@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.FileResourceTypes.Queries
 {
+    /// <summary>
+    /// Get File Resource Types All List Handler
+    /// </summary>
     public class GetFileResourceTypesAllListHandler : IRequestHandler<GetFileResourceTypesAllList, ApiResponse<IReadOnlyList<FileResourceTypeResponse>>>
     {
         private readonly IUnitOfWork _unitOfWork;

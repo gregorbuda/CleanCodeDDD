@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData
 {
+    /// <summary>
+    /// Update Batch An Return Compliance Distributor Data Command Handler
+    /// </summary>
     public class UpdateBatchAnReturnComplianceDistributorDataCommandHandler : IRequestHandler<UpdateBatchAnReturnComplianceDistributorDataListCommand, ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>
     {
         private readonly IUnitOfWork _unitOfWork;

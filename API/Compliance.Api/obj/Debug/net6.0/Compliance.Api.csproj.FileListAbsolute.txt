@@ -100,6 +100,7 @@ C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.AssemblyInfo.cs
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.csproj.CoreCompileInputs.cache
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\obj\Debug\net6.0\Compliance.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\appsettings.Development.json
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\appsettings.json
 C:\GitRepositories\cleanarchitecture\compliance\API\Compliance.Api\bin\Debug\net6.0\Compliance.Api.exe

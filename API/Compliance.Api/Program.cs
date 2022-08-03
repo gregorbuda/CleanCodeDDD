@@ -1,6 +1,7 @@
+using Compliance.Api.OperationFilters;
 using Compliance.Api.Utils;
 using Compliance.Application;
-using Compliance.Application.Responses;
+using Compliance.Domain.Models;
 using Compliance.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -41,6 +42,11 @@ builder.Services.AddSwaggerGen(options =>
     // using System.Reflection;
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+    options.IncludeXmlComments("Models.xml");
+    options.IncludeXmlComments("Application.xml");
+    options.OperationFilter<RemoveVersionParameterFilter>();
+    options.DocumentFilter<ReplaceVersionWithExactValueInPathFilter>();
+    options.EnableAnnotations();
 });
 
 builder.Services.AddMvc()

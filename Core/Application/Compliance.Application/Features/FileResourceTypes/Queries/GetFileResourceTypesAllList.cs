@@ -1,4 +1,4 @@
-﻿using Compliance.Application.Responses;
+﻿
 using Compliance.Domain.Models;
 using MediatR;
 using System;
@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.FileResourceTypes.Queries
 {
+    /// <summary>
+    /// Get File Resource Types All List
+    /// </summary>
     public class GetFileResourceTypesAllList : IRequest<ApiResponse<IReadOnlyList<FileResourceTypeResponse>>>
     {
     }

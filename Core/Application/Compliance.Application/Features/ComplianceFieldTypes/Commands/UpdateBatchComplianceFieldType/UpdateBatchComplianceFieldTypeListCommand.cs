@@ -1,15 +1,20 @@
-﻿using Compliance.Application.Responses;
+﻿using Compliance.Domain.Models;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType
 {
+    /// <summary>
+    /// Update Compliance Field Type List Command 
+    /// </summary>
     public class UpdateBatchComplianceFieldTypeListCommand : IRequest<ApiResponse<Boolean>>
     {
+        /// <summary>
+        /// List Complaince Field Type 
+        /// </summary>
+        /// <value>
+        /// List Complaince Field Type
+        /// </value>
         public List<UpdateBatchComplianceFieldTypeCommand> ComplainceFieldTypeList { get; set; }
     }
 }

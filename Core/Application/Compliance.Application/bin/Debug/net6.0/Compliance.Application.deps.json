@@ -190,7 +190,8 @@
       "System.Text.Encodings.Web/4.5.0": {},
       "Compliance.Domain/1.0.0": {
         "dependencies": {
-          "MediatR": "10.0.1"
+          "MediatR": "10.0.1",
+          "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0"
         },
         "runtime": {
           "Compliance.Domain.dll": {}

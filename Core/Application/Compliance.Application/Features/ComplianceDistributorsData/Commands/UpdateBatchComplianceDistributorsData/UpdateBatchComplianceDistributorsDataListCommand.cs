@@ -1,15 +1,20 @@
-﻿using Compliance.Application.Responses;
+﻿using Compliance.Domain.Models;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData
 {
+    /// <summary>
+    /// Update Batch  Compliance Distributor Data List Command
+    /// </summary>
     public class UpdateBatchComplianceDistributorsDataListCommand : IRequest<ApiResponse<Boolean>>
     {
-        public List<UpdateBatchComplianceDistributorsDataCommand> ComplianceDistributorData { get; set; }
+        /// <summary>
+        /// List Compliance Distributor Data
+        /// </summary>
+        /// <value>
+        /// List Compliance Distributor Data
+        /// </value>
+        public List<UpdateBatchComplianceDistributorsDataCommand>? ComplianceDistributorData { get; set; }
     }
 }

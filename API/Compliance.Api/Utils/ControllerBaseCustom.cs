@@ -1,6 +1,7 @@
-﻿using Compliance.Application.Responses;
+﻿using Compliance.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using System;
 
 namespace Compliance.Api.Utils
 {

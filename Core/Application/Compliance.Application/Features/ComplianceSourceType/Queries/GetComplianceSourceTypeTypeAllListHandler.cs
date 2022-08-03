@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceSourceType.Queries
 {
+    /// <summary>
+    /// Get Compliance Source Type All List Handler
+    /// </summary>
     public class GetComplianceSourceTypeTypeAllListHandler : IRequestHandler<GetComplianceSourceTypeAllList, ApiResponse<IReadOnlyList<ComplianceSourceTypesResponse>>>
     {
         private readonly IUnitOfWork _unitOfWork;

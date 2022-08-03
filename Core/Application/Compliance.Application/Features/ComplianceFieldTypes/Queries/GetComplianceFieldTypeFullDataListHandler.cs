@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
 {
+    /// <summary>
+    /// Get Compliance Field Type Full Data List Handler
+    /// </summary>
     public class GetComplianceFieldTypeFullDataListHandler : IRequestHandler<GetComplianceFieldTypeFullDataList, ApiResponse<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>>
     {
         private readonly IUnitOfWork _unitOfWork;

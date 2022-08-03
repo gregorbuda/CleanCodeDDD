@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType
 {
+    /// <summary>
+    /// Update Compliance Field Type Command Hanlder
+    /// </summary>
     public class UpdateBatchComplianceFieldTypeCommandHandler : IRequestHandler<UpdateBatchComplianceFieldTypeListCommand, ApiResponse<Boolean>>
     {
         private readonly IUnitOfWork _unitOfWork;

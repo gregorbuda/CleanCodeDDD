@@ -1,0 +1,2529 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Compliance.Application</name>
+    </assembly>
+    <members>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommand">
+            <summary>
+            Create Batch Compliance Distributor Data Logs Bls Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommand.ComplianceDistributorLogMessage">
+            <summary>
+            Compliance Distributor Log Message
+            </summary>
+            <value>
+            Compliance Distributor Log Message
+            </value>
+            <example>Test Message</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommand.ComplianceDistributorLogData">
+            <summary>
+            Compliance Distributor Log Data
+            </summary>
+            <value>
+            Compliance Distributor Log Data
+            </value>
+            <example>Test Data</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommand.ComplianceDistributorDataId">
+            <summary>
+            Compliance Distributor Data Id
+            </summary>
+            <value>
+            Compliance Distributor Data Id
+            </value>
+            <example>Test Data</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommandHandler">
+            <summary>
+            Create Batch Compliance Distributor Data Logs Bls List Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsListCommand">
+            <summary>
+            Create Batch Compliance Distributor Data Logs Bls List Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsListCommand.complianceDistributorDataLogs">
+            <summary>
+            List Create Batch Compliance Distributor Data Logs Bls Command
+            </summary>
+            <value>
+            List Create Batch Compliance Distributor Data Logs Bls Command
+            </value>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Queries.GetComplianceDistributorDataLogsFullDataByDistributorId">
+            <summary>
+            Get Compliance Distributor Data Logs Full Data By Distributor Id
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Queries.GetComplianceDistributorDataLogsFullDataByDistributorId._complianceDistributorDataId">
+            <summary>
+            Compliance Distributor Data Id
+            </summary>
+            <value>
+            Compliance Distributor Data Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Queries.GetComplianceDistributorDataLogsFullDataByDistributorIdHandler">
+            <summary>
+            Get Compliance Distributor Data Logs Full Data By Distributor Id Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommand">
+            <summary>
+            Create Batch Compliance Distributor Data Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommand.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommand.DistributorId">
+            <summary>
+            Distributor  Id
+            </summary>
+            <value>
+            Distributor  Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommand.FieldData">
+            <summary>
+            FieldData
+            </summary>
+            <value>
+            FieldData
+            </value>
+            <example>Test Data</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommandHandler">
+            <summary>
+            Create Batch Compliance Distributor Data Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataListCommand">
+            <summary>
+            Create Batch Compliance Distributor Data List Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataListCommand.ComplianceDistributorData">
+            <summary>
+            Compliance Distributor Data
+            </summary>
+            <value>
+            Compliance Distributor Data
+            </value>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommand">
+            <summary>
+            Update Batch An Return Compliance Distributor Data Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommand.ComplianceDistributorDataId">
+            <summary>
+            Compliance Distributor Data Id
+            </summary>
+            <value>
+            Compliance Distributor Data Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommand.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommand.DistributorId">
+            <summary>
+            Distributor  Id
+            </summary>
+            <value>
+            Distributor  Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommand.FieldData">
+            <summary>
+            FieldData
+            </summary>
+            <value>
+            FieldData
+            </value>
+            <example>Test Data</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataCommandHandler">
+            <summary>
+            Update Batch An Return Compliance Distributor Data Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataListCommand">
+            <summary>
+            Update Batch An Return Compliance Distributor Data List Command 
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataListCommand.ComplianceDistributorData">
+            <summary>
+            List Compliance Distributor Data 
+            </summary>
+            <value>
+            List Compliance Distributor Data
+            </value>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommand">
+            <summary>
+            Update Batch  Compliance Distributor Data Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommand.ComplianceDistributorDataId">
+            <summary>
+            Compliance Distributor Data Id
+            </summary>
+            <value>
+            Compliance Distributor Data Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommand.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommand.DistributorId">
+            <summary>
+            Distributor  Id
+            </summary>
+            <value>
+            Distributor  Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommand.FieldData">
+            <summary>
+            FieldData
+            </summary>
+            <value>
+            FieldData
+            </value>
+            <example>Test Data</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataCommandHandler">
+            <summary>
+            Update Batch  Compliance Distributor Data Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataListCommand">
+            <summary>
+            Update Batch  Compliance Distributor Data List Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataListCommand.ComplianceDistributorData">
+            <summary>
+            List Compliance Distributor Data
+            </summary>
+            <value>
+            List Compliance Distributor Data
+            </value>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Queries.GetComplianceDistributorDataFullDataByDistributorId">
+            <summary>
+            Get Compliance Distributor Data Full Data By DistributorI d
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Queries.GetComplianceDistributorDataFullDataByDistributorId._complianceDistributorDataId">
+            <summary>
+            Compliance Distributor Data Id
+            </summary>
+            <value>
+            Compliance Distributor Data Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Queries.GetComplianceDistributorDataFullDataByDistributorIdHandler">
+            <summary>
+            Get Compliance Distributor Data Full Data By Distributor Id Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Queries.GetComplianceDistributorDataFullDataList">
+            <summary>
+            Get Compliance Distributor Data Full Data List
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceDistributorsData.Queries.GetComplianceDistributorDataFullDataListHandler">
+            <summary>
+            Get Compliance Distributor Data Full Data List Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand">
+            <summary>
+            Create Compliance Field Type Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.ComplianceFieldTypeName">
+            <summary>
+            Compliance Field Type Name
+            </summary>
+            <value>
+            Compliance Field Type Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.TranslationKey">
+            <summary>
+            Translation Key
+            </summary>
+            <value>
+            Translation Key
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.FieldPath">
+            <summary>
+            Field Path
+            </summary>
+            <value>
+            Field Path
+            </value>
+            <example>Test Path</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.ComplianceFileSizeKb">
+            <summary>
+            Compliance File Size Kb
+            </summary>
+            <value>
+            Compliance File Size Kb
+            </value>
+            <example>20</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.HeightPx">
+            <summary>
+            HeightPx
+            </summary>
+            <value>
+            HeightPx
+            </value>
+            <example>20</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.WidthPx">
+            <summary>
+            WidthPx
+            </summary>
+            <value>
+            WidthPx
+            </value>
+            <example>20</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand.FileResourceTypeId">
+            <summary>
+            File Resource Type Id
+            </summary>
+            <value>
+            File Resource Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommandHandler">
+            <summary>
+            Create Compliance Field Type Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Commands.DeleteComplianceFieldType.DeleteComplianceFieldTypeCommand">
+            <summary>
+            Delete Compliance Field Type Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.DeleteComplianceFieldType.DeleteComplianceFieldTypeCommand.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Commands.DeleteComplianceFieldType.DeleteComplianceFieldTypeCommandHandler">
+            <summary>
+            Delete Compliance Field Type Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand">
+            <summary>
+            Update Batch Compliance Field Type Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.ComplianceFieldTypeName">
+            <summary>
+            Compliance Field Type Name
+            </summary>
+            <value>
+            Compliance Field Type Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.TranslationKey">
+            <summary>
+            Translation Key
+            </summary>
+            <value>
+            Translation Key
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.FieldPath">
+            <summary>
+            Field Path
+            </summary>
+            <value>
+            Field Path
+            </value>
+            <example>Test Path</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.ComplianceFileSizeKb">
+            <summary>
+            Compliance File Size Kb
+            </summary>
+            <value>
+            Compliance File Size Kb
+            </value>
+            <example>20</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.HeightPx">
+            <summary>
+            HeightPx
+            </summary>
+            <value>
+            HeightPx
+            </value>
+            <example>20</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.WidthPx">
+            <summary>
+            WidthPx
+            </summary>
+            <value>
+            WidthPx
+            </value>
+            <example>20</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommand.FileResourceTypeId">
+            <summary>
+            File Resource Type Id
+            </summary>
+            <value>
+            File Resource Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeCommandHandler">
+            <summary>
+            Update Compliance Field Type Command Hanlder
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeListCommand">
+            <summary>
+            Update Compliance Field Type List Command 
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeListCommand.ComplainceFieldTypeList">
+            <summary>
+            List Complaince Field Type 
+            </summary>
+            <value>
+            List Complaince Field Type
+            </value>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand">
+            <summary>
+            Update Compliance Field Type Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.ComplianceFieldTypeName">
+            <summary>
+            Compliance Field Type Name
+            </summary>
+            <value>
+            Compliance Field Type Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.TranslationKey">
+            <summary>
+            Translation Key
+            </summary>
+            <value>
+            Translation Key
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.FieldPath">
+            <summary>
+            Field Path
+            </summary>
+            <value>
+            Field Path
+            </value>
+            <example>Test Path</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.ComplianceFileSizeKb">
+            <summary>
+            Compliance File Size Kb
+            </summary>
+            <value>
+            Compliance File Size Kb
+            </value>
+            <example>20</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.HeightPx">
+            <summary>
+            HeightPx
+            </summary>
+            <value>
+            HeightPx
+            </value>
+            <example>20</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.WidthPx">
+            <summary>
+            WidthPx
+            </summary>
+            <value>
+            WidthPx
+            </value>
+            <example>20</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand.FileResourceTypeId">
+            <summary>
+            File Resource Type Id
+            </summary>
+            <value>
+            File Resource Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommandHandler">
+            <summary>
+            Update Compliance Field Type Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Queries.GetComplianceFieldTypeAllList">
+            <summary>
+            Get Compliance Field Type All List
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Queries.GetComplianceFieldTypeAllListHandler">
+            <summary>
+            Get Compliance Field Type All List Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Queries.GetComplianceFieldTypeByIdList">
+            <summary>
+            Get Compliance Field Type By Id List
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Queries.GetComplianceFieldTypeByIdList._complianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Queries.GetComplianceFieldTypeByIdListHandler">
+            <summary>
+            Get Compliance Field Type By Id List Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Queries.GetComplianceFieldTypeFullDataById">
+            <summary>
+            Get Compliance Field Type Full Data By Id
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceFieldTypes.Queries.GetComplianceFieldTypeFullDataById._complianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Queries.GetComplianceFieldTypeFullDataByIdHandler">
+            <summary>
+            Get Compliance Field Type Full Data By Id Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Queries.GetComplianceFieldTypeFullDataList">
+            <summary>
+            Get Compliance Field Type Full Data List
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceFieldTypes.Queries.GetComplianceFieldTypeFullDataListHandler">
+            <summary>
+            Get Compliance Field Type Full Data List Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand">
+            <summary>
+            Create Compliance Source Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand.ComplianceSourceName">
+            <summary>
+            Compliance Source Name
+            </summary>
+            <value>
+            Compliance Source Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand.Status" -->
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommandHandler">
+            <summary>
+            Create Compliance Source Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Commands.DeleteComplianceSources.DeleteComplianceSourceCommand">
+            <summary>
+            Delete Compliance Source Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.DeleteComplianceSources.DeleteComplianceSourceCommand.ComplianceSourceId">
+            <summary>
+            Compliance Source Id
+            </summary>
+            <value>
+            Compliance Source Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Commands.DeleteComplianceSources.DeleteComplianceSourceCommandHandler">
+            <summary>
+            Delete Compliance Source Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesCommand">
+            <summary>
+            Update Batch Compliance Source Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesCommand.ComplianceSourceId">
+            <summary>
+            Compliance Source Id
+            </summary>
+            <value>
+            Compliance Source Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesCommand.ComplianceSourceName">
+            <summary>
+            Compliance Source Name
+            </summary>
+            <value>
+            Compliance Source Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesCommand.CreatedDate">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesCommandHandler">
+            <summary>
+            Update Batch Compliance Source Command
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesListCommand">
+            <summary>
+            Update Batch Compliance Source List Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesListCommand.ComplainceSourcesList">
+            <summary>
+            List Compliance Source
+            </summary>
+            <value>
+            List Compliance Source
+            </value>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand">
+            <summary>
+            Update Batch Compliance Source Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand.ComplianceSourceId">
+            <summary>
+            Compliance Source Id
+            </summary>
+            <value>
+            Compliance Source Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand.ComplianceSourceName">
+            <summary>
+            Compliance Source Name
+            </summary>
+            <value>
+            Compliance Source Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand.CreatedDate">
+            <summary>
+            CreatedDate
+            </summary>
+            <value>
+            CreatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommandHandler">
+            <summary>
+            Update  Compliance Source Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Queries.GetComplianceSourceAllList">
+            <summary>
+            Get Compliance Source All List
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Queries.GetComplianceSourceAllListHanlder">
+            <summary>
+            Get Compliance Source All List Hanlder
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Queries.GetComplianceSourceByIdList">
+            <summary>
+            Get Compliance Source All List
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSources.Queries.GetComplianceSourceByIdList._complianceSourceId">
+            <summary>
+            Compliance Source Id
+            </summary>
+            <value>
+            Compliance Source Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSources.Queries.GetComplianceSourceByIdListHandler">
+            <summary>
+            Get Compliance Source All List
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketCommand">
+            <summary>
+            Create Batch Compliance Source Type Market Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketCommand.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketCommand.MarketId">
+            <summary>
+            Market Id
+            </summary>
+            <value>
+            Market Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketCommand.CreatedDate">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketCommandHandler">
+            <summary>
+            Create Batch Compliance Source Type Market Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketListCommand">
+            <summary>
+            Create Batch Compliance Source Type Market List Command Handler
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketListCommand.ComplainceSourcesTypeMarket">
+            <summary>
+            List Complaince Sources Type Market
+            </summary>
+            <value>
+            List Complaince Sources Type Market
+            </value>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand">
+            <summary>
+            Create  Compliance Source Type Market Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand.MarketId">
+            <summary>
+            Market Id
+            </summary>
+            <value>
+            Market Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand.CreatedDate">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommandHandler">
+            <summary>
+            Create  Compliance Source Type Market Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketCommand">
+            <summary>
+            Update Batch Compliance Source Type Market Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketCommand.ComplianceSourceTypeMarketId">
+            <summary>
+            Compliance Source Type Market Id
+            </summary>
+            <value>
+            Compliance Source Type Market Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketCommand.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketCommand.MarketId">
+            <summary>
+            Market Id
+            </summary>
+            <value>
+            Market Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketCommand.CreatedDate">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketCommandHandler">
+            <summary>
+            Update Batch Compliance Source Type Market Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketListCommand">
+            <summary>
+            Update Batch Compliance Source Type Market List Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketListCommand.ComplainceSourcesTypeMarket">
+            <summary>
+            List Complaince Sources Type Market
+            </summary>
+            <value>
+            List Complaince Sources Type Market
+            </value>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Queries.GetByComplianceSourceTypeMarketById">
+            <summary>
+            Get By ComplianceSource Type Market By Id
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Queries.GetByComplianceSourceTypeMarketById._complianceSourceTypeId">
+            <summary>
+            Compliance Source Type  Id
+            </summary>
+            <value>
+            Compliance Source Type  Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Queries.GetByComplianceSourceTypeMarketByIdHandler">
+            <summary>
+            Get By ComplianceSource Type Market By Id Hanlder
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Queries.GetComplianceSourceTypeMarketById">
+            <summary>
+            Get  ComplianceSource Type Market By Id
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Queries.GetComplianceSourceTypeMarketById._complianceSourceTypeMarketId">
+            <summary>
+            Compliance Source Type Market Id
+            </summary>
+            <value>
+            Compliance Source Type Market Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceTypeMarket.Queries.GetComplianceSourceTypeMarketByIdHandler">
+            <summary>
+            Get  ComplianceSource Type Market By Id Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand">
+            <summary>
+            Create Compliance Source Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.ComplianceSourceId">
+            <summary>
+            Compliance Source Id
+            </summary>
+            <value>
+            Compliance Source Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.DistributorId">
+            <summary>
+            Distributor Id
+            </summary>
+            <value>
+            Distributor Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.RequiresCompliance">
+            <summary>
+            Requires Compliance
+            </summary>
+            <value>
+            Requires Compliance
+            </value>
+            <example>true</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.ComplianceFileSizeKb">
+            <summary>
+            Compliance File Size Kb
+            </summary>
+            <value>
+            Compliance File Size Kb
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.HeightPx">
+            <summary>
+            HeightPx
+            </summary>
+            <value>
+            HeightPx
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.WidthPx">
+            <summary>
+            WidthPx
+            </summary>
+            <value>
+            WidthPx
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommandHandler">
+            <summary>
+            Create Compliance Source Command
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Commands.DeleteComplianceSourceType.DeleteComplianceSourceTypeCommand">
+            <summary>
+            Delete Compliance Source Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.DeleteComplianceSourceType.DeleteComplianceSourceTypeCommand.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Commands.DeleteComplianceSourceType.DeleteComplianceSourceTypeCommandHandler">
+            <summary>
+            Delete Compliance Source Command
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand">
+            <summary>
+            Update Batch Compliance Source Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.ComplianceSourceId">
+            <summary>
+            Compliance Source Id
+            </summary>
+            <value>
+            Compliance Source Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.DistributorId">
+            <summary>
+            Distributor Id
+            </summary>
+            <value>
+            Distributor Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.RequiresCompliance">
+            <summary>
+            Requires Compliance
+            </summary>
+            <value>
+            Requires Compliance
+            </value>
+            <example>true</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.ComplianceFileSizeKb">
+            <summary>
+            Compliance File Size Kb
+            </summary>
+            <value>
+            Compliance File Size Kb
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.HeightPx">
+            <summary>
+            HeightPx
+            </summary>
+            <value>
+            HeightPx
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.WidthPx">
+            <summary>
+            WidthPx
+            </summary>
+            <value>
+            WidthPx
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeCommandHandler">
+            <summary>
+            Update Batch Compliance Source Type Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeListCommand">
+            <summary>
+            Update Batch Compliance Source Type List Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeListCommand.ComplainceSourcesType">
+            <summary>
+            List Compliance Source Type 
+            </summary>
+            <value>
+            list Compliance Source Type 
+            </value>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand">
+            <summary>
+            Update Batch Compliance Source Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.ComplianceSourceId">
+            <summary>
+            Compliance Source Id
+            </summary>
+            <value>
+            Compliance Source Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.ComplianceFieldTypeId">
+            <summary>
+            Compliance Field Type Id
+            </summary>
+            <value>
+            Compliance Field Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.DistributorId">
+            <summary>
+            Distributor Id
+            </summary>
+            <value>
+            Distributor Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.RequiresCompliance">
+            <summary>
+            Requires Compliance
+            </summary>
+            <value>
+            Requires Compliance
+            </value>
+            <example>true</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.ComplianceFileSizeKb">
+            <summary>
+            Compliance File Size Kb
+            </summary>
+            <value>
+            Compliance File Size Kb
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.HeightPx">
+            <summary>
+            HeightPx
+            </summary>
+            <value>
+            HeightPx
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.WidthPx">
+            <summary>
+            WidthPx
+            </summary>
+            <value>
+            WidthPx
+            </value>
+            <example>10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommandHandler">
+            <summary>
+            Update Batch Compliance Source Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Queries.GetComplianceSourceTypeByIdList">
+            <summary>
+            Get Compliance Source Type By Id List
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Queries.GetComplianceSourceTypeByIdList._complianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Queries.GetComplianceSourceTypeByIdListHandler">
+            <summary>
+            Get Compliance Source Type By Id List Hanlder
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Queries.GetComplianceSourceTypeFullDataById">
+            <summary>
+            Get Compliance Source Type Full Data By Id
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.ComplianceSourceType.Queries.GetComplianceSourceTypeFullDataById._complianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Queries.GetComplianceSourceTypeFullDataByIdHandler">
+            <summary>
+            Get Compliance Source Type Full Data By Id Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Queries.GetComplianceSourceTypesIdFullDataList">
+            <summary>
+            Get Compliance Source Type Full Data Data List
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Queries.ComplianceSourceTypesIdFullDataListHandler">
+            <summary>
+            Get Compliance Source Type Full Data Data List Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Queries.GetComplianceSourceTypeAllList">
+            <summary>
+            Get Compliance Source Type All List
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.ComplianceSourceType.Queries.GetComplianceSourceTypeTypeAllListHandler">
+            <summary>
+            Get Compliance Source Type All List Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand">
+            <summary>
+            Create File Resource Types Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand.Name">
+            <summary>
+            Name
+            </summary>
+            <value>
+            Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand.TranslationKey">
+            <summary>
+            Translation Key
+            </summary>
+            <value>
+            Translation Key
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand.Description">
+            <summary>
+            Description
+            </summary>
+            <value>
+            Description
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand.MaxSize">
+            <summary>
+            MaxSize
+            </summary>
+            <value>
+            MaxSize
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand.CreatedDate">
+            <summary>
+            CreatedDate
+            </summary>
+            <value>
+            CreatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommandHandler">
+            <summary>
+            Create File Resource Types Command Hanlder
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.FileResourceTypes.Commands.DeleteFileResourceTypes.DeleteFileResourceTypesCommand">
+            <summary>
+            Create File Resource Types Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.DeleteFileResourceTypes.DeleteFileResourceTypesCommand.FileResourceTypeId">
+            <summary>
+            File Resource Type Id
+            </summary>
+            <value>
+            File Resource Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.FileResourceTypes.Commands.DeleteFileResourceTypes.DeleteFileResourceTypesCommandHandler">
+            <summary>
+            Create File Resource Types Command Hanlder
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand">
+            <summary>
+            Update File Resource Types Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand.FileResourceTypeId">
+            <summary>
+            File Resource Type Id
+            </summary>
+            <value>
+            File Resource Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand.Name">
+            <summary>
+            Name
+            </summary>
+            <value>
+            Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand.TranslationKey">
+            <summary>
+            Translation Key
+            </summary>
+            <value>
+            Translation Key
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand.Description">
+            <summary>
+            Description
+            </summary>
+            <value>
+            Description
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand.MaxSize">
+            <summary>
+            MaxSize
+            </summary>
+            <value>
+            MaxSize
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand.CreatedDate">
+            <summary>
+            CreatedDate
+            </summary>
+            <value>
+            CreatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommandHandler">
+            <summary>
+            Update File Resource Types Command Hanlder
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.FileResourceTypes.Queries.GetFileResourceTypesAllList">
+            <summary>
+            Get File Resource Types All List
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.FileResourceTypes.Queries.GetFileResourceTypesAllListHandler">
+            <summary>
+            Get File Resource Types All List Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.FileResourceTypes.Queries.GetFileResourceTypesByIdList">
+            <summary>
+            Get File Resource Types Type By Id List
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.FileResourceTypes.Queries.GetFileResourceTypesByIdList._fileResourceTypeId">
+            <summary>
+            file Resource Type Id
+            </summary>
+            <value>
+            file Resource Type Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.FileResourceTypes.Queries.GetFileResourceTypesByIdListHandler">
+            <summary>
+            Get File Resource Types Type By Id List Hanlder
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours.CreateInputBehavioursCommand">
+            <summary>
+            Create Input Behaviours Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours.CreateInputBehavioursCommand.InputBehaviourName">
+            <summary>
+            Input Behaviour Name
+            </summary>
+            <value>
+            Input Behaviour Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours.CreateInputBehavioursCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours.CreateInputBehavioursCommand.CreatedDate">
+            <summary>
+            CreatedDate
+            </summary>
+            <value>
+            CreatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours.CreateInputBehavioursCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours.CreateInputBehavioursCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours.CreateInputBehavioursCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours.CreateInputBehavioursCommandHandler">
+            <summary>
+            Create Input Behaviours Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.InputBehaviours.Commands.DeleteInputBehaviours.DeleteInputBehavioursCommand">
+            <summary>
+            Delete Input Behaviours Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.DeleteInputBehaviours.DeleteInputBehavioursCommand.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.InputBehaviours.Commands.DeleteInputBehaviours.DeleteInputBehavioursCommandHandler">
+            <summary>
+            Delete Input Behaviours Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursCommand">
+            <summary>
+            Update Batch Input Behaviours Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursCommand.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursCommand.InputBehaviourName">
+            <summary>
+            Input Behaviour Name
+            </summary>
+            <value>
+            Input Behaviour Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursCommand.CreatedDate">
+            <summary>
+            CreatedDate
+            </summary>
+            <value>
+            CreatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursCommandHandler">
+            <summary>
+            Update Batch Input Behaviours Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursListCommand">
+            <summary>
+            Update Batch Input Behaviours Command Handler
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursListCommand.ComplainceSourcesList">
+            <summary>
+            List Complaince Sources
+            </summary>
+            <value>
+            List Complaince Sources
+            </value>
+        </member>
+        <member name="T:Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommand">
+            <summary>
+            Update  Input Behaviours Command
+            </summary>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommand.InputBehaviourId">
+            <summary>
+            Input Behaviour Id
+            </summary>
+            <value>
+            Input Behaviour Id
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommand.InputBehaviourName">
+            <summary>
+            Input Behaviour Name
+            </summary>
+            <value>
+            Input Behaviour Name
+            </value>
+            <example>Test Name</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommand.CreatedDate">
+            <summary>
+            CreatedDate
+            </summary>
+            <value>
+            CreatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="T:Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommandHandler">
+            <summary>
+            Update  Input Behaviours Command Handler
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Mappings.ComplianceDistributorDataLogsProfile">
+            <summary>
+            Compliance Distributor Data Logs Profile AutoMapper
+            </summary>
+            <seealso cref="T:AutoMapper.Profile" />
+        </member>
+        <member name="M:Compliance.Application.Mappings.ComplianceDistributorDataLogsProfile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Compliance.Application.Mappings.ComplianceDistributorDataLogsProfile"/> class.
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Mappings.ComplianceDistributorDataProfile">
+            <summary>
+            Compliance Distributor Data  Profile AutoMapper
+            </summary>
+            <seealso cref="T:AutoMapper.Profile" />
+        </member>
+        <member name="M:Compliance.Application.Mappings.ComplianceDistributorDataProfile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Compliance.Application.Mappings.ComplianceDistributorDataProfile"/> class.
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Mappings.ComplianceFieldTypeProfile">
+            <summary>
+            Compliance Field Type Profile AutoMapper
+            </summary>
+            <seealso cref="T:AutoMapper.Profile" />
+        </member>
+        <member name="M:Compliance.Application.Mappings.ComplianceFieldTypeProfile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Compliance.Application.Mappings.ComplianceFieldTypeProfile"/> class.
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Mappings.ComplianceSourceProfile">
+            <summary>
+            Compliance Source Profile AutoMapper
+            </summary>
+            <seealso cref="T:AutoMapper.Profile" />
+        </member>
+        <member name="M:Compliance.Application.Mappings.ComplianceSourceProfile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Compliance.Application.Mappings.ComplianceSourceProfile"/> class.
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Mappings.ComplianceSourceTypeMarketsProfile">
+            <summary>
+            Compliance Source Type Markets Profile AutoMapper
+            </summary>
+            <seealso cref="T:AutoMapper.Profile" />
+        </member>
+        <member name="M:Compliance.Application.Mappings.ComplianceSourceTypeMarketsProfile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Compliance.Application.Mappings.ComplianceSourceTypeMarketsProfile"/> class.
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Mappings.ComplianceSourceTypesProfile">
+            <summary>
+            Compliance Source Types Profile AutoMapper
+            </summary>
+            <seealso cref="T:AutoMapper.Profile" />
+        </member>
+        <member name="M:Compliance.Application.Mappings.ComplianceSourceTypesProfile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Compliance.Application.Mappings.ComplianceSourceTypesProfile"/> class.
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Mappings.FileResourceTypeProfile">
+            <summary>
+            File Resource Type Profile AutoMapper
+            </summary>
+            <seealso cref="T:AutoMapper.Profile" />
+        </member>
+        <member name="M:Compliance.Application.Mappings.FileResourceTypeProfile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Compliance.Application.Mappings.FileResourceTypeProfile"/> class.
+            </summary>
+        </member>
+        <member name="T:Compliance.Application.Mappings.InputBehaviourProfile">
+            <summary>
+            Input Behaviour Profile AutoMapper
+            </summary>
+            <seealso cref="T:AutoMapper.Profile" />
+        </member>
+        <member name="M:Compliance.Application.Mappings.InputBehaviourProfile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Compliance.Application.Mappings.InputBehaviourProfile"/> class.
+            </summary>
+        </member>
+    </members>
+</doc>

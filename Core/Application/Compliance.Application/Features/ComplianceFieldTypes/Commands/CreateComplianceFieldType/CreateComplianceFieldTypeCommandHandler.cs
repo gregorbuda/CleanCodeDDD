@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType
 {
+    /// <summary>
+    /// Create Compliance Field Type Command Handler
+    /// </summary>
     public class CreateComplianceFieldTypeCommandHandler : IRequestHandler<CreateComplianceFieldTypeCommand, ApiResponse<ComplianceFieldTypeCreateResponse>>
     {
         private readonly IUnitOfWork _unitOfWork;

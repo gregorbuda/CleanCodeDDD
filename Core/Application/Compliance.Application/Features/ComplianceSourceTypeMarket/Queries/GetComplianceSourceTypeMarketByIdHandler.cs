@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 
 namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Queries
 {
+    /// <summary>
+    /// Get  ComplianceSource Type Market By Id Handler
+    /// </summary>
     public class GetComplianceSourceTypeMarketByIdHandler : IRequestHandler<GetComplianceSourceTypeMarketById, ApiResponse<ComplianceSourceTypeMarketsResponse>>
     {
         private readonly IUnitOfWork _unitOfWork;

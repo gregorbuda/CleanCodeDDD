@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 
 namespace Compliance.Application.Features.ComplianceSourceType.Queries
 {
+    /// <summary>
+    /// Get Compliance Source Type Full Data By Id Handler
+    /// </summary>
     public class GetComplianceSourceTypeFullDataByIdHandler : IRequestHandler<GetComplianceSourceTypeFullDataById, ApiResponse<ComplianceSourceTypesFullDataResponse>>
     {
         private readonly IUnitOfWork _unitOfWork;

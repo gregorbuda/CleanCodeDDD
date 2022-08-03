@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -8,6 +7,9 @@ using Microsoft.AspNetCore.Http;
 
 namespace Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType
 {
+    /// <summary>
+    /// Update Batch Compliance Source Type Command Handler
+    /// </summary>
     public class UpdateBatchComplianceSourceTypeCommandHandler : IRequestHandler<UpdateBatchComplianceSourceTypeListCommand, ApiResponse<Boolean>>
     {
         private readonly IUnitOfWork _unitOfWork;

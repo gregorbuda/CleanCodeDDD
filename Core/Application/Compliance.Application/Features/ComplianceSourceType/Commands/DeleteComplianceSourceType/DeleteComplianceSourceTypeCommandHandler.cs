@@ -1,17 +1,15 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
+using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Compliance.Application.Features.ComplianceSourceType.Commands.DeleteComplianceSourceType
 {
+    /// <summary>
+    /// Delete Compliance Source Command
+    /// </summary>
     public class DeleteComplianceSourceTypeCommandHandler : IRequestHandler<DeleteComplianceSourceTypeCommand, ApiResponse<Boolean>>
     {
         private readonly IUnitOfWork _unitOfWork;

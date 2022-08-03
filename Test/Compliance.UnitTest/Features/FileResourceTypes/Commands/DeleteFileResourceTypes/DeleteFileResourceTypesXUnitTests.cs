@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Compliance.Application.Features.FileResourceTypes.Commands.DeleteFileResourceTypes;
 using Compliance.Application.Mappings;
-using Compliance.Application.Responses;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
 using Microsoft.AspNetCore.Http;

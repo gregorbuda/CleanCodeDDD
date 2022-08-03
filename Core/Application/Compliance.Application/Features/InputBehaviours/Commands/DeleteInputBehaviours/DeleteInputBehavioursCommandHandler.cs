@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.InputBehaviours.Commands.DeleteInputBehaviours
 {
+    /// <summary>
+    /// Delete Input Behaviours Command Handler
+    /// </summary>
     public class DeleteInputBehavioursCommandHandler : IRequestHandler<DeleteInputBehavioursCommand, ApiResponse<Boolean>>
     {
         private readonly IUnitOfWork _unitOfWork;

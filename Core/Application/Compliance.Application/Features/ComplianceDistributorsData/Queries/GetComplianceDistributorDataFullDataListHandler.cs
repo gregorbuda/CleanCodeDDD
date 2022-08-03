@@ -1,17 +1,14 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceDistributorsData.Queries
 {
+    /// <summary>
+    /// Get Compliance Distributor Data Full Data List Handler
+    /// </summary>
     public class GetComplianceDistributorDataFullDataListHandler : IRequestHandler<GetComplianceDistributorDataFullDataList, ApiResponse<IReadOnlyList<ComplianceDistributorDataResponse>>>
     {
         private readonly IUnitOfWork _unitOfWork;

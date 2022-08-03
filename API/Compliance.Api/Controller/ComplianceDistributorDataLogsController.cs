@@ -1,7 +1,6 @@
 ﻿using Compliance.Api.Utils;
 using Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls;
 using Compliance.Application.Features.ComplianceDistributorDataLogsBls.Queries;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

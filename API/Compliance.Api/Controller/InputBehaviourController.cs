@@ -4,7 +4,6 @@ using Compliance.Application.Features.InputBehaviours.Commands.DeleteInputBehavi
 using Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours;
 using Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours;
 using Compliance.Application.Features.InputBehaviours.Queries;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

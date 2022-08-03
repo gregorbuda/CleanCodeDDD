@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 
 namespace Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours
 {
+    /// <summary>
+    /// Update Batch Input Behaviours Command Handler
+    /// </summary>
     public class UpdateBatchInputBehavioursCommandHandler : IRequestHandler<UpdateBatchInputBehavioursListCommand, ApiResponse<Boolean>>
     {
         private readonly IUnitOfWork _unitOfWork;

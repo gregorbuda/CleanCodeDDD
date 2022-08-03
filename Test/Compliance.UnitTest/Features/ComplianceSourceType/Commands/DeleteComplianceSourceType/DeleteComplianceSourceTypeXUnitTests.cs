@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Compliance.Application.Features.ComplianceSourceType.Commands.DeleteComplianceSourceType;
 using Compliance.Application.Mappings;
-using Compliance.Application.Responses;
+using Compliance.Domain.Models;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
 using Microsoft.AspNetCore.Http;

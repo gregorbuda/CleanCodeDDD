@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls
 {
+    /// <summary>
+    /// Create Batch Compliance Distributor Data Logs Bls List Command Handler
+    /// </summary>
     public class CreateBatchComplianceDistributorDataLogsBlsCommandHandler : IRequestHandler<CreateBatchComplianceDistributorDataLogsBlsListCommand, ApiResponse<Boolean>>
     {
         private readonly IUnitOfWork _unitOfWork;

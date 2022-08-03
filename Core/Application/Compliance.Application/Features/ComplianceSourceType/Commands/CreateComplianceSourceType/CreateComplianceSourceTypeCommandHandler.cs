@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType
 {
+    /// <summary>
+    /// Create Compliance Source Command
+    /// </summary>
     public class CreateComplianceSourceTypeCommandHandler : IRequestHandler<CreateComplianceSourceTypeCommand, ApiResponse<ComplianceSourceTypeCreateResponse>>
     {
         private readonly IUnitOfWork _unitOfWork;

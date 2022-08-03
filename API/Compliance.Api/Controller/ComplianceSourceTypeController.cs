@@ -4,7 +4,6 @@ using Compliance.Application.Features.ComplianceSourceType.Commands.DeleteCompli
 using Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType;
 using Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType;
 using Compliance.Application.Features.ComplianceSourceType.Queries;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

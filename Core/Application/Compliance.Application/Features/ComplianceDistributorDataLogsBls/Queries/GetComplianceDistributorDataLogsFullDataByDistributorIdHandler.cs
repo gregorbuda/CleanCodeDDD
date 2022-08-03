@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Compliance.Application.Contracts.Persistence;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Compliance.Application.Features.ComplianceDistributorDataLogsBls.Queries
 {
+    /// <summary>
+    /// Get Compliance Distributor Data Logs Full Data By Distributor Id Handler
+    /// </summary>
     public class GetComplianceDistributorDataLogsFullDataByDistributorIdHandler : IRequestHandler<GetComplianceDistributorDataLogsFullDataByDistributorId, ApiResponse<IReadOnlyList<ComplianceDistributorDataLogsResponse>>>
     {
         private readonly IUnitOfWork _unitOfWork;

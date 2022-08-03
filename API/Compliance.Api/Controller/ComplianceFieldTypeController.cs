@@ -5,7 +5,6 @@ using Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchC
 using Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType;
 using Compliance.Application.Features.ComplianceFieldTypes.Queries;
 using Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

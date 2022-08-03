@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources;
 using Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources;
-using Compliance.Application.Responses;
 using Compliance.Domain.Models;
 using System;
 using System.Collections.Generic;

@@ -77,28 +77,28 @@ namespace Compliance.Domain.Models
         /// <example>1</example>
         public Int16? WidthPx { get; set; }
         /// <summary>
-        /// Compliance Source Type Id
+        /// Created Date
         /// </summary>
         /// <value>
-        /// Compliance Source Type Id
+        /// Created Date
         /// </value>
-        /// <example>1</example>
+        /// <example>2022-11-10</example>
         public DateTime? CreatedDate { get; set; }
         /// <summary>
-        /// Compliance Source Type Id
+        /// CreatedBy
         /// </summary>
         /// <value>
-        /// Compliance Source Type Id
+        /// CreatedBy
         /// </value>
         /// <example>1</example>
         public int CreatedBy { get; set; }
         /// <summary>
-        /// Compliance Source Type Id
+        /// UpdatedDate
         /// </summary>
         /// <value>
-        /// Compliance Source Type Id
+        /// UpdatedDate
         /// </value>
-        /// <example>1</example>
+        /// <example>2022-11-10</example>
         public DateTime? UpdatedDate { get; set; }
         /// <summary>
         /// Compliance Source Type Id
