@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources;
 using Compliance.Application.Mappings;
+using Compliance.Domain.Models;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
 using Microsoft.AspNetCore.Http;
@@ -40,7 +41,7 @@ namespace Compliance.UnitTest.Features.ComplianceSources.Commands.UpdateComplian
         {
             var ComplianceSourcesInput = new UpdateComplianceSourceCommand
             {
-                ComplianceSourceId = 1,
+                ComplianceSourceId = 3,
                 ComplianceSourceName = "Test",
                 Status = 1
             };

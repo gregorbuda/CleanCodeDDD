@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours;
 using Compliance.Application.Mappings;
+using Compliance.Domain.Models;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
 using Microsoft.AspNetCore.Http;

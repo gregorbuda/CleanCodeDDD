@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket;
 using Compliance.Application.Mappings;
+using Compliance.Domain.Models;
 using Compliance.Infrastructure.Repositories;
 using Compliance.UnitTest.Mock;
 using Microsoft.AspNetCore.Http;
