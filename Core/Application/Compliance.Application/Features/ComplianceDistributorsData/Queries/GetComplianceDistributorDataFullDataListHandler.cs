@@ -32,7 +32,7 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Queries
             {
                 complianceDistributorData = await _unitOfWork.complianceDistributorDataRepository.GetItemFullDataList();
 
-                if (complianceDistributorData != null)
+                if (complianceDistributorData.Count > 0)
                 {
                     complianceDistributorDataResponse = _mapper.Map<IReadOnlyList<ComplianceDistributorDataResponse>>(complianceDistributorData);
 

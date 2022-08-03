@@ -37,7 +37,7 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Queries
             {
                 complianceDistributorData = await _unitOfWork.complianceDistributorDataRepository.ItemFullDataListByDistributor(request._complianceDistributorDataId);
 
-                if (complianceDistributorData != null)
+                if (complianceDistributorData.Count > 0)
                 {
                     complianceDistributorDataResponse = _mapper.Map<IReadOnlyList<ComplianceDistributorDataResponse>>(complianceDistributorData);
 
@@ -48,7 +48,7 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Queries
                 else
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
-                    Message = "Compliance Distributor Data Not Found";
+                    Message = $"Compliance Distributor Id {request._complianceDistributorDataId} Not Found";
                     complianceDistributorDataResponse = null;
                     success = false;
                 }

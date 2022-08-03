@@ -351,12 +351,6 @@ namespace Compliance.Infrastructure.Persistence
 
                 ctm.Property(e => e.UpdatedDate).HasColumnType("date");
 
-                ctm.HasOne(d => d.Markets)
-                    .WithMany(p => p.ComplianceSourceTypeMarkets)
-                    .HasForeignKey(d => d.MarketId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ComplianceSourceTypeMarkets_Market");
-
                 ctm.HasOne(d => d.ComplianceSourceType)
                     .WithMany(p => p.ComplianceSourceTypeMarkets)
                     .HasForeignKey(d => d.ComplianceSourceTypeId)

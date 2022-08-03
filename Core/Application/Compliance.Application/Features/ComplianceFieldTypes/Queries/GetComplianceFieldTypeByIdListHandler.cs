@@ -34,7 +34,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
 
                 //complianceFieldTypeResponse = _mapper.Map<ComplianceFieldTypeResponse>(complianceFieldType);
 
-                if (complianceFieldType.ComplianceFieldTypeId > 0)
+                if (complianceFieldType != null)
                 {
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";

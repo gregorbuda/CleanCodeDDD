@@ -37,7 +37,7 @@ namespace Compliance.Application.Features.ComplianceDistributorDataLogsBls.Queri
             {
                 complianceDistributorDataLogs = await _unitOfWork.complianceDistributorDataLogsRepository.ItemFullDataListByDistributorId(request._complianceDistributorDataId);
 
-                if (complianceDistributorDataLogs != null)
+                if (complianceDistributorDataLogs.Count > 0)
                 {
                     complianceDistributorDataLogsResponse = _mapper.Map<IReadOnlyList<ComplianceDistributorDataLogsResponse>>(complianceDistributorDataLogs);
 

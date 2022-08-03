@@ -33,7 +33,7 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Queries
             {
                 complianceSourceTypeMarkets = await _unitOfWork.complianceSourceTypeMarketsRepository.GetByComplianceSourceTypeId(request._complianceSourceTypeId);
 
-                if (complianceSourceTypeMarkets != null)
+                if (complianceSourceTypeMarkets.Count > 0)
                 {
                     complianceSourceTypesResponse = _mapper.Map<IReadOnlyList<ComplianceSourceTypeMarketsResponse>>(complianceSourceTypeMarkets);
 

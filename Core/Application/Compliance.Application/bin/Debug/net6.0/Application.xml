@@ -134,10 +134,10 @@
         </member>
         <member name="P:Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataCommand.DistributorId">
             <summary>
-            Distributor  Id
+            Distributor Id
             </summary>
             <value>
-            Distributor  Id
+            Distributor Id
             </value>
             <example>2</example>
         </member>
@@ -1322,12 +1322,12 @@
         </member>
         <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand.CreatedDate">
             <summary>
-            CreatedBy
+            Created Date
             </summary>
             <value>
-            CreatedBy
+            Created Date
             </value>
-            <example>1</example>
+            <example>2022-10-10</example>
         </member>
         <member name="P:Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand.CreatedBy">
             <summary>

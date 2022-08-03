@@ -1,6 +1,6 @@
 ﻿using Compliance.Domain.Models;
 using MediatR;
-
+using System.ComponentModel.DataAnnotations;
 
 namespace Compliance.Application.Features.ComplianceDistributorsData.Queries
 {
@@ -16,6 +16,7 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Queries
         /// Compliance Distributor Data Id
         /// </value>
         /// <example>2</example>
+        [Required]
         public Int32 _complianceDistributorDataId { get; set; }
 
         public GetComplianceDistributorDataFullDataByDistributorId(Int32 complianceDistributorDataId)

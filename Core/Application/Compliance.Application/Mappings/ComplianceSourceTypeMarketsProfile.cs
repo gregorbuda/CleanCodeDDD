@@ -28,7 +28,6 @@ namespace Compliance.Application.Mappings
             CreateMap<ComplianceSourceTypeMarkets, ComplianceSourceTypeMarketsResponse>()
                 .ForMember(dest => dest.ComplianceSourceTypeMarketId, opt => opt.MapFrom(src => src.ComplianceSourceTypeMarketId))
                 .ForMember(dest => dest.ComplianceSourceTypeId, opt => opt.MapFrom(src => src.ComplianceSourceTypeId))
-                .ForMember(dest => dest.Markets, opt => opt.MapFrom(src => src.Markets))
                 .ForMember(dest => dest.ComplianceSourceType, opt => opt.MapFrom(src => src.ComplianceSourceType))
                 .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)(EnumComplianceSourceStatus)src.Status));
 

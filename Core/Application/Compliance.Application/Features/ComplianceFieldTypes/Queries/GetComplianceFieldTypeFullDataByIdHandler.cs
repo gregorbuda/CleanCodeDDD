@@ -45,7 +45,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
                 else
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
-                    Message = "Compliance Field Type Not Found";
+                    Message = $"Compliance Field Type Id {request._complianceFieldTypeId} Not Found";
                     ComplianceSourceResponseFieldType = null;
                     success = false;
                 }

@@ -36,7 +36,7 @@ namespace Compliance.Application.Features.InputBehaviours.Queries
 
                 inputBehaviourResponse = _mapper.Map<InputBehaviourResponse>(inputBehaviour);
 
-                if (inputBehaviour.InputBehaviourId > 0)
+                if (inputBehaviour != null)
                 {
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";

@@ -39,7 +39,7 @@ namespace Compliance.Application.Features.ComplianceSourceType.Queries
 
                 complianceSourceTypesResponse = _mapper.Map<IReadOnlyList<ComplianceSourceTypesResponse>>(complianceSourceTypes);
 
-                if (complianceSourceTypes != null)
+                if (complianceSourceTypes.Count > 0)
                 {
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";

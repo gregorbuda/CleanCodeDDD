@@ -943,14 +943,6 @@
             </value>
             <example>1</example>
         </member>
-        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarkets.Markets">
-            <summary>
-            Markets
-            </summary>
-            <value>
-            Markets
-            </value>
-        </member>
         <member name="T:Compliance.Domain.Models.ComplianceSourceTypeMarketsCreateResponse">
             <summary>
             Compliance Source Type Markets Create Response
@@ -988,13 +980,14 @@
             </value>
             <example>1</example>
         </member>
-        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarketsResponse.Markets">
+        <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarketsResponse.MarketId">
             <summary>
-            Markets
+            Market Id
             </summary>
             <value>
-            Markets
+            Market Id
             </value>
+            <example>1</example>
         </member>
         <member name="P:Compliance.Domain.Models.ComplianceSourceTypeMarketsResponse.ComplianceSourceType">
             <summary>

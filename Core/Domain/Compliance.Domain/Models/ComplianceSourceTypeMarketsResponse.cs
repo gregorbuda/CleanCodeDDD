@@ -28,12 +28,13 @@ namespace Compliance.Domain.Models
         /// <example>1</example>
         public Int32 ComplianceSourceTypeId { get; set; }
         /// <summary>
-        /// Markets
+        /// Market Id
         /// </summary>
         /// <value>
-        /// Markets
+        /// Market Id
         /// </value>
-        public MarketResponse? Markets { get; set; }
+        /// <example>1</example>
+        public Int32 MarketId { get; set; }
         /// <summary>
         /// Compliance Source Type
         /// </summary>

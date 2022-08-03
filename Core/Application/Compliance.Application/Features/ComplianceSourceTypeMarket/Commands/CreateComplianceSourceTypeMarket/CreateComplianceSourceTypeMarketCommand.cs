@@ -43,12 +43,12 @@ namespace Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.Cr
         [Required]
         public byte Status { get; set; }
         /// <summary>
-        /// CreatedBy
+        /// Created Date
         /// </summary>
         /// <value>
-        /// CreatedBy
+        /// Created Date
         /// </value>
-        /// <example>1</example>
+        /// <example>2022-10-10</example>
         public DateTime? CreatedDate { get; set; }
         /// <summary>
         /// CreatedBy

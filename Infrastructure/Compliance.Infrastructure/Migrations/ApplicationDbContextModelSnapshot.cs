@@ -17,7 +17,7 @@ namespace Compliance.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.0-preview.6.22329.4")
+                .HasAnnotation("ProductVersion", "6.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -47,7 +47,6 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("FieldData")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -81,13 +80,11 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ComplianceDistributorLogData")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .IsUnicode(false)
                         .HasColumnType("varchar(500)");
 
                     b.Property<string>("ComplianceDistributorLogMessage")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .IsUnicode(false)
                         .HasColumnType("varchar(500)");
@@ -149,7 +146,6 @@ namespace Compliance.Infrastructure.Migrations
                         .HasDefaultValueSql("(getdate())");
 
                     b.Property<string>("FieldPath")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -268,8 +264,6 @@ namespace Compliance.Infrastructure.Migrations
                         .HasName("PK_ComplianceSourceTypeMarket_ComplianceSourceTypeMarketId");
 
                     b.HasIndex("ComplianceSourceTypeId");
-
-                    b.HasIndex("MarketId");
 
                     b.ToTable("ComplianceSourceTypeMarkets", "eth");
                 });
@@ -392,7 +386,6 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnType("datetime");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -442,7 +435,6 @@ namespace Compliance.Infrastructure.Migrations
                         .HasDefaultValueSql("(getdate())");
 
                     b.Property<string>("InputBehaviourName")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .IsUnicode(false)
                         .HasColumnType("varchar(500)");
@@ -480,20 +472,17 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnName("COMPANYADDRESSID");
 
                     b.Property<string>("Companycode")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .IsUnicode(false)
                         .HasColumnType("varchar(20)")
                         .HasColumnName("COMPANYCODE");
 
                     b.Property<string>("Companyemail")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("COMPANYEMAIL");
 
                     b.Property<string>("Companyphone")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("COMPANYPHONE");
@@ -519,7 +508,6 @@ namespace Compliance.Infrastructure.Migrations
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("DefaultCultureInfo")
-                        .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(10)
                         .IsUnicode(false)
@@ -539,7 +527,6 @@ namespace Compliance.Infrastructure.Migrations
                         .HasDefaultValueSql("('')");
 
                     b.Property<string>("MarketDescription")
-                        .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
@@ -575,7 +562,6 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnName("MAXVOLUMELIMIT_NFR");
 
                     b.Property<string>("MerchantCurrency")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .IsUnicode(false)
                         .HasColumnType("varchar(50)");
@@ -585,13 +571,11 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnName("MIN_AGE");
 
                     b.Property<string>("Nfrcompanycode")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("NFRCOMPANYCODE");
 
                     b.Property<string>("Nfrcurrency")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("NFRCURRENCY");
@@ -616,7 +600,6 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnName("SETTAXINTEGRATION");
 
                     b.Property<string>("Shippingcurrency")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .IsUnicode(false)
                         .HasColumnType("varchar(50)")
@@ -641,7 +624,6 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnType("smallint");
 
                     b.Property<string>("TranslationKey")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("UpdatedBy")
@@ -706,15 +688,7 @@ namespace Compliance.Infrastructure.Migrations
                         .IsRequired()
                         .HasConstraintName("FK_ComplianceSourceTypeMarkets_ComplianceSourceType");
 
-                    b.HasOne("Compliance.Domain.Models.Market", "Markets")
-                        .WithMany("ComplianceSourceTypeMarkets")
-                        .HasForeignKey("MarketId")
-                        .IsRequired()
-                        .HasConstraintName("FK_ComplianceSourceTypeMarkets_Market");
-
                     b.Navigation("ComplianceSourceType");
-
-                    b.Navigation("Markets");
                 });
 
             modelBuilder.Entity("Compliance.Domain.Models.ComplianceSourceTypes", b =>
@@ -779,11 +753,6 @@ namespace Compliance.Infrastructure.Migrations
             modelBuilder.Entity("Compliance.Domain.Models.InputBehaviour", b =>
                 {
                     b.Navigation("ComplianceFieldType");
-                });
-
-            modelBuilder.Entity("Compliance.Domain.Models.Market", b =>
-                {
-                    b.Navigation("ComplianceSourceTypeMarkets");
                 });
 #pragma warning restore 612, 618
         }

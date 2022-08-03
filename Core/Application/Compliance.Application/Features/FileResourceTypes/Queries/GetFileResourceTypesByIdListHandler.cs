@@ -35,7 +35,7 @@ namespace Compliance.Application.Features.FileResourceTypes.Queries
 
                // fileResourceTypeResponse = _mapper.Map<FileResourceTypeResponse>(fileResourceType);
 
-                if (fileResourceType.FileResourceTypeId > 0)
+                if (fileResourceType != null)
                 {
                     CodeResult = StatusCodes.Status200OK.ToString();
                     Message = "Success, and there is a response body.";

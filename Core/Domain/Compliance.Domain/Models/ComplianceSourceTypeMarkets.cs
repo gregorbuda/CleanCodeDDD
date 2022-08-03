@@ -80,12 +80,6 @@ namespace Compliance.Domain.Models
         /// </value>
         /// <example>1</example>
         public Int32 MarketId { get; set; }
-        /// <summary>
-        /// Markets
-        /// </summary>
-        /// <value>
-        /// Markets
-        /// </value>
-        public Market Markets { get; set; }
+
     }
 }

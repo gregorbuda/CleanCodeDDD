@@ -37,7 +37,7 @@ namespace Compliance.Application.Features.ComplianceFieldTypes.Queries
             {
                 ComplianceSourceFieldType = await _unitOfWork.complianceFieldTypeRepository.GetItemFullDataList();
            
-                if (ComplianceSourceFieldType != null)
+                if (ComplianceSourceFieldType.Count > 0)
                 {
                     ComplianceSourceResponseFieldType = _mapper.Map<IReadOnlyList<ComplianceFieldTypeFullDataResponse>>(ComplianceSourceFieldType);
 

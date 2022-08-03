@@ -52,6 +52,6 @@ namespace Compliance.Domain.Models
         public bool? ShowFlagStatus { get; set; }
         public string TranslationKey { get; set; }
 
-        public virtual ICollection<ComplianceSourceTypeMarkets> ComplianceSourceTypeMarkets { get; set; }
+        //public virtual ICollection<ComplianceSourceTypeMarkets> ComplianceSourceTypeMarkets { get; set; }
     }
 }

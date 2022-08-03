@@ -19,7 +19,6 @@ namespace Compliance.Infrastructure.Repositories
         public async Task<IReadOnlyList<ComplianceSourceTypeMarkets>> GetByComplianceSourceTypeId(int complianceSourceTypeId)
         {
             var result =  _context.ComplianceSourceTypeMarkets
-                .Include(complianceSourceType => complianceSourceType.Markets)
                 .ToList()
                 .FindAll(complianceSourceType => complianceSourceType.ComplianceSourceTypeId == complianceSourceTypeId);
 

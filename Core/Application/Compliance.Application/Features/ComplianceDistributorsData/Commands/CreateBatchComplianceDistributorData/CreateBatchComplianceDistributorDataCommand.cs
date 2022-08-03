@@ -22,10 +22,10 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Commands.Cr
         [Required]
         public Int32 ComplianceSourceTypeId { get; set; }
         /// <summary>
-        /// Distributor  Id
+        /// Distributor Id
         /// </summary>
         /// <value>
-        /// Distributor  Id
+        /// Distributor Id
         /// </value>
         /// <example>2</example>
         [Required]
