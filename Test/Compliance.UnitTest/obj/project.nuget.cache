@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MJfW1cbZSydH+jkkQBqKaShXiTATsII7gY+PIKYUc5OiRbseZVC7KaXLSCinSOer0Ecv1Ib1AQucTauOmY3RoQ==",
+  "dgSpecHash": "oYmIbL5EKto2z1x+yWtwtDxZe+lEOR+VKKfux+g4M24zWB4VIirGV/G6FCxlLi/ndO/A4GGymHtowNex8raJZA==",
   "success": true,
-  "projectFilePath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj",
+  "projectFilePath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Example.UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\autofixture\\4.17.0\\autofixture.4.17.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",

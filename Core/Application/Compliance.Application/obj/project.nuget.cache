@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9gUyv7bNHP6KTJo7NQ+9hyDc/IQODQcRju28X9ALfEAW9VayDSm4FD87bK2+hGLteNnr+Z7gzmelWP/iohsRzA==",
+  "dgSpecHash": "BENygTwCV7Ju+xeS7wrKRIaqtdX0s4YKGdYyntjPMRb6u1sMAG2TGrWa3jsCZnwa+9rvXwyOz4VEonvh2jazww==",
   "success": true,
-  "projectFilePath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Compliance.Application.csproj",
+  "projectFilePath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Example.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

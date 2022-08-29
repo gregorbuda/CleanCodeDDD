@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Application\Compliance.Application\Compliance.Application.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\Compliance.Infrastructure\Compliance.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Core\Application\Compliance.Application\Example.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Compliance.Infrastructure\Example.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

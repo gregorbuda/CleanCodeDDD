@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj": {}
+    "C:\\GitRepositories\\cleanarchitecture\\compliance\\Infrastructure\\Compliance.Infrastructure\\Example.Infrastructure.csproj": {}
   },
   "projects": {
     "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Example.Application.csproj": {
@@ -216,100 +216,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.7, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj",
-        "projectName": "Compliance.UnitTest",
-        "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://xnuget.xirect.com/api/v2": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Example.Application.csproj": {
-                "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Example.Application.csproj"
-              },
-              "C:\\GitRepositories\\cleanarchitecture\\compliance\\Infrastructure\\Compliance.Infrastructure\\Example.Infrastructure.csproj": {
-                "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Infrastructure\\Compliance.Infrastructure\\Example.Infrastructure.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "AutoFixture": {
-              "target": "Package",
-              "version": "[4.17.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.InMemory": {
-              "target": "Package",
-              "version": "[6.0.7, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[17.2.0, )"
-            },
-            "Moq": {
-              "target": "Package",
-              "version": "[4.18.1, )"
-            },
-            "Shouldly": {
-              "target": "Package",
-              "version": "[4.0.3, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.5, )"
             }
           },
           "imports": [

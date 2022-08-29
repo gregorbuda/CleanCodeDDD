@@ -1097,7 +1097,7 @@
           "lib/netcoreapp3.1/xss.Utils.NetCore.dll": {}
         }
       },
-      "Compliance.Domain/1.0.0": {
+      "Example.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1105,10 +1105,10 @@
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0"
         },
         "compile": {
-          "bin/placeholder/Compliance.Domain.dll": {}
+          "bin/placeholder/Example.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Compliance.Domain.dll": {}
+          "bin/placeholder/Example.Domain.dll": {}
         }
       }
     }
@@ -3251,17 +3251,17 @@
         "xss.utils.netcore.nuspec"
       ]
     },
-    "Compliance.Domain/1.0.0": {
+    "Example.Domain/1.0.0": {
       "type": "project",
-      "path": "../../Domain/Compliance.Domain/Compliance.Domain.csproj",
-      "msbuildProject": "../../Domain/Compliance.Domain/Compliance.Domain.csproj"
+      "path": "../../Domain/Compliance.Domain/Example.Domain.csproj",
+      "msbuildProject": "../../Domain/Compliance.Domain/Example.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 11.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
-      "Compliance.Domain >= 1.0.0",
+      "Example.Domain >= 1.0.0",
       "FluentValidation >= 11.1.0",
       "FluentValidation.DependencyInjectionExtensions >= 11.1.0",
       "MediatR >= 10.0.1",
@@ -3276,9 +3276,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Compliance.Application.csproj",
-      "projectName": "Compliance.Application",
-      "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Compliance.Application.csproj",
+      "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Example.Application.csproj",
+      "projectName": "Example.Application",
+      "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Example.Application.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\obj\\",
       "projectStyle": "PackageReference",
@@ -3298,8 +3298,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\Compliance.Domain.csproj": {
-              "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\Compliance.Domain.csproj"
+            "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\Example.Domain.csproj": {
+              "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\Example.Domain.csproj"
             }
           }
         }

@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Application\Compliance.Application\Compliance.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Application\Compliance.Application\Example.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

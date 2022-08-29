@@ -11,17 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{BCC0C10C-C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastucture", "Infrastucture", "{4A8F779B-9569-4422-B719-55CF6CD16069}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compliance.Api", "API\Compliance.Api\Compliance.Api.csproj", "{EFE62AF0-37A2-4204-A189-1D548F68D618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Api", "API\Compliance.Api\Example.Api.csproj", "{EFE62AF0-37A2-4204-A189-1D548F68D618}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compliance.Application", "Core\Application\Compliance.Application\Compliance.Application.csproj", "{EA31025C-1DA1-47FF-8247-677F70A5F722}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Application", "Core\Application\Compliance.Application\Example.Application.csproj", "{EA31025C-1DA1-47FF-8247-677F70A5F722}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compliance.Domain", "Core\Domain\Compliance.Domain\Compliance.Domain.csproj", "{4DB795B3-CC5E-4106-B4EE-B32D4749D89B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Domain", "Core\Domain\Compliance.Domain\Example.Domain.csproj", "{4DB795B3-CC5E-4106-B4EE-B32D4749D89B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compliance.Infrastructure", "Infrastructure\Compliance.Infrastructure\Compliance.Infrastructure.csproj", "{6B01FAC9-5BDB-4D5B-96BD-4D3E1FA3ABAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Infrastructure", "Infrastructure\Compliance.Infrastructure\Example.Infrastructure.csproj", "{6B01FAC9-5BDB-4D5B-96BD-4D3E1FA3ABAB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{5ABD2F11-D5FE-4BF3-B872-E74F637F2132}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compliance.UnitTest", "Test\Compliance.UnitTest\Compliance.UnitTest.csproj", "{CED1910D-563D-4AD0-8FE8-51E769883E34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.UnitTest", "Test\Compliance.UnitTest\Example.UnitTest.csproj", "{CED1910D-563D-4AD0-8FE8-51E769883E34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

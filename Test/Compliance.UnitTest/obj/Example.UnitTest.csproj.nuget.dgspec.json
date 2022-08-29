@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj": {}
+    "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Example.UnitTest.csproj": {}
   },
   "projects": {
     "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Example.Application.csproj": {
@@ -237,12 +237,12 @@
         }
       }
     },
-    "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj": {
+    "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Example.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj",
-        "projectName": "Compliance.UnitTest",
-        "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Compliance.UnitTest.csproj",
+        "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Example.UnitTest.csproj",
+        "projectName": "Example.UnitTest",
+        "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\Example.UnitTest.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Test\\Compliance.UnitTest\\obj\\",
         "projectStyle": "PackageReference",

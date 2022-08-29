@@ -357,9 +357,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\Compliance.Domain.csproj",
-      "projectName": "Compliance.Domain",
-      "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\Compliance.Domain.csproj",
+      "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\Example.Domain.csproj",
+      "projectName": "Example.Domain",
+      "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\Example.Domain.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\obj\\",
       "projectStyle": "PackageReference",

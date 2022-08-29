@@ -1498,13 +1498,13 @@
           "lib/netcoreapp3.1/xss.Utils.NetCore.dll": {}
         }
       },
-      "Compliance.Application/1.0.0": {
+      "Example.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "Compliance.Domain": "1.0.0",
+          "Example.Domain": "1.0.0",
           "FluentValidation": "11.1.0",
           "FluentValidation.DependencyInjectionExtensions": "11.1.0",
           "MediatR": "10.0.1",
@@ -1513,13 +1513,13 @@
           "xss.Market.Client": "7.3.0"
         },
         "compile": {
-          "bin/placeholder/Compliance.Application.dll": {}
+          "bin/placeholder/Example.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Compliance.Application.dll": {}
+          "bin/placeholder/Example.Application.dll": {}
         }
       },
-      "Compliance.Domain/1.0.0": {
+      "Example.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1527,25 +1527,25 @@
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0"
         },
         "compile": {
-          "bin/placeholder/Compliance.Domain.dll": {}
+          "bin/placeholder/Example.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Compliance.Domain.dll": {}
+          "bin/placeholder/Example.Domain.dll": {}
         }
       },
-      "Compliance.Infrastructure/1.0.0": {
+      "Example.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Compliance.Application": "1.0.0",
+          "Example.Application": "1.0.0",
           "MediatR": "10.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7"
         },
         "compile": {
-          "bin/placeholder/Compliance.Infrastructure.dll": {}
+          "bin/placeholder/Example.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Compliance.Infrastructure.dll": {}
+          "bin/placeholder/Example.Infrastructure.dll": {}
         }
       }
     }
@@ -4422,26 +4422,26 @@
         "xss.utils.netcore.nuspec"
       ]
     },
-    "Compliance.Application/1.0.0": {
+    "Example.Application/1.0.0": {
       "type": "project",
-      "path": "../../Core/Application/Compliance.Application/Compliance.Application.csproj",
-      "msbuildProject": "../../Core/Application/Compliance.Application/Compliance.Application.csproj"
+      "path": "../../Core/Application/Compliance.Application/Example.Application.csproj",
+      "msbuildProject": "../../Core/Application/Compliance.Application/Example.Application.csproj"
     },
-    "Compliance.Domain/1.0.0": {
+    "Example.Domain/1.0.0": {
       "type": "project",
-      "path": "../../Core/Domain/Compliance.Domain/Compliance.Domain.csproj",
-      "msbuildProject": "../../Core/Domain/Compliance.Domain/Compliance.Domain.csproj"
+      "path": "../../Core/Domain/Compliance.Domain/Example.Domain.csproj",
+      "msbuildProject": "../../Core/Domain/Compliance.Domain/Example.Domain.csproj"
     },
-    "Compliance.Infrastructure/1.0.0": {
+    "Example.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../../Infrastructure/Compliance.Infrastructure/Compliance.Infrastructure.csproj",
-      "msbuildProject": "../../Infrastructure/Compliance.Infrastructure/Compliance.Infrastructure.csproj"
+      "path": "../../Infrastructure/Compliance.Infrastructure/Example.Infrastructure.csproj",
+      "msbuildProject": "../../Infrastructure/Compliance.Infrastructure/Example.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Compliance.Application >= 1.0.0",
-      "Compliance.Infrastructure >= 1.0.0",
+      "Example.Application >= 1.0.0",
+      "Example.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.7",
       "Swashbuckle.AspNetCore >= 6.2.3",
@@ -4454,9 +4454,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\API\\Compliance.Api\\Compliance.Api.csproj",
-      "projectName": "Compliance.Api",
-      "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\API\\Compliance.Api\\Compliance.Api.csproj",
+      "projectUniqueName": "C:\\GitRepositories\\cleanarchitecture\\compliance\\API\\Compliance.Api\\Example.Api.csproj",
+      "projectName": "Example.Api",
+      "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\API\\Compliance.Api\\Example.Api.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\API\\Compliance.Api\\obj\\",
       "projectStyle": "PackageReference",
@@ -4476,11 +4476,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Compliance.Application.csproj": {
-              "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Compliance.Application.csproj"
+            "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Example.Application.csproj": {
+              "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Application\\Compliance.Application\\Example.Application.csproj"
             },
-            "C:\\GitRepositories\\cleanarchitecture\\compliance\\Infrastructure\\Compliance.Infrastructure\\Compliance.Infrastructure.csproj": {
-              "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Infrastructure\\Compliance.Infrastructure\\Compliance.Infrastructure.csproj"
+            "C:\\GitRepositories\\cleanarchitecture\\compliance\\Infrastructure\\Compliance.Infrastructure\\Example.Infrastructure.csproj": {
+              "projectPath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Infrastructure\\Compliance.Infrastructure\\Example.Infrastructure.csproj"
             }
           }
         }
