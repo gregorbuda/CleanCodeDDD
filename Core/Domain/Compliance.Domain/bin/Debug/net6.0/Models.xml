@@ -95,6 +95,24 @@
             </value>
             <example>2</example>
         </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.Status2">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Compliance.Domain.Models.ComplianceDistributorData.Status3">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
         <member name="P:Compliance.Domain.Models.ComplianceDistributorData.CreatedDate">
             <summary>
             Created Date

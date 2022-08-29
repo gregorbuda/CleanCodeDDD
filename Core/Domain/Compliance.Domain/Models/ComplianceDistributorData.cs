@@ -54,6 +54,22 @@ namespace Compliance.Domain.Models
         /// <example>2</example>
         public byte Status { get; set; }
         /// <summary>
+        /// Status
+        /// </summary>
+        /// <value>
+        /// Status
+        /// </value>
+        /// <example>2</example>
+        public byte Status2 { get; set; }
+        /// <summary>
+        /// Status
+        /// </summary>
+        /// <value>
+        /// Status
+        /// </value>
+        /// <example>2</example>
+        public byte Status3 { get; set; }
+        /// <summary>
         /// Created Date
         /// </summary>
         /// <value>

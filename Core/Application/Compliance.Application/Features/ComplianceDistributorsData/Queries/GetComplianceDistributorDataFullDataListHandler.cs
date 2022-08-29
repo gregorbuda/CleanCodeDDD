@@ -43,7 +43,7 @@ namespace Compliance.Application.Features.ComplianceDistributorsData.Queries
                 else
                 {
                     CodeResult = StatusCodes.Status404NotFound.ToString();
-                    Message = "Compliance Distributor Data Not Found";
+                    Message = $"Compliance Distributor Data Id Not Found";
                     complianceDistributorDataResponse = null;
                     success = false;
                 }

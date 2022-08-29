@@ -26,7 +26,7 @@ namespace Compliance.Application.Features.FileResourceTypes.Queries
             Boolean success = false;
             String Message = "";
             FileResourceType fileResourceType = null;
-            FileResourceTypeResponse fileResourceTypeResponse = null;
+            FileResourceTypeResponse? fileResourceTypeResponse = null;
             String CodeResult = "";
 
             try

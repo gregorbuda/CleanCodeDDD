@@ -24,8 +24,8 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "Compliance Microservice",
-        Description = "Compliance Microservice",
+        Title = "Example Microservice",
+        Description = "Example Microservice",
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
         {

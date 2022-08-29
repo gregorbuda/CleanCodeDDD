@@ -55,6 +55,12 @@ namespace Compliance.Infrastructure.Migrations
                         .HasColumnType("tinyint")
                         .HasDefaultValueSql("((1))");
 
+                    b.Property<byte>("Status2")
+                        .HasColumnType("tinyint");
+
+                    b.Property<byte>("Status3")
+                        .HasColumnType("tinyint");
+
                     b.Property<int?>("UpdatedBy")
                         .HasColumnType("int");
 
