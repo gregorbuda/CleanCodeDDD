@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "P7q/YdGB93lh1GbOkg+Ncg6sZkcL/fCwIKifadyH1Sq6HZgbj7irh5rdiMcGCM1tm0bwvnmHUKFahvwDeLw6YQ==",
+  "dgSpecHash": "oD/7nWF/e7Eo2/RBJ641p4LkZW/XWAhT87BsWx2teGfAoeEv6gqurGdyZBOy9zkPEkxjmOokDCmmMRS54mQtHw==",
   "success": true,
   "projectFilePath": "C:\\GitRepositories\\cleanarchitecture\\compliance\\Core\\Domain\\Compliance.Domain\\Example.Domain.csproj",
   "expectedPackageFiles": [
