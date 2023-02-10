@@ -4,6 +4,7 @@ using Compliance.Application.Features.ComplianceDistributorsData.Commands.Update
 using Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData;
 using Compliance.Application.Features.ComplianceDistributorsData.Queries;
 using Compliance.Domain.Models;
+using Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -127,5 +128,23 @@ namespace Compliance.Api.Controller
             return Ok(result);
         }
 
+        /// <summary>
+        /// Update Batch Compliance Compliance Distributor Data
+        /// </summary>
+        /// <param name="command">The data Input Compliance Distributor Data.</param>
+        /// <returns>
+        /// A List of Compliance Compliance Distributor Data
+        /// </returns>
+        /// <remarks>
+        /// Update Batch Compliance Compliance Distributor Data
+        /// `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+        /// </remarks>
+        [HttpPut("UpdateBatchReturnBoolean")]
+        [ProducesResponseType(typeof(ApiResponse<Boolean>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ApiResponse<Boolean>>> UpdateBatchReturnBooleanComplianceDistributorData([FromBody] UpdateListReturnBoleanComplianceDistributorsDataListCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
+        }
     }
 }

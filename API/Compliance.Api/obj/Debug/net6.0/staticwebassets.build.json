@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "OQ85gVUXK0e4n6NxayLJP574mJDLUGekXgGI/TAJNKY=",
-  "Source": "Compliance.Api",
-  "BasePath": "_content/Compliance.Api",
+  "Hash": "e9yhqVor5GzW7k8XZfz+aTj8yNr/fZH+x10dlkjmV5c=",
+  "Source": "Example.Api",
+  "BasePath": "_content/Example.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

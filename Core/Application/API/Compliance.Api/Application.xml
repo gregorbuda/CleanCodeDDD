@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Compliance.Application</name>
+        <name>Example.Application</name>
     </assembly>
     <members>
         <member name="T:Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsCommand">
@@ -2524,6 +2524,95 @@
             <summary>
             Initializes a new instance of the <see cref="T:Compliance.Application.Mappings.InputBehaviourProfile"/> class.
             </summary>
+        </member>
+        <member name="P:Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataListCommand.ComplianceDistributorData">
+            <summary>
+            List Compliance Distributor Data
+            </summary>
+            <value>
+            List Compliance Distributor Data
+            </value>
+        </member>
+        <member name="P:Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataCommand.ComplianceDistributorDataId">
+            <summary>
+            Compliance Distributor Data Id
+            </summary>
+            <value>
+            Compliance Distributor Data Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataCommand.ComplianceSourceTypeId">
+            <summary>
+            Compliance Source Type Id
+            </summary>
+            <value>
+            Compliance Source Type Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataCommand.DistributorId">
+            <summary>
+            Distributor  Id
+            </summary>
+            <value>
+            Distributor  Id
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataCommand.FieldData">
+            <summary>
+            FieldData
+            </summary>
+            <value>
+            FieldData
+            </value>
+            <example>Test Data</example>
+        </member>
+        <member name="P:Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataCommand.Status">
+            <summary>
+            Status
+            </summary>
+            <value>
+            Status
+            </value>
+            <example>2</example>
+        </member>
+        <member name="P:Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataCommand.CreatedDate">
+            <summary>
+            Created Date
+            </summary>
+            <value>
+            Created Date
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataCommand.CreatedBy">
+            <summary>
+            CreatedBy
+            </summary>
+            <value>
+            CreatedBy
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataCommand.UpdatedDate">
+            <summary>
+            UpdatedDate
+            </summary>
+            <value>
+            UpdatedDate
+            </value>
+            <example>2022-11-10</example>
+        </member>
+        <member name="P:Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataCommand.UpdatedBy">
+            <summary>
+            UpdatedBy
+            </summary>
+            <value>
+            UpdatedBy
+            </value>
+            <example>1</example>
         </member>
     </members>
 </doc>

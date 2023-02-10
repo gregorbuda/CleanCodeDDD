@@ -114,11 +114,21 @@ namespace Compliance.Infrastructure.Repositories
 
         public void SaveBatch(IEnumerable<T> itemList)
         {
-            //_context.ChangeTracker.Clear();
+            var transaction = _context.Database.BeginTransaction();
+            try
+            {
+                _context.ChangeTracker.Clear();
 
-            _context.AddRange(itemList);
+                _context.AddRange(itemList);
 
-            _context.SaveChanges();
+                _context.SaveChanges();
+
+                transaction.Commit();
+            }
+            catch
+            {
+                transaction.Rollback();
+            }
         }
 
         public void DeleteBatch(IEnumerable<T> itemList)
@@ -130,13 +140,23 @@ namespace Compliance.Infrastructure.Repositories
 
         }
 
-        public  void UpdateBatch(IEnumerable<T> itemList)
+        public void UpdateBatch(IEnumerable<T> itemList)
         {
-            _context.ChangeTracker.Clear();
+            var transaction = _context.Database.BeginTransaction();
+            try
+            {
+                _context.ChangeTracker.Clear();
 
-            _context.UpdateRange(itemList);
+                _context.UpdateRange(itemList);
 
-            _context.SaveChanges();
+                _context.SaveChanges();
+
+                transaction.Commit();
+            }
+            catch
+            {
+                transaction.Rollback();
+            }
         }
     }
 }

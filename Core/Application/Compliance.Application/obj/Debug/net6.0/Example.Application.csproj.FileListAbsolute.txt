@@ -1,0 +1,16 @@
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\bin\Debug\net6.0\Example.Application.deps.json
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\bin\Debug\net6.0\Example.Application.dll
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\bin\Debug\net6.0\Example.Application.pdb
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\bin\Debug\net6.0\Application.xml
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\bin\Debug\net6.0\Example.Domain.dll
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\bin\Debug\net6.0\Example.Domain.pdb
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Example.Application.csproj.AssemblyReference.cache
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Example.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Example.Application.AssemblyInfoInputs.cache
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Example.Application.AssemblyInfo.cs
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Example.Application.csproj.CoreCompileInputs.cache
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Example.Application.csproj.CopyComplete
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Example.Application.dll
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\ref\Example.Application.dll
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\Example.Application.pdb
+C:\GitRepositories\cleanarchitecture\compliance\Core\Application\Compliance.Application\obj\Debug\net6.0\refint\Example.Application.dll

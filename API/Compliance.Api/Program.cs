@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using Example.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,9 @@ builder.Services.AddApplicationServices();
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddTransient<LoggingApiMiddleware>();
+
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
@@ -49,6 +53,7 @@ builder.Services.AddSwaggerGen(options =>
     options.EnableAnnotations();
 });
 
+
 builder.Services.AddMvc()
 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
            .ConfigureApiBehaviorOptions(options =>
@@ -62,9 +67,12 @@ builder.Services.AddMvc()
 
 var app = builder.Build();
 
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+   app.UseClassWithNoImplementationMiddlewareExtensions();
     app.UseSwagger();
 
     app.UseSwaggerUI(c =>
@@ -73,8 +81,10 @@ if (app.Environment.IsDevelopment())
                           "Swagger XML Api Demo v1");
     });
 }
-
-
+else
+{
+    app.UseClassWithNoImplementationMiddlewareExtensions();
+}
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

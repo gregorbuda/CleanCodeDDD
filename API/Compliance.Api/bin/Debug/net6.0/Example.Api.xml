@@ -1,0 +1,662 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Example.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataController.CreateBatchComplianceDistributorData(Compliance.Application.Features.ComplianceDistributorsData.Commands.CreateBatchComplianceDistributorData.CreateBatchComplianceDistributorDataListCommand)">
+            <summary>
+            Create Batch Compliance Compliance Distributor Data
+            </summary>
+            <param name="command">The data Input Compliance Distributor Data.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Create Batch Compliance Compliance Distributor Data
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataController.UpdateBatchComplianceDistributorData(Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchComplianceDistributorsData.UpdateBatchComplianceDistributorsDataListCommand)">
+            <summary>
+            Update Batch Compliance Compliance Distributor Data
+            </summary>
+            <param name="command">The data Input Compliance Distributor Data.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Compliance Compliance Distributor Data
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataController.GetComplianceDistributorDataFullData">
+            <summary>
+            Get Compliance Distributor Data Full Data
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Distributor Data Full Data
+            </returns>
+            <remarks>
+            Get Compliance Distributor Data Full Data
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataController.GetComplianceDistributorDataFullDataListByDistributor(System.Int32)">
+            <summary>
+            Get Compliance Distributor Data Full Data List By Distributor Id
+            </summary>
+            <param name="complianceDistributorId">compliance DistributorId Id</param>
+            <returns>
+            A Compliance Distributor Data Full Data List by  Distributor Id
+            </returns>
+            <remarks>
+            Get Compliance Distributor Data Full Data List By Distributor Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataController.UpdateBatchReturnListComplianceDistributorData(Compliance.Application.Features.ComplianceDistributorsData.Commands.UpdateBatchAnReturnComplianceDistributorData.UpdateBatchAnReturnComplianceDistributorDataListCommand)">
+            <summary>
+            Update Batch Compliance Compliance Distributor Data
+            </summary>
+            <param name="command">The data Input Compliance Distributor Data.</param>
+            <returns>
+            A List of Compliance Compliance Distributor Data
+            </returns>
+            <remarks>
+            Update Batch Compliance Compliance Distributor Data
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataController.UpdateBatchReturnBooleanComplianceDistributorData(Example.Application.Features.ComplianceDistributorsData.Commands.UpdateListReturnBoleanComplianceDistributorsData.UpdateListReturnBoleanComplianceDistributorsDataListCommand)">
+            <summary>
+            Update Batch Compliance Compliance Distributor Data
+            </summary>
+            <param name="command">The data Input Compliance Distributor Data.</param>
+            <returns>
+            A List of Compliance Compliance Distributor Data
+            </returns>
+            <remarks>
+            Update Batch Compliance Compliance Distributor Data
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataLogsController.CreateBatchComplianceDistributorDataLogs(Compliance.Application.Features.ComplianceDistributorDataLogsBls.Commands.CreateBatchComplianceDistributorDataLogsBls.CreateBatchComplianceDistributorDataLogsBlsListCommand)">
+            <summary>
+            Create Batch Compliance Compliance Distributor Data Logs
+            </summary>
+            <param name="command">The data Input Compliance Distributor Data Logs.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Create Batch Compliance Compliance Distributor Data Logs
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceDistributorDataLogsController.GetComplianceDistributorDataFullDataListByDistributor(System.Int32)">
+            <summary>
+            Get Compliance Distributor Data Full Data Logs List By Distributor Id
+            </summary>
+            <param name="complianceDistributorId">Distributor Id</param>
+            <returns>
+            A Compliance Distributor Data Full Data Logs List by  Distributor Id
+            </returns>
+            <remarks>
+            Get Compliance Distributor Data Full Data Logs List By Distributor Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.CreateComplianceFieldType(Compliance.Application.Features.ComplianceFieldTypes.Commands.CreateComplianceFieldType.CreateComplianceFieldTypeCommand)">
+            <summary>
+            Create Compliance Field Type
+            </summary>
+            <param name="command">The data Compliance Source.</param>
+            <returns>
+            An Compliance Field Type Id 
+            </returns>
+            <remarks>
+            Create Compliance Field Type.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.UpdateFileResourceType(Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateComplianceFieldType.UpdateComplianceFieldTypeCommand)">
+            <summary>
+            Update Compliance Field Type
+            </summary>
+            <param name="command">The data Compliance Field Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Compliance Field Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.DeleteComplianceFieldType(Compliance.Application.Features.ComplianceFieldTypes.Commands.DeleteComplianceFieldType.DeleteComplianceFieldTypeCommand)">
+            <summary>
+            Delete Compliance Field Type
+            </summary>
+            <param name="command">The data Compliance Field Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Delete Compliance Field Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.GetComplianceFieldTypeAll">
+            <summary>
+            Get Compliance Field Type All
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Field Type  List
+            </returns>
+            <remarks>
+            Get Compliance Field Type All
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.GetComplianceFieldTypeById(System.Int32)">
+            <summary>
+            Get Compliance Field Type By Id
+            </summary>
+            <param name="ComplianceFieldTypeId">The Compliance Field Type Id.</param>
+            <returns>
+            A Compliance Field Type Id
+            </returns>
+            <remarks>
+            Get Compliance Field Type By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.GetComplianceFieldTypeFullDataList">
+            <summary>
+            Get Compliance Field Type Full Data List
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Field Type Full Data List
+            </returns>
+            <remarks>
+            Get Compliance Field Type Full Data List
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.GetComplianceFieldTypeFullDataById(System.Int32)">
+            <summary>
+            Get Compliance Field Type Full Data By Id
+            </summary>
+            <param name="ComplianceFieldTypeId">The Compliance Field Type Id.</param>
+            <returns>
+            A Compliance Field Type Id
+            </returns>
+            <remarks>
+            Get Compliance Field Type Full Data By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceFieldTypeController.UpdateBatchComplianceFieldType(Compliance.Application.Features.ComplianceFieldTypes.Commands.UpdateBatchComplianceFieldType.UpdateBatchComplianceFieldTypeListCommand)">
+            <summary>
+            Update Batch Compliance Field Type
+            </summary>
+            <param name="command">The data Compliance Field Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Compliance Field Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.CreateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.CreateComplianceSources.CreateComplianceSourceCommand)">
+            <summary>
+            Create Compliance Source
+            </summary>
+            <param name="command">The data Compliance Source.</param>
+            <returns>
+            An Compliance Source Id 
+            </returns>
+            <remarks>
+            Create Compliance Source.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.GetComplianceSourceById(System.Int32)">
+            <summary>
+            Get Compliance Source By Id
+            </summary>
+            <param name="ComplianceSourceId">The Compliance Source Id.</param>
+            <returns>
+            A Compliance Source By Id 
+            </returns>
+            <remarks>
+            Get Compliance Source By Id.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.GetComplianceSourceAll">
+            <summary>
+            Get Compliance Source All
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Source List
+            </returns>
+            <remarks>
+            Get Compliance Source All.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.UpdateComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.UpdateComplianceSources.UpdateComplianceSourceCommand)">
+            <summary>
+            Update Compliance Source
+            </summary>
+            <param name="command">The data Compliance Source.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Compliance Source.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.DeleteComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.DeleteComplianceSources.DeleteComplianceSourceCommand)">
+            <summary>
+            Delete Compliance Source
+            </summary>
+            <param name="command">The data Compliance Source.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Delete Compliance Source.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceController.UpdateBatchComplianceSource(Compliance.Application.Features.ComplianceSources.Commands.UpdateBatchComplainceSources.UpdateBatchComplainceSourcesListCommand)">
+            <summary>
+            Update Batch Compliance Source
+            </summary>
+            <param name="command">The data Compliance Source.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Compliance Source.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.CreateComplianceSourceType(Compliance.Application.Features.ComplianceSourceType.Commands.CreateComplianceSourceType.CreateComplianceSourceTypeCommand)">
+            <summary>
+            Create Compliance Source Type
+            </summary>
+            <param name="command">The data Compliance Source Type.</param>
+            <returns>
+            An Compliance Source Type Id 
+            </returns>
+            <remarks>
+            Create Compliance Source Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.UpdateComplianceSourceType(Compliance.Application.Features.ComplianceSourceType.Commands.UpdateComplianceSourceType.UpdateComplianceSourceTypeCommand)">
+            <summary>
+            Update Compliance Source Type
+            </summary>
+            <param name="command">The data Compliance Source Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Compliance Source Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.DeleteComplianceSourceType(Compliance.Application.Features.ComplianceSourceType.Commands.DeleteComplianceSourceType.DeleteComplianceSourceTypeCommand)">
+            <summary>
+            Delete Compliance Source Type
+            </summary>
+            <param name="command">The data Compliance Source Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Delete Compliance Source Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.GetComplianceSourceTypeAll">
+            <summary>
+            Get Compliance Source Type All
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Source Type List
+            </returns>
+            <remarks>
+            Get Compliance Source Type All
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.GetComplianceSourceTypeMarketById(System.Int32)">
+            <summary>
+            Get Compliance Source Type  By Id
+            </summary>
+            <param name="ComplianceSourceTypeId">The Compliance Source Type Id.</param>
+            <returns>
+            A Compliance Source Type  By Id
+            </returns>
+            <remarks>
+            Get Compliance Source Type  By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.GetComplianceSourceTypesFullData">
+            <summary>
+            Get Compliance Source Types Full Data
+            </summary>
+            <param></param>
+            <returns>
+            A Compliance Source Types Full Data
+            </returns>
+            <remarks>
+            Get Compliance Source Types Full Data
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.GetComplianceSourceTypeFullDataById(System.Int32)">
+            <summary>
+            Get ComplianceSource Type Full Data By Id
+            </summary>
+            <param name="ComplianceSourceTypeId">The Compliance Source Type Id.</param>
+            <returns>
+            A ComplianceSource Type Full Data By Id
+            </returns>
+            <remarks>
+            Get ComplianceSource Type Full Data By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeController.UpdateBatchComplianceSourceTypes(Compliance.Application.Features.ComplianceSourceType.Commands.UpdateBatchComplianceSourceType.UpdateBatchComplianceSourceTypeListCommand)">
+            <summary>
+            Update Batch Compliance Source Types
+            </summary>
+            <param name="command">The data Compliance Source Types.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Compliance Source Types
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.CreateComplianceSourceTypeMarkets(Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateComplianceSourceTypeMarket.CreateComplianceSourceTypeMarketCommand)">
+            <summary>
+            Create Compliance Source Type Markets
+            </summary>
+            <param name="command">The data Compliance Source Type Markets.</param>
+            <returns>
+            A Compliance Source Type Markets Id 
+            </returns>
+            <remarks>
+            Create Compliance Source Type Markets
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.GetComplianceSourceTypeById(System.Int32)">
+            <summary>
+            Get Compliance Source Type By Id
+            </summary>
+            <param name="InputBehaviourId">The Input Behaviour Id.</param>
+            <returns>
+            A Compliance Source Type By Id
+            </returns>
+            <remarks>
+            Get Compliance Source Type By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.UpdateBatchComplianceSourceTypeMarkets(Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.UpdateBatchComplianceSourceTypeMarket.UpdateBatchComplianceSourceTypeMarketListCommand)">
+            <summary>
+            Update Batch Compliance Source Type Markets
+            </summary>
+            <param name="command">The data Input Compliance Source Type Markets.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Compliance Source Type Markets
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.CreateBatchComplianceSourceTypeMarkets(Compliance.Application.Features.ComplianceSourceTypeMarket.Commands.CreateBatchComplianceSourceTypeMarket.CreateBatchComplianceSourceTypeMarketListCommand)">
+            <summary>
+            Create Batch Compliance Source Type Markets
+            </summary>
+            <param name="command">The data Input Compliance Source Type Markets.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Create Batch Compliance Source Type Markets
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.ComplianceSourceTypeMarketsController.GetComplianceSourceTypeMarketById(System.Int32)">
+            <summary>
+            Get Compliance Source Type Market By Id
+            </summary>
+            <param name="ComplianceSourceTypeMarketId">Compliance Source Type Market Id.</param>
+            <returns>
+            A Compliance Source Type Market By Id
+            </returns>
+            <remarks>
+            Get Compliance Source Type Market By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.CreateFileResourceType(Compliance.Application.Features.FileResourceTypes.Commands.CreateFileResourceTypes.CreateFileResourceTypesCommand)">
+            <summary>
+            Create File Resource Type
+            </summary>
+            <param name="command">The data File Resource Type.</param>
+            <returns>
+            A File Resource Type Id 
+            </returns>
+            <remarks>
+            Create File Resource Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.UpdateFileResourceType(Compliance.Application.Features.FileResourceTypes.Commands.UpdateFileResourceTypes.UpdateFileResourceTypesCommand)">
+            <summary>
+            Update File Resource Type
+            </summary>
+            <param name="command">The data File Resource Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update File Resource Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.DeleteFileResourceType(Compliance.Application.Features.FileResourceTypes.Commands.DeleteFileResourceTypes.DeleteFileResourceTypesCommand)">
+            <summary>
+            Delete File Resource Type
+            </summary>
+            <param name="command">The data File Resource Type.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Delete File Resource Type
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.GetFileResourceTypeAll">
+            <summary>
+            Get File Resource Type All
+            </summary>
+            <param></param>
+            <returns>
+            A File Resource Type List
+            </returns>
+            <remarks>
+            Get File Resource Type All
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.FileResourceTypeController.GetFileResourceTypeById(System.Int32)">
+            <summary>
+            Get File Resource Type By Id
+            </summary>
+            <param name="FileResourceTypeId">The File Resource Type Id.</param>
+            <returns>
+            A File Resource Type By Id 
+            </returns>
+            <remarks>
+            Get File Resource Type By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.CreateInputBehaviour(Compliance.Application.Features.InputBehaviours.Commands.CreateInputBehaviours.CreateInputBehavioursCommand)">
+            <summary>
+            Create Input Behaviour
+            </summary>
+            <param name="command">The data Input Behaviour.</param>
+            <returns>
+            An Input Behaviour Id 
+            </returns>
+            <remarks>
+            Create Input Behaviour.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.GetInputBehaviourAll">
+            <summary>
+            Get Input Behaviour All
+            </summary>
+            <param></param>
+            <returns>
+            A List of Input Behaviour
+            </returns>
+            <remarks>
+            Get Input Behaviour All.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.UpdateInputBehaviour(Compliance.Application.Features.InputBehaviours.Commands.UpdateInputBehaviours.UpdateInputBehavioursCommand)">
+            <summary>
+            Update Input Behaviour
+            </summary>
+            <param name="command">The data Input Behaviour.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Input Behaviour.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.DeleteInputBehaviour(Compliance.Application.Features.InputBehaviours.Commands.DeleteInputBehaviours.DeleteInputBehavioursCommand)">
+            <summary>
+            Delete Input Behaviour
+            </summary>
+            <param name="command">The data Input Behaviour.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Delete Input Behaviour.\
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.GetInputBehaviourById(System.Int32)">
+            <summary>
+            Get Input Behaviour By Id
+            </summary>
+            <param name="InputBehaviourId">The Input Behaviour Id.</param>
+            <returns>
+            A Input Behaviour By Id 
+            </returns>
+            <remarks>
+            Get Input Behaviour By Id
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="M:Compliance.Api.Controller.InputBehaviourController.UpdateBatchInputBehaviour(Compliance.Application.Features.InputBehaviours.Commands.UpdateBatchInputBehaviours.UpdateBatchInputBehavioursListCommand)">
+            <summary>
+            Update Batch Input Behaviour
+            </summary>
+            <param name="command">The data Input Behaviour.</param>
+            <returns>
+            A Boolean
+            </returns>
+            <remarks>
+            Update Batch Input Behaviour
+            `Note: This endpoint requires authentication.` [more info](#section/Authentication)
+            </remarks>
+        </member>
+        <member name="T:Compliance.Api.OperationFilters.RemoveVersionParameterFilter">
+            <summary>
+            RemoveVersionParameter Filter
+            </summary>
+            <seealso cref="T:Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter" />
+        </member>
+        <member name="M:Compliance.Api.OperationFilters.RemoveVersionParameterFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Applies the specified operation.
+            </summary>
+            <param name="operation">The operation.</param>
+            <param name="context">The context.</param>
+        </member>
+        <member name="T:Compliance.Api.OperationFilters.ReplaceVersionWithExactValueInPathFilter">
+            <summary>
+            ReplaceVersionWithExactValueInPath Filter
+            </summary>
+            <seealso cref="T:Swashbuckle.AspNetCore.SwaggerGen.IDocumentFilter" />
+        </member>
+        <member name="M:Compliance.Api.OperationFilters.ReplaceVersionWithExactValueInPathFilter.Apply(Microsoft.OpenApi.Models.OpenApiDocument,Swashbuckle.AspNetCore.SwaggerGen.DocumentFilterContext)">
+            <summary>
+            Applies the specified swagger document.
+            </summary>
+            <param name="swaggerDoc">The swagger document.</param>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Compliance.Api.Utils.ControllerBaseCustom.NotFound">
+            <summary>
+            Not Found Response.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Compliance.Api.Utils.ControllerBaseCustom.BadRequest">
+            <summary>
+            Bad Request Response.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Compliance.Api.Utils.ControllerBaseCustom.Ok(System.Object)">
+            <summary>
+            Dynamic Response
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Compliance.Api.Utils.ControllerBaseCustom.Ok">
+            <summary>
+            Ok Response.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Compliance.Api.Utils.ControllerBaseCustom.Unauthorized">
+            <summary>
+            Not Found Response.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,13 @@
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\Example.Domain.deps.json
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\Example.Domain.dll
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\Example.Domain.pdb
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\bin\Debug\net6.0\Models.xml
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Example.Domain.csproj.AssemblyReference.cache
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Example.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Example.Domain.AssemblyInfoInputs.cache
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Example.Domain.AssemblyInfo.cs
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Example.Domain.csproj.CoreCompileInputs.cache
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Example.Domain.dll
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\ref\Example.Domain.dll
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\Example.Domain.pdb
+C:\GitRepositories\cleanarchitecture\compliance\Core\Domain\Compliance.Domain\obj\Debug\net6.0\refint\Example.Domain.dll
